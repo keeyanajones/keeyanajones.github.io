@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-01-10T20:49:43-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">keeyanajones.github.io</title><subtitle></subtitle><entry><title type="html">Reality</title><link href="http://localhost:4000/blog/reality/extended/xr/vr/ar/2022/12/06/reality.html" rel="alternate" type="text/html" title="Reality" /><published>2022-12-06T19:39:46-05:00</published><updated>2022-12-06T19:39:46-05:00</updated><id>http://localhost:4000/blog/reality/extended/xr/vr/ar/2022/12/06/reality</id><content type="html" xml:base="http://localhost:4000/blog/reality/extended/xr/vr/ar/2022/12/06/reality.html"><![CDATA[<h2 id="reality-the-metaverse">Reality: The Metaverse</h2>
+
+<p>Last year I told someone about my work and before I could even finish my sentence, they said, “I live in reality…” and went on to say “now go and play like your working…”</p>
+
+<p>I laughed and thought to myself, goofy the metaverse market is expected to be a $800 billion market by 2024, according to Bloomberg Intelligence. Roblox CEO David Baszucki, meanwhile, projects a total addressable market of around $200 billion or more each in the categories of mobile, streaming content, and social media.</p>
+
+<p>In fact, there are much more audacious estimates — Morgan Stanley analyst Brian Nowak vaguely refers to an $8 trillion total addressable market among U.S. consumers — that come with multiple caveats. Adoption “won’t be rapid or easy,” Nowak says, because of uncertainty over the metaverse experience, consumer distrust toward Facebook with their personal and enterprise data, and Facebook’s lack of enterprise tool expertise.</p>
+
+<h2 id="the-future-of-connection-will-be-in-3d">The future of connection will be in 3D</h2>
+
+<p>The metaverse will be a place where we can work, play, and connect with others in immersive, online experiences.</p>
+
+<h2 id="virtual-reality">Virtual Reality</h2>
+
+<p>VR technologies immerse you in 3D spaces that go beyond the physical world, letting you feel like you’re with friends and family as you discover new experiences together.</p>
+
+<h2 id="augmented-reality">Augmented reality</h2>
+<p>AR lets you add playful virtual effects to photos and video at the touch or swipe of a screen, letting you express yourself with the people who matter most.</p>
+
+<p>Check out the <a href="https://about.facebook.com/technologies">Facebook Reality Technology</a> or <a href="https://www.marketwatch.com/story/what-is-the-metaverse">Market Watch</a> for more info on how to get the most out of learn more about the Metaverse.</p>]]></content><author><name></name></author><category term="blog" /><category term="reality" /><category term="extended" /><category term="xr" /><category term="vr" /><category term="ar" /><summary type="html"><![CDATA[Reality: The Metaverse]]></summary></entry><entry><title type="html">AI</title><link href="http://localhost:4000/blog/ai/tensorflow/openai/2022/12/05/ai.html" rel="alternate" type="text/html" title="AI" /><published>2022-12-05T19:39:46-05:00</published><updated>2022-12-05T19:39:46-05:00</updated><id>http://localhost:4000/blog/ai/tensorflow/openai/2022/12/05/ai</id><content type="html" xml:base="http://localhost:4000/blog/ai/tensorflow/openai/2022/12/05/ai.html"><![CDATA[<h2 id="ai">AI</h2>
+
+<p>Artificial intelligence (AI) is the general study of making intelligent machines. Machine learning (ML), a subset of AI, focuses on the ability of machines to receive data and learn for themselves without being programmed with rules. ML differs from traditional programming by allowing you to teach your program with examples rather than a list of instructions. Instead of writing instructions, or rules, while programming, machine learning enables you to “train” an algorithm so that it can learn on its own, and then adjust and improve as it learns more about the information it is processing.</p>
+
+<p>I am a little familiar with these concepts but want to learn more so I’ve been working on Machine Learning, AI Experiments, examples, problem framing, data sources, responsibly, and more. I recently got into TensorFlow and now I am learning how to use AI and TF with my development. I have a few products I want to create in the next few weeks using TF to see if they would profitable.</p>
+
+<p>Check out the <a href="https://ai.google/education">Google AI</a> 
+and <a href="https://tensorflow.org">Tensorflow</a> for more info on how to get the most out of Artificial Intelligence.</p>]]></content><author><name></name></author><category term="blog" /><category term="ai" /><category term="tensorflow" /><category term="openai" /><summary type="html"><![CDATA[AI]]></summary></entry><entry><title type="html">Training - Learning AWS</title><link href="http://localhost:4000/blog/aws/training/2022/12/04/training-aws.html" rel="alternate" type="text/html" title="Training - Learning AWS" /><published>2022-12-04T19:39:46-05:00</published><updated>2022-12-04T19:39:46-05:00</updated><id>http://localhost:4000/blog/aws/training/2022/12/04/training-aws</id><content type="html" xml:base="http://localhost:4000/blog/aws/training/2022/12/04/training-aws.html"><![CDATA[<h2 id="working-with-aws">Working with AWS</h2>
+
+<p>I joined AWS Skill Builder in December of last year, accessed AWS Digital Training, on-demand courses, and more. With the new learning center, I explored learning plans and digital courses to help grow my career and achieve goals on my schedule. I still haven’t completed the course. I really enjoy FreeCodeCamp’s way of offering material and often go on my own learning journey sparked by something I see they mention on Twitter.</p>
+
+<p>Check out the <a href="https://explore.skillbuilder.aws/learn/home">Skill Builder AWS</a> and <a href="https://freecodecamp.com">Free Code Camp</a> for more info on how to get the most out of AWS Training.</p>]]></content><author><name></name></author><category term="blog" /><category term="aws" /><category term="training" /><summary type="html"><![CDATA[Working with AWS]]></summary></entry><entry><title type="html">100 Days of Coding</title><link href="http://localhost:4000/blog/jekyll/update/2022/12/03/100-days-of-coding.html" rel="alternate" type="text/html" title="100 Days of Coding" /><published>2022-12-03T19:39:46-05:00</published><updated>2022-12-03T19:39:46-05:00</updated><id>http://localhost:4000/blog/jekyll/update/2022/12/03/100-days-of-coding</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/update/2022/12/03/100-days-of-coding.html"><![CDATA[<h1 id="100-days-of-coding">100 Days of Coding</h1>
+
+<h2 id="using-the-mern-stack">Using the MERN Stack</h2>
+<p>Let’s try to update my MERN Full Stack skill set in 2022. Since, I recently updated my MongoDB Atlas and AWS (Amazon Web Services) accounts, I want to use MERN to quickly build a few applications. The idea is to re-familiarize myself with this stack and build modular components and snippets that I can use to build several apps over the next few weeks.</p>
+
+<p>Before I begin, I have to make sure I update Node.js and React.js basics; then make sure Create React App is updated and installed. Next, I will need access to the MongoDB Atlas database to add a database deployment and connect the app. The full code tutorial for building a full stack MERN application with MongoDB Atlas is available in this GitHub repo.</p>
+
+<h2 id="what-is-the-mern-stack">What is the MERN Stack?</h2>
+
+<p>The MERN stack is a web development framework made up of the stack of:</p>
+
+<ul>
+  <li>MongoDB - It’s an open-source NoSQL cross-platform document-oriented database.</li>
+  <li>ExpressJS - It’s a web-based application framework work with Node JS, It helps to build web apps and RESTful APIs.</li>
+  <li>React - React is a JavaScript library created by Facebook. React is a User Interface (UI) library. React is a tool for building UI components</li>
+  <li>NodeJS - It is a free JavaScript run-time environment, It executes JavaScript code outside of a browser. It is available for macOS, Windows, Linux, and Unix.</li>
+</ul>
+
+<p>It is one of the several variants of the MEAN stack. The MERN stack visualized When you use the MERN stack, you work with React to implement the presentation layer, Express and Node to make up the middle or application layer, and MongoDB to create the database layer. I utilize these four technologies to develop a basic application that is able to record the information and then display it using a React.</p>
+
+<p>I am using the following plugins and tools to create the MERN Stack apps:</p>
+
+<ul>
+  <li>NodeJS</li>
+  <li>MongoDB</li>
+  <li>MongooseJS</li>
+  <li>ExpressJS</li>
+  <li>ReactJS</li>
+  <li>Visual Studio Code</li>
+</ul>
+
+<p>The MERN Stack Apps being built will estimate, manage, implement, administer, deploy, and monitor with via AWS. In addition, freelance development, agents, bots, features, solutions, mods, extensions, plugins, themes, expansions, and other related server content is also being explored.</p>
+
+<p>Finally, I plan to post update on my progress regularly here and be more consistent highlighting the essential topics and tasks related to my development. But, if I have skipped anything feel free to check out my github Repo’s or send me a message.</p>
+
+<p>Check out the <a href="https://github.com/mongodb-developer/mern-stack-example">Mongodb Developer Github</a> for more info on how to get the most out of a Mern Stack.</p>]]></content><author><name></name></author><category term="blog" /><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[100 Days of Coding]]></summary></entry><entry><title type="html">December Game Releases</title><link href="http://localhost:4000/blog/games/new/december/2022/2022/12/02/new-game-releases.html" rel="alternate" type="text/html" title="December Game Releases" /><published>2022-12-02T19:39:46-05:00</published><updated>2022-12-02T19:39:46-05:00</updated><id>http://localhost:4000/blog/games/new/december/2022/2022/12/02/new-game-releases</id><content type="html" xml:base="http://localhost:4000/blog/games/new/december/2022/2022/12/02/new-game-releases.html"><![CDATA[<h1 id="new-game-releases">New Game Releases</h1>
+
+<h2 id="december-2022">December 2022</h2>
+
+<ul>
+  <li>Dwarven Skykeep [PC] – December 1</li>
+  <li>Gundam Evolution [PS5, XSX, PS4, XBO] – December 1</li>
+  <li>Romancing SaGa -Minstrel Song- Remastered [PC. PS5, PS4, Switch] – December 1</li>
+  <li>The Callisto Protocol [PC, PS5, XSX, PS4, XBO] – December 2</li>
+  <li>Intrepid Izzy [PS5, XSX, PS4, XBO, Switch] – December 2</li>
+  <li>Marvel’s Midnight Suns [PC, PS5, XSX] – December 2</li>
+  <li>Need For Speed Unbound [PC, PS5, XSX] – December 2</li>
+  <li>Fortnite Chapter 4 [PC, PS5, XSX, PS4, XBO, Switch] – December 4</li>
+  <li>Paper Cut Mansion [PS4, Switch] – December 5</li>
+  <li>Swordship [PC, PS5, XSX, PS4, XBO, Switch] – December 5</li>
+  <li>Terror of Hemasaurus [PS5, PS4] – December 5</li>
+  <li>Back 4 Blood: River of Blood DLC [PC, PS5, XSX, PS4, XBO] – December 6</li>
+  <li>Firefighting Simulator - The Squad [PS5, XSX, PS4, XBO] – December 6</li>
+  <li>Hello Neighbor 2 [PC, PS5, XSX, PS4, XBO] – December 6</li>
+  <li>Impaler [PC] – December 6</li>
+  <li>Knights of Honor 2: Sovereign [PC] – December 6</li>
+  <li>Kukoos - Lost Pets [PS4, Switch] – December 6</li>
+  <li>Sunshine Shuffle [PC] – December 6</li>
+  <li>Terror of Hemasaurus [Switch] – December 6</li>
+  <li>Alaskan Truck Simulator [PC, PS5, XSX, PS4, XBO] – December 7</li>
+  <li>Hubris [PC VR] – December 7</li>
+  <li>IXION [PC] – December 7</li>
+  <li>Terror of Hemasaurus [XSX, XBO] – December 7</li>
+  <li>Togges [PC, PS5, XSX, PS4, XBO, Switch] – December 7</li>
+  <li>Chained Echoes [PC, PS5, XSX, PS4, XBO, Switch] – December 8</li>
+  <li>NecroBouncer [PC] – December 8</li>
+  <li>Portal with RTX [PC] – December 8</li>
+  <li>The Rumble Fish 2 [PC, PS5, XSX, PS4, XBO, Switch] – December 8</li>
+  <li>Witch On The Holy Night [PS4, Switch] – December 8</li>
+  <li>Dragon Quest Treasures [Switch] – December 9</li>
+  <li>Jitsu Squad [PS5, PS4, Switch] – December 9</li>
+  <li>Wavetale [PC, PS5, XSX, PS4, XBO, Switch] – December 12</li>
+  <li>Crisis Core –Final Fantasy 7– Reunion [PC, PS5, XSX, PS4, XBO, Switch] – December 13</li>
+  <li>High On Life [PC, XSX] – December 13</li>
+  <li>The Witcher 3 [PS5, XSX] – December 14</li>
+  <li>Aka [Switch] – December 15</li>
+  <li>The Crackpet Show [PC, Switch] – December 15</li>
+  <li>Nakara: Bladepoint [XBO] – December 22</li>
+  <li>Highwater [PC] – December TBC</li>
+  <li>Sports Story [Switch] – December TBC</li>
+</ul>
+
+<p>Check out the <a href="https://www.gameinformer.com/2022">game informer</a> and <a href="https://www.gamesradar.com/video-game-release-dates">games radar</a>
+for more info on how to get the updates. If you wanna talk about them, you can join my <a href="https://discord.gg/NbRTUyF3tP">Discord Server</a> and <a href="https://twitch.tv/agent_kee">Twitch.tv</a>.</p>]]></content><author><name></name></author><category term="blog" /><category term="games" /><category term="new" /><category term="december" /><category term="2022" /><summary type="html"><![CDATA[New Game Releases]]></summary></entry><entry><title type="html">My Side Hustle Experience</title><link href="http://localhost:4000/blog/side/hustles/2022/12/01/my-side-hustle-experience.html" rel="alternate" type="text/html" title="My Side Hustle Experience" /><published>2022-12-01T19:39:46-05:00</published><updated>2022-12-01T19:39:46-05:00</updated><id>http://localhost:4000/blog/side/hustles/2022/12/01/my-side-hustle-experience</id><content type="html" xml:base="http://localhost:4000/blog/side/hustles/2022/12/01/my-side-hustle-experience.html"><![CDATA[<h2 id="my-side-hustle-experience">My Side Hustle Experience</h2>
+<p>I have always worked from home. It is something that was a part of who I am since I started in technology in the 90’s.</p>
+
+<p>I was critically ill in 2013 and had a surgery in 2014 that took a lot longer to recover from than I expected. While recovering, I worked on learning new technologies, and looking into side gigs and additional jobs to supplement my income.</p>
+
+<p>It was a very difficult time but I never gave up and continued to learn what I could. I also kept coding and networking with recruiters. Even when I knew I wouldn’t get the job I would still try. Coding and learning about technology was all I could do. I also had my old ps3 and communicated with friends. I told many of them what was going on in my life at the time and they would play games with me to keep me in a positive frame of mind while I recovered.</p>
+
+<p>During that time I learned a lot about the social components of gaming and live streaming but that is for a later post.</p>
+
+<p>By 2019, I was obsessed with finding side job ideas to make money and get back to work. So when the pandemic changed everything, I was ready. I already had a small home business I was trying to grow. What I learned about myself and side hustle ideas surprised me. There is no “one way” to find a side hustle that works for you. I would suggest looking into them all and finding the ones that you think are right for you and your life style.</p>
+
+<h2 id="learning-to-create-profitable-ideas">Learning to Create Profitable Ideas</h2>
+<p>If you google “Side Hustle” there are so many results that suggest they know the ultimate ways to make money on the side. The truth is though a lot of them will require a ton of work or some money to start. But, what I learned was the most important factors are patience and passion mattered most at the beginning:</p>
+
+<ul>
+  <li><strong>Patience</strong> - Understanding the idea that you will not start off at an hourly rate like a normal 9 to 5. If you don’t do the work you don’t get the money. No one is there to pay you for just showing up. Don’t give up to early, try it on first.</li>
+  <li><strong>Passion</strong> - Some days you won’t make money but you still will have to work at it. If your not authentically interested in the work and won’t do it for free pick something else that you love. Always start with your talents.</li>
+</ul>
+
+<h2 id="assessing-your-skills">Assessing your skills</h2>
+<p>Your side hustle doesn’t have to connect to a job—but it can if it works. For example, I have always programmed in my past jobs but I started as a data analysts and love researching things at night. Both roles use similar technology and independent working skills. Alternatively, I have great communication skills that I use in my spare time, allowing me to also use my tutoring and social skills.</p>
+
+<p>Both side hustles have the same success potential; the difference is one option may be more enjoyable than the other, depending on my preferences.</p>
+
+<p>Since I was starting my side hustle on top of my business, I wanted to take some steps to choose the more enjoyable stuff. This helped me avoid burnout and create long term projects for my business. I had to ask myself:</p>
+
+<ol>
+  <li>What skills do I already use regularly?</li>
+  <li>Do I have the mental, emotional, and physical capacity to use those skills outside of my other responsibilities?</li>
+  <li>What other skills would I enjoy using regularly?</li>
+</ol>
+
+<p>Once assessed, I started thinking about turning skills into a project that connects with goals.</p>
+
+<blockquote>
+  <p>“Determining the best way for you to work from home, as well as recognizing your limitations, helped physically set myself up for prosperity. Considering my home work environment, I didn’t need much space to dedicate to my type of work and I don’t have many things that might impact my ability to use my space.”</p>
+</blockquote>
+
+<h2 id="list-of-side-hustles-ideas-to-researched">List of Side Hustles Ideas to Researched</h2>
+
+<p><strong>Writing</strong></p>
+
+<p>Many companies hire freelance or contract writers to draft marketing materials, social media copy, SEO articles, editorials, and more, without expecting their writers to be available full-time. As a writer, you can also start an affiliate marketing blog, though since that path requires building your readership, it can take a bit of time before you start making money from your blog.</p>
+
+<p>Where to begin: Sites like 
+<a href="https://www.fiverr.com">fiverr</a>, 
+<a href="https://www.upwork.com">upwork</a>, 
+<a href="https://www.freelancer.com">freelancer</a>, 
+<a href="https://www.indeed.com">indeed</a>, or 
+<a href="https://www.wordpress.com">wordpress</a></p>
+
+<p><strong>Proofreading or copyediting</strong></p>
+
+<p>If you are more of an editor than a writer, you can get paid to proofread or copyedit marketing or editorial content. You can develop a steady flow of side income by finding one or two anchor clients, or clients you work with regularly.</p>
+
+<p>Where to begin: Sites like 
+<a href="https://www.fiverr.com">fiverr</a>, 
+<a href="https://www.upwork.com">upwork</a>, 
+<a href="https://www.freelancer.com">freelancer</a>, or 
+<a href="https://www.flexjobs.com">flexjobs</a></p>
+
+<p><strong>Drop shipping business</strong></p>
+
+<p>A dropshipping business looks like a regular online shop to the average customer, but behind the scenes, the company is a bit less traditional. With dropshipping, a retailer sells products housed and fulfilled by a third party, so the retailer is responsible for customer-facing communications, product curation, and marketing, while another company handles the inventory.</p>
+
+<p>Where to begin: Sites like 
+<a href="https://www.alibaba.com">alibaba</a>, 
+<a href="https://www.dropshipdirect.com">dropship direct</a>, or 
+<a href="https://www.oberlo.com">oberlo</a></p>
+
+<p><strong>Online Training or courses</strong></p>
+
+<p>I have a skill to share with others; for example, I am a technologist with a specialty in web development; I want to host a live online class or workshop and charge people for access. There are several ways to set up this type of business model. One option could be to create a Zoom link and invite guests once I receive payment. Another option is to offer a membership with self paced instant lifetime access to 8+ hours of video in a downloadable format, homework, and a money back guarantee.</p>
+
+<p>Where to begin: Video platforms like 
+<a href="https://www.youtube.com">youtube</a>, 
+<a href="https://www.discord.com">discord</a>, 
+<a href="https://www.zoom.com">zoom</a>, or 
+<a href="https://meet.google.com">google meet</a></p>
+
+<p><strong>Digital creative</strong></p>
+
+<p>There are many ways to pursue creativity using only a computer, for example, video editing or graphic design. You may choose to seek clients who will hire you to create business assets. Or, if you want to monetize your digital designs independently, you may look into posting videos on YouTube or putting your designs on merchandise with a print-on-demand business. In addition, many people use these methods to sell handmade items or original artwork online, either through an independent online shop or through sites as well.</p>
+
+<p>Where to begin: Sites like 
+<a href="https://www.etsy.com">etsy</a>, 
+<a href="https://www.saatchiart.com">saatchi art</a>, 
+<a href="https://www.shopify.com">shopify</a>, 
+<a href="https://www.fiverr.com">fiverr</a>, 
+<a href="https://www.upwork.com">upwork</a>, 
+<a href="https://www.freelancer.com">freelancer</a>, 
+<a href="https://www.youtube.com">youtube</a>, or 
+<a href="https://www.printful.com">printful</a></p>
+
+<p><strong>Virtual assistant</strong></p>
+
+<p>Virtual assistants help businesses or individuals with administrative tasks such as managing inboxes or scheduling. You can search for companies seeking a virtual assistant on regular job sites, like Flexjobs or Indeed, or you can apply for a company that pairs virtual assistants with businesses, such as Time Etc or Boldly. If you decide to go through a third-party matching process, you may have less flexibility in the number of hours you work per week or the specific hours you work.</p>
+
+<p>Where to begin: Sites like 
+<a href="https://www.flexjobs.com">flexjobs</a>, 
+<a href="https://web.timeetc.com/country/usa">timeetc</a>, or 
+<a href="https://www.boldly.com">boldly</a></p>
+
+<p><strong>Narrator</strong></p>
+
+<p>This side hustle can require specific recording equipment and an echo-proof space free of background noise, but it can be fun if you like reading a range of materials and genres and are interested in voice acting.</p>
+
+<p>Where to begin: Sites like 
+<a href="https://www.acx.com">acx</a>, 
+<a href="https://www.voices.com">voices</a>, or 
+<a href="https://www.BunnyStudio.com">bunnystudio</a></p>
+
+<p><strong>Transcription service</strong></p>
+
+<p>Use your quick and accurate typing skills as a transcriptionist. Transcribing is the act of typing out audio. Some cases where a business might want their audio files transcribed might be to generate closed captions or to use quotes from a speech or interview in an editorial feature.</p>
+
+<p>Where to begin: Sites like 
+<a href="https://www.rev.com">rev</a>, 
+<a href="https://www.speakwrite.com">speakwrite</a>, or 
+<a href="https://www.fiverr.com">fiverr</a></p>
+
+<p>Other Side Hustles Ideas to Research</p>
+<ul>
+  <li>Ad Based Revenue</li>
+  <li>Affiliate Revenue</li>
+  <li>Social Media Management</li>
+  <li>Blogging</li>
+  <li>Baby Sitting</li>
+  <li>Book Keeping</li>
+  <li>Delivery</li>
+  <li>Ride Share</li>
+  <li>Digital Marketing</li>
+  <li>Dog Walking</li>
+  <li>Fulfillment by Amazon (FBA)</li>
+  <li>Transactional Revenue</li>
+  <li>Research</li>
+  <li>Email Newsletter</li>
+  <li>Focus Groups</li>
+  <li>Freemium Revenue</li>
+  <li>Brokerage Revenue</li>
+  <li>Host on Airbnb</li>
+  <li>Real Estate</li>
+  <li>Odd Jobs</li>
+  <li>Restaurant Jobs</li>
+  <li>Sales Channels Revenue</li>
+  <li>Retail Revenue</li>
+  <li>Microtask Revenue</li>
+  <li>Surveys</li>
+  <li>Translations</li>
+  <li>Web Sales Revenue</li>
+  <li>Direct Sales Revenue</li>
+  <li>Mystery Shopping</li>
+  <li>Lending Revenue</li>
+  <li>Volume Sales Revenue</li>
+  <li>Free Until… Revenue</li>
+  <li>Usage Revenue</li>
+  <li>Print On Demand Revenue</li>
+  <li>T-Shirts and Merch Design</li>
+  <li>Web Design and Maintenance</li>
+</ul>]]></content><author><name></name></author><category term="blog" /><category term="side" /><category term="hustles" /><summary type="html"><![CDATA[My Side Hustle Experience I have always worked from home. It is something that was a part of who I am since I started in technology in the 90’s.]]></summary></entry></feed>
