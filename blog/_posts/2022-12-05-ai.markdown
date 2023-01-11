@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "AI"
+date:   2022-12-05 19:39:46 -0500
+categories: ai tensorflow openai
+---
+
+## AI
+
+Artificial intelligence (AI) is the general study of making intelligent machines. Machine learning (ML), a subset of AI, focuses on the ability of machines to receive data and learn for themselves without being programmed with rules. ML differs from traditional programming by allowing you to teach your program with examples rather than a list of instructions. Instead of writing instructions, or rules, while programming, machine learning enables you to "train" an algorithm so that it can learn on its own, and then adjust and improve as it learns more about the information it is processing.
+
+I am a little familiar with these concepts but want to learn more so I've been working on Machine Learning, AI Experiments, examples, problem framing, data sources, responsibly, and more. I recently got into TensorFlow and now I am learning how to use AI and TF with my development. I have a few products I want to create in the next few weeks using TF to see if they would profitable.
+
+Check out the [Google AI](https://ai.google/education) 
+and [Tensorflow](https://tensorflow.org) for more info on how to get the most out of Artificial Intelligence. 

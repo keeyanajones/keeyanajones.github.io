@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,137 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KeeyanaJones.Github.io</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="assets/stylesheets/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f017635e3b.js" crossorigin="anonymous"></script>
-    <style>
-    /* CUSTOMIZE THE LATEST BLOB POST */    
-    /* sassy base class */
-.sassy {
-    background: -moz-linear-gradient(45deg, #02e1ba 0%, #26c9f2 29%, #d911f2 66%, #ffa079 100%);
-    background: -webkit-linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
-    background: linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,#d911f2 66%,#ffa079 100%);
-    background-size: 400% 400%;
-    -webkit-animation: Gradient 15s ease infinite;
-  -moz-animation: Gradient 15s ease infinite;
-  animation: Gradient 15s ease infinite;
-  /*min-height: calc(100vh - 2rem);*/
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: space-evenly;
-  overflow: hidden;
-  position: relative; 
-}
-
-.sassy::before, 
-.sassy::after {
-  content: "";
-  width: 70vmax;
-  height: 70vmax;
-  position: absolute;
-  background: rgba(255, 255, 255, 0.07);
-  left: -20vmin;
-  top: -20vmin;
-  animation: morph 15s linear infinite alternate, spin 20s linear infinite;
-  z-index: 1;
-  will-change: border-radius, transform;
-  transform-origin: 55% 55%;
-  pointer-events: none; 
-}
-  
-.sassy::after {
-    width: 70vmin;
-    height: 70vmin;
-    left: auto;
-    right: -10vmin;
-    top: auto;
-    bottom: 0;
-    animation: morph 10s linear infinite alternate, spin 26s linear infinite reverse;
-    transform-origin: 20% 20%; 
-}
-
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0 50%
-  }
-}
-
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0 50%
-  }
-}
-
-@keyframes Gradient {
-  0% {
-    background-position: 0 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0 50%
-  }
-}
-
-@keyframes morph {
-  0% {
-    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%; }
-  100% {
-    border-radius: 40% 60%; } 
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(1turn); 
-  } 
-}
-  .st0{display:none;}
-  .st1{display:inline;}
-  .st2{opacity:0.29;}
-  .st3{fill:#FFFFFF;}
-  .st4{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
-  .st5{clip-path:url(#SVGID_4_);}
-  .st6{clip-path:url(#SVGID_6_);}
-  .st7{clip-path:url(#SVGID_8_);}
-  .st8{clip-path:url(#SVGID_10_);}
-  .st9{fill:none;}
-  .st10{clip-path:url(#SVGID_12_);}
-  .st11{opacity:0.7;}
-  .st12{clip-path:url(#SVGID_14_);}
-  .st13{opacity:0.2;}
-  .st14{clip-path:url(#SVGID_16_);}
-  .st15{opacity:0.3;fill:#FFFFFF;enable-background:new    ;}
-
-    /* CUSTOMIZE THE CAROUSEL */    
-    /* Carousel base class */
-    .carousel {
-      margin-bottom: 4rem;
-    }
-    /* Since positioning the image, we need to help out the caption */
-    .carousel-caption {
-      bottom: 3rem;
-      z-index: 10;
-    }
-    
-    /* Declare heights because of positioning of img element */
-    .carousel-item {
-      height: 32rem;
-    }
-    </style>
   </head>
-
   <body>
     <!-- Navbar --> 
     <nav class="navbar navbar-expand-lg">
@@ -171,6 +44,7 @@
       </div>
     </nav>    
     <!-- .navbar -->
+
     <!-- Carousel -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -254,10 +128,9 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <!-- .carousel -->    
-        
-    <hr/>
+    <!-- .carousel -->            
     
+    <hr/>    
     <!-- Marketing Message and Features -->    
     <div class="container px-4 py-5">
       <a id="feature"></a>
@@ -342,6 +215,7 @@
       </div>
     </div>
     <!-- .feature -->
+    
     <hr/>
     <!-- Portfolio -->
     <section class="py-5 text-center container">
@@ -408,7 +282,6 @@
         </div>
       </div>
     </section>
-  
     <div class="album py-5 bg-light">
       <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -675,6 +548,7 @@
       </div>
     </div>  
     <!-- .portfolio -->
+    
     <hr/>
     <!-- Blog -->
     <section class="container">
@@ -694,7 +568,9 @@
             </div>
           </div>
         </header>
+    
         <hr/>
+    
         <!-- blog nav -->        
         <div class="nav-scroller py-1 mb-2">
           <nav class="nav d-flex justify-content-between">
@@ -708,29 +584,32 @@
         </div>
         <!-- ./ blog nav -->
       </div>
+
+      <a id="january2023"></a>
       
+      <!-- blog headline -->
       <div class="p-4 p-md-5 mb-4 rounded text-bg-dark sassy">
         <div class="col-md-6 px-0">
          
           <h1 class="display-4 fst-italic">
-            My Side Hustle Experience</h1>
+            2023 The Year of Side Hustles</h1>
           <p class="lead my-3">           
-            Determining the best way for you to work from home, as well as 
-            recognizing your limitations, can help you physically set 
-            yourself up for success.        
+            ... "I have to change the way I think about making money,
+            use what I do have more effectively, and managing my time better" ...        
           </p>
           <p class="lead mb-0">
             <a href="#latestBlog" class="text-white fw-bold">Continue...</a></p>
         </div>
       </div>
-    
+      <!-- .blog headline -->
+          
       <div class="row mb-2">
         <div class="col-md-6">
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-primary">Gaming</strong>
               <h3 class="mb-0">New Releases</h3>
-              <div class="mb-1 text-muted">Dec 1</div>
+              <div class="mb-1 text-muted">January 9</div>
               <p class="card-text mb-auto">
                 All the game release dates for upcoming titles and DLC 
                 on PS5, Xbox Series X, PS4, Xbox One, PC, and Switch in a 
@@ -749,7 +628,7 @@
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-success">Development</strong>
               <h3 class="mb-0">100 Days of Coding</h3>
-              <div class="mb-1 text-muted">Dec 2</div>
+              <div class="mb-1 text-muted">January 9</div>
               <p class="mb-auto">
                 Code minimum an hour every day for the next 100 days and
                 tweet your progress every day with the #100DaysOfCode</p>
@@ -771,455 +650,267 @@
     
           <article class="blog-post" id="latestBlog">
             <h2 class="blog-post-title mb-1">
-              My Side Hustle Experience</h2>
+              2023 The Year of The Side Hustles</h2>
             <p class="blog-post-meta">
-              December 1, 2022 by 
+              January 9, 2023 by 
               <a href="mailto:keeyanajones@yahoo.com">
                 Kee</a></p>
 
-            <p>I have always worked from home. It is something that was a part 
-              of who I am since I started in technology in the 90's.</p> 
+              <p>They say the US job market is strong and unemployment is at a 
+                five-decade low, but inflation rose over 7% in 2022. Everyone and 
+                their auntie is looking for a side hustle to make more money 
+                because of the cost of food alone.  I have been obsessed the art 
+                of building side hustles and specifically a passive income.  At least, 
+                the idea of a side gig that wouldn't require a large amount of 
+                resources to manage in 2023.</p>  
+                
+              <p>Thus, what I did at the end of 2022 was begin developing plans and 
+                establishing various ways to offer my services.</p>  
 
-            <p>I was critically ill in 2013 and had a surgery in 2014 that took 
-              a lot longer to recover from than I expected. While recovering, I 
-              worked on learning new technologies, and looking into side gigs and 
-              additional jobs to supplement my income.</p>  
+              <p>Then, last week I read this 
+                <a href="https://www.bloomberg.com/news/articles/2023-01-06/10-best-side-hustles-in-2023-to-make-some-extra-money"
+                   target="_blank">Bloomberg article</a> 
+                about the top 10 side hustles and was inspired to change a few things 
+                this month. The most interesting thing about the article was I need 
+                all the gigs offered and can do most of them. Some of these side hustles 
+                are on my list but I assumed that they won't generate enough money 
+                based on the amount of time I would have to dedicate to them. Clearly, 
+                I have to change the way I think about making money,
+                use what I do have more effectively, and managing my time better.</p>     
                 
-            <p>It was a very difficult time but I never gave up and continued to 
-              learn what I could.  I also kept coding and networking with recruiters.  
-              Even when I knew I wouldn't get the job I would still try.  Coding and 
-              learning about technology was all I could do.  I also had my old ps3 and 
-              communicated with friends.  I told many of them what was going on in my 
-              life at the time and they would play games with me to keep me in a 
-              positive frame of mind while I recovered.</p> 
-                
-            <p>During that time I learned a lot about the social components of gaming 
-              and live streaming but that is for a later post.</p>   
-                
-            <p>By 2019, I was obsessed with finding side job ideas to make money and 
-              get back to work. So when the pandemic changed everything, I was ready. 
-              I already had a small home business I was trying to grow. What I learned 
-              about myself and side hustle ideas surprised me.  There is no "one way" 
-              to find a side hustle that works for you. I would suggest looking into 
-              them all and finding the ones that you think are right for you and your 
-              life style.</p>
-                
-            <h2>Learning to Create Profitable Ideas</h2>
-            <p>If you google "Side Hustle" there are so many results that suggest they 
-              know the ultimate ways to make money on the side. The truth is though a 
-              lot of them will require a ton of work or some money to start. But, what 
-              I learned was the most important factors are patience and passion 
-              mattered most at the beginning:</p>
-            
-            <ul>    
-              <li><strong>Patience</strong> - Understanding the idea that you will not 
-                start off at an hourly rate like a normal 9 to 5. If you don't do the 
-                work you don't get the money. No one is there to pay you for just 
-                showing up. Don't give up to early, try it on first.</li>
-              <li><strong>Passion</strong> - Some days you won't make money but you 
-                still will have to work at it. If your not authentically interested in 
-                the work and won't do it for free pick something else that you love. 
-                Always start with your talents.</li>
-            </ul>    
-
-            <h2>Assessing your skills</h2>
-            <p>Your side hustle doesn’t have to connect to a job—but it can if it works. 
-              For example, I have always programmed in my past jobs but I started as a 
-              data analysts and love researching things at night. Both roles use similar 
-              technology and independent working skills. Alternatively, I have great 
-              communication skills that I use in my spare time, allowing me to also use 
-              my tutoring and social skills.</p>
-                
-            <p>Both side hustles have the same success potential; the difference is one 
-              option may be more enjoyable than the other, depending on my preferences.</p>
-                
-            <p>Since I was starting my side hustle on top of my business, I wanted to 
-              take some steps to choose the more enjoyable stuff. This helped me avoid 
-              burnout and create long term projects for my business.  I had to ask myself:</p>
-            <ul>  
-              <li>What skills do I already use regularly?</li>
-              <li>Do I have the mental, emotional, and physical capacity to use those 
-                skills outside of my other responsibilities?</li>
-              <li>What other skills would I enjoy using regularly?</li>
-            </ul>    
-                
-            <p>Once assessed, I started thinking about turning skills into a project 
-              that connects with goals.</p>
-              
-            <blockquote class="blockquote">
-              <p>"Determining the best way for you to work from home, as well as 
-                recognizing your limitations, helped physically set myself up for 
-                prosperity.  Considering my home work environment, I didn't need 
-                much space to dedicate to my type of work and I don't have many 
-                things that might impact my ability to use my space."</p>
-            </blockquote>
-
-            <h2>List of Side Hustles Ideas to Researched</h2>
-                
-            <h3>Writing</h3>
-            <p>Many companies hire freelance or contract writers to draft 
-              marketing materials, social media copy, SEO articles, editorials, 
-              and more, without expecting their writers to be available 
-              full-time. As a writer, you can also start an affiliate marketing 
-              blog, though since that path requires building your readership, 
-              it can take a bit of time before you start making money from your 
-              blog.</p>
-                
-            <p>Where to begin: Sites like Fiverr, Upwork, Freelancer, Indeed, 
-              or WordPress</p>
-                
-            <h3>Proofreading or copyediting</h3>
-            <p>If you are more of an editor than a writer, you can get paid to 
-              proofread or copyedit marketing or editorial content. You can 
-              develop a steady flow of side income by finding one or two anchor 
-              clients, or clients you work with regularly.</p>
-                
-            <p>Where to begin: Sites like Fiverr, Upwork, Freelancer, or 
-              Flexjobs</p>
-                
-            <h3>Drop shipping business</h3>
-            <p>A dropshipping business looks like a regular online shop to 
-              the average customer, but behind the scenes, the company is a 
-              bit less traditional. With dropshipping, a retailer sells products 
-              housed and fulfilled by a third party, so the retailer is 
-              responsible for customer-facing communications, product curation, 
-              and marketing, while another company handles the inventory.</p>
-                
-            <p>Where to begin: Sites like Alibaba, Dropship Direct, or Oberlo</p>
-                
-            <h3>Online Training or courses</h3> 
-            <p>I have a skill to share with others; for example, I am a technologist 
-              with a specialty in web development; I want to host a live online class 
-              or workshop and charge people for access. There are several ways to set 
-              up this type of business model. One option could be to create a Zoom 
-              link and invite guests once I receive payment.  Another option is to 
-              offer a membership with self paced instant lifetime access to 8+ hours 
-              of video in a downloadable format, homework, and a money back 
-              guarantee.</p>  
-                
-            <p>Where to begin: Video platforms like Youtube, Discord, Zoom, or 
-              Google Meet</p>
-                
-            <h3>Digital creative</h3>
-            <p>There are many ways to pursue creativity using only a computer, for 
-              example, video editing or graphic design. You may choose to seek 
-              clients who will hire you to create business assets. Or, if you want 
-              to monetize your digital designs independently, you may look into posting 
-              videos on YouTube or putting your designs on merchandise with a 
-              print-on-demand business.  In addition, many people use these methods to 
-              sell handmade items or original artwork online, either through an 
-              independent online shop or through sites as well.</p>
-                
-            <p>Where to begin: Sites like Etsy, Saatchi Art, Shopify, Fiverr, Upwork, 
-              Freelancer, YouTube, or Printful</p>
-                
-            <h3>Virtual assistant</h3>
-            <p>Virtual assistants help businesses or individuals with administrative 
-              tasks such as managing inboxes or scheduling. You can search for companies 
-              seeking a virtual assistant on regular job sites, like Flexjobs or Indeed, 
-              or you can apply for a company that pairs virtual assistants with 
-              businesses, such as Time Etc or Boldly. If you decide to go through a 
-              third-party matching process, you may have less flexibility in the number 
-              of hours you work per week or the specific hours you work.</p>
-                
-            <p>Where to begin: Sites like Flexjobs, Time Etc, or Boldly</p>
-                
-            <h3>Narrator</h3>
-            <p>This side hustle can require specific recording equipment and an 
-              echo-proof space free of background noise, but it can be fun if you 
-              like reading a range of materials and genres and are interested in 
-              voice acting.</p>
-                
-            <p>Where to begin: Sites like ACX, Voices.com, or BunnyStudio</p>
-                
-            <h3>Transcription service</h3>
-            <p>Use your quick and accurate typing skills as a transcriptionist. 
-              Transcribing is the act of typing out audio. Some cases where a 
-              business might want their audio files transcribed might be to generate 
-              closed captions or to use quotes from a speech or interview in an 
-              editorial feature.</p>
-                
-            <p>Where to begin: Sites like Rev, SpeakWrite, or Fiverr</p>
-                
-                
-            <h2>Other Side Hustles Ideas to Research</h2>
-
-            <ul>
-              <li>Ad Based Revenue</li>
-              <li>Affiliate Revenue</li>
-              <li>Social Media Management</li>
-              <li>Blogging</li>
-              <li>Baby Sitting</li>
-              <li>Book Keeping</li>
-              <li>Delivery</li>
-              <li>Ride Share</li>
-              <li>Digital Marketing</li>
-              <li>Dog Walking</li>
-              <li>Fulfillment by Amazon (FBA)</li>
-              <li>Transactional Revenue</li>
-              <li>Research</li>
-              <li>Email Newsletter</li>
-              <li>Focus Groups</li>
-              <li>Freemium Revenue</li>
-              <li>Brokerage Revenue</li>
-              <li>Host on Airbnb</li>
-              <li>Real Estate</li>
-              <li>Odd Jobs</li>
-              <li>Restaurant Jobs</li>
-              <li>Sales Channels Revenue</li>
-              <li>Retail Revenue</li>
-              <li>Microtask Revenue</li>
-              <li>Surveys</li>
-              <li>Translations</li>
-              <li>Web Sales Revenue</li>
-              <li>Direct Sales Revenue</li>
-              <li>Mystery Shopping</li>
-              <li>Lending Revenue</li>
-              <li>Volume Sales Revenue</li>
-              <li>Free Until... Revenue</li>
-              <li>Usage Revenue</li>
-              <li>Print On Demand Revenue</li>
-              <li>T-Shirts and Merch Design</li>
-              <li>Web Design and Maintenance</li>
-            </ul>    
-                
-            <p>If you want to know more about my experience with these let me know, 
-              otherwise this post would would be very long. My suggestion is to start 
-              with microtask revenue now (via Amazon MTurk) or surveys while you learn 
-              more about the rest of these. This is just to get a little cash flowing.</p>             
+              <p>In addition to the Bloomberg article, I read similar articles on 
+                <a href="https://time.com/nextadvisor/financial-independence/best-side-hustles/"
+                   target="_blank">time.com</a> and 
+                <a href="https://www.cnbc.com/2022/12/01/side-hustles-for-2023.html"
+                   target="_blank">cnbc.com</a> 
+                that shown me how lucrative the side hustles I've been avoiding can be.    
           </article>
-
-          <hr/>
           
+          <hr/>
+
           <article class="blog-post" id="gamingBlog">
             <h2 class="blog-post-title mb-1">New Game Releases</h2>
-            <p class="blog-post-meta">December 2, 2022 by 
+            <p class="blog-post-meta">January 9, 2023 by 
               <a href="mailto:keeyanajones@yahoo.com">Kee</a></p>
     
-              <h3>December 2022 </h3>
-
+              <hr/>
+              <h3>January 2023</h3>              
+              <hr/>
+    
               <sub>SOURCES: 
-                <a href="https://www.gameinformer.com/2022" target="_blank">
-                  https://www.gameinformer.com/2022</a>
+                <a href="https://www.gameinformer.com/2023" target="_blank">
+                  https://www.gameinformer.com/2023</a>
                 &amp;
                 <a href="https://www.gamesradar.com/video-game-release-dates" target="_blank">
                  https://www.gamesradar.com/video-game-release-dates</a>
               </sub><br/><br/>
 
               <ul>
-                <li>Dwarven Skykeep [PC] – December 1</li>
-                <li>Gundam Evolution [PS5, XSX, PS4, XBO] – December 1</li>
-                <li>Romancing SaGa -Minstrel Song- Remastered [PC. PS5, PS4, Switch] – December 1</li>
-                <li>The Callisto Protocol [PC, PS5, XSX, PS4, XBO] – December 2</li>
-                <li>Intrepid Izzy [PS5, XSX, PS4, XBO, Switch] – December 2</li>
-                <li>Marvel's Midnight Suns [PC, PS5, XSX] – December 2</li>
-                <li>Need For Speed Unbound [PC, PS5, XSX] – December 2</li>
-                <li>Fortnite Chapter 4 [PC, PS5, XSX, PS4, XBO, Switch] – December 4</li>
-                <li>Paper Cut Mansion [PS4, Switch] – December 5</li>
-                <li>Swordship [PC, PS5, XSX, PS4, XBO, Switch] – December 5</li>
-                <li>Terror of Hemasaurus [PS5, PS4] – December 5</li>
-                <li>Back 4 Blood: River of Blood DLC [PC, PS5, XSX, PS4, XBO] – December 6</li>
-                <li>Firefighting Simulator - The Squad [PS5, XSX, PS4, XBO] – December 6</li>
-                <li>Hello Neighbor 2 [PC, PS5, XSX, PS4, XBO] – December 6</li>
-                <li>Impaler [PC] – December 6</li>
-                <li>Knights of Honor 2: Sovereign [PC] – December 6</li>
-                <li>Kukoos - Lost Pets [PS4, Switch] – December 6</li>
-                <li>Sunshine Shuffle [PC] – December 6</li>
-                <li>Terror of Hemasaurus [Switch] – December 6</li>
-                <li>Alaskan Truck Simulator [PC, PS5, XSX, PS4, XBO] – December 7</li>
-                <li>Hubris [PC VR] – December 7</li>
-                <li>IXION [PC] – December 7</li>
-                <li>Terror of Hemasaurus [XSX, XBO] – December 7</li>
-                <li>Togges [PC, PS5, XSX, PS4, XBO, Switch] – December 7</li>
-                <li>Chained Echoes [PC, PS5, XSX, PS4, XBO, Switch] – December 8</li>
-                <li>NecroBouncer [PC] – December 8</li>
-                <li>Portal with RTX [PC] – December 8</li>
-                <li>The Rumble Fish 2 [PC, PS5, XSX, PS4, XBO, Switch] – December 8</li>
-                <li>Witch On The Holy Night [PS4, Switch] – December 8</li>
-                <li>Dragon Quest Treasures [Switch] – December 9</li>
-                <li>Jitsu Squad [PS5, PS4, Switch] – December 9</li>
-                <li>Wavetale [PC, PS5, XSX, PS4, XBO, Switch] – December 12</li>
-                <li>Crisis Core –Final Fantasy 7– Reunion [PC, PS5, XSX, PS4, XBO, Switch] – December 13</li>
-                <li>High On Life [PC, XSX] – December 13</li>
-                <li>The Witcher 3 [PS5, XSX] – December 14</li>
-                <li>Aka [Switch] – December 15</li>
-                <li>The Crackpet Show [PC, Switch] – December 15</li>
-                <li>Nakara: Bladepoint [XBO] – December 22</li>
-
-                <li>Highwater [PC] – December TBC</li>
-                <li>Sports Story [Switch] – December TBC</li>
+                <li>Toy Soldiers HD (Switch) – January 3</li>
+                <li>We Are The Caretakers (Xbox Series X/S, Xbox One, PC) – January 6</li>
+                <li>Flash Party [PC] – January 10</li>
+                <li>Children of Silentown [PC, PS4, XBO, Switch] – January 11</li>
+                <li>Kandria [PC] – January 11</li>
+                <li>KartRider: Drift (PC, iOS, Android) – January 11</li>
+                <li>Lone Ruin (Switch, PC) – January 12</li>
+                <li>Gatewalkers [PC] – January 12</li>
+                <li>One Piece Odyssey [PC] – January 12</li>
+                <li>Rogue AI Simulator [PC] – January 12</li>                
+                <li>Terror of Hemasaurus [Switch] – January 12</li>
+                <li>Vengeful Guardian: Moonrider [PC, PS4, Switch] – January 12</li>
+                <li>Dragon Ball Z: Kakarot [PS5, XSX] – January 13</li>
+                <li>Dragon Ball Z: Kakarot: Bardock - Alone Against Fate DLC [PC, PS5, XSX, PS4, XBO, Switch] – January 13</li>
+                <li>One Piece Odyssey [PS5, XSX, PS4] – January 13</li>                
+                <li>Gigantosaurus: Dino Kart (PlayStation 5, Xbox Series X/S, PlayStation 4, Xbox One, Switch, PC) – January 17</li>
+                <li>Definitely Not Fried Chicken [PC] – January 18</li>
+                <li>Persona 4 Golden (Xbox Series X/S, PlayStation 4, Xbox One, Switch) – January 19</li>
+                <li>Shin Megami Tensei: Persona 3 Portable (Xbox Series X/S, PlayStation 4, Xbox One, Switch, PC) – January 19</li>
+                <li>A Space For The Unbound [PC, PS4, XBO, Switch] – January 19</li>
+                <li>Colossal Cave [PC, PS5, XSX, Switch] – January 19</li>
+                <li>Fire Emblem Engage [Switch] – January 20</li>
+                <li>Fire Emblem Engage: Wave 1 DLC [Switch] – January 20</li>
+                <li>Monster Hunter Rise [PS5, XSX, PS4, XBO] – January 20</li>
+                <li>Pocket Card Jockey: Ride On! (iOS) – January 20</li>             
+                <li>Forspoken [PC, PS5] – January 24</li>
+                <li>Mahokenshi [PC] – January 24</li>
+                <li>Risen [PS4, XBO, Switch] – January 24</li>
+                <li>World War Z [PS5, XSX] – January 24</li>
+                <li>Anniversary Wonder Boy Collection [PS5, PS4, Switch] – January 26</li>
+                <li>Hitman: World of Assassination [PC, PS5, XSX, PS4, XBO, Switch] – January 26</li>
+                <li>Hitman 3 Freelancer mode [PC, PS5, XSX, PS4, XBO, Switch] – January 26</li>
+                <li>PS5 DualSense Edge – January 26 (DualSense Edge pre-order)</li>
+                <li>Dead Space remake [PC, PS5, XSX] – January 27</li>
+                <li>Inkulinati [PC, XSX, XBO] – January 31</li>
+                <li>Season: A Letter to the Future [PC, PS5, PS4] – January 31</li>
+                <li>Second Front [PC] – January 31</li>
+                <li>SpongeBob SquarePants: The Cosmic Shake [PC, PS4, XBO, Switch] – January 31</li>
+                <li>We Were Here Forever [PS5, XSX] – January 31</li>
+                <li>Age of Empires II: Definitive Edition (Xbox Series X/S, Xbox One) – January 31</li>
               </ul>
           </article>
-
+          
           <hr/>
           
           <article class="blog-post" id="developmentBlog">
-            <h2 class="blog-post-title mb-1">100 Days of Coding</h2>
-            <p class="blog-post-meta">December 2, 2022 by 
+            <h2 class="blog-post-title mb-1">100 Days of Coding: What I Learned</h2>
+            <p class="blog-post-meta">January 9, 2023 
+              <kbd class="bg-success">Day 95</kbd> by 
               <a href="mailto:keeyanajones@yahoo.com">Kee</a></p>
               
-              <h3>Using the MERN Stack</h3>
-              <p>Let's try to update my MERN Full Stack skill set in 2022. Since, I recently updated 
-                my MongoDB Atlas and AWS (Amazon Web Services) accounts, I want to use MERN to quickly
-                build a few applications.  The idea is to re-familiarize myself with this stack and 
-                build modular components and snippets that I can use to build several apps over the 
-                next few weeks.</p>  
-                
-                
-              <p>Before I begin, I have to make sure I update Node.js and React.js basics; then make 
-                sure Create React App is updated and installed. Next, I will need access to the MongoDB 
-                Atlas database to add a database deployment and connect the app.  The full code tutorial
-                for building a full stack MERN application with MongoDB Atlas is available in this 
-                <a href="https://github.com/mongodb-developer/mern-stack-example" target="_blank">
-                  GitHub repo</a>.</p>
-
-              <h3>What is the MERN Stack?</h3>
-
-              <p>The MERN stack is a web development framework made up of the stack of:</p>
-                
-              <ul>
-                <li><kbd>MongoDB</kbd> - It's an open-source NoSQL cross-platform document-oriented database.</li>
-                <li><kbd>ExpressJS</kbd> - It's a web-based application framework work with Node JS, It helps to 
-                  build web apps and RESTful APIs.</li>
-                <li><kbd>React</kbd> - React is a JavaScript library created by Facebook. React is a User Interface 
-                  (UI) library. React is a tool for building UI components</li>
-                <li><kbd>NodeJS</kbd> - It is a free JavaScript run-time environment, It executes JavaScript code 
-                  outside of a browser. It is available for macOS, Windows, Linux, and Unix.</li>
-              </ul>                  
-                
-              <p>It is one of the several variants of the MEAN stack. The MERN stack visualized When you use the 
-                MERN stack, you work with React to implement the presentation layer, Express and Node to make up 
-                the middle or application layer, and MongoDB to create the database layer.  I utilize these four 
-                technologies to develop a basic application that is able to record the information and then 
-                display it using a React.</p>
-
-              <p>I am using the following plugins and tools to create the MERN Stack apps:</p>
-
-              <ul>
-                <li>NodeJS</li>
-                <li>MongoDB</li>
-                <li>MongooseJS</li>
-                <li>ExpressJS</li>
-                <li>ReactJS</li>
-                <li>Visual Studio Code</li>
-              </ul>
-
-              <p>The MERN Stack Apps being built will estimate, manage, implement, administer, deploy, and monitor
-                with via AWS.  In addition, freelance development, agents, bots, features, solutions, mods, 
-                extensions, plugins, themes, expansions, and other related server content is also being explored.
-                <br/><br/>
-
-              Finally, I plan to post update on my progress regularly here and be more consistent highlighting 
-              the essential topics and tasks related to my development. But, if I have skipped anything feel 
-              free to check out my github Repo's or send me a message.</p>              
+              <h3>10 Things I Learned From the Coding Challenge</h3>
+              <p></p>
+              
+              <ol>
+               <li>I am not a developer anymore, I'm more</li>
+               <li>I like learning on FreeCodeCamp (and other similar sites)</li>
+               <li>I can make more money</li>               
+               <li>I can use social media, game, and code</li>
+               <li>I am a math nerd</li>
+               <li>I need to know more about AI</li>
+               <li>Immersion and Extended Reality is my Jam</li>
+               <li>I give alot of free consultations on freelance sites and on social media</li>
+               <li>I can design, develop, and release my own apps, games, and content</li>
+               <li>I still love coding, learning, and working with others</li>
+              </ol>                                      
           </article>
 
           <hr/>
           
           <article class="blog-post" id="trainingBlog">
-            <h2 class="blog-post-title mb-1">Training</h2>
-            <p class="blog-post-meta">December 2, 2022 by 
+            <h2 class="blog-post-title mb-1">Training - Learning to Learn</h2>
+            <p class="blog-post-meta">January 10, 2023 by 
               <a href="mailto:keeyanajones@yahoo.com">Kee</a></p>
               
-              <h3>Working with AWS</h3>
-              <p>I joined AWS Skill Builder in December of last year, accessed AWS Digital Training, 
-                on-demand courses, and more. With the new learning center, I explored learning plans 
-                and digital courses to help grow my career and achieve goals on my schedule.  I still 
-                haven't completed the course.  I really enjoy FreeCodeCamp's way of offering 
-                material and often go on my own learning journey sparked by something I see they 
-                mention on Twitter.  
-              </p>
-
-              <sub>SOURCE: 
-                <a href="https://explore.skillbuilder.aws/learn/home" target="_blank">
-                  https://explore.skillbuilder.aws/learn/home</a><br/>
-                <a href="https://freecodecamp.com" target="_blank">
-                    https://freecodecamp.com</a></sub>                  
+              <h3>Techniques I use to Learn</h3>
+                
+                <strong>FOCUS ON ONE THING MULTITASKING IS A LIE</strong> 
+                                
+                <p>I used to always try to multitask and then I saw this
+                <a href="https://www.youtube.com/watch?v=tMiyzuO1qMs&ab_channel=BBCIdeas"
+                   target="_blank">
+                  video</a> about multitasking that said multitasking was a 
+                waste of time.  So, now I try not to multitask and instead, I 
+                listen to music for focus. Lofi music is ok but one of my 
+                favorite types of music to study and work too is coffee house 
+                jazz.  For example, 
+                <a href="https://www.youtube.com/watch?v=Rp60uDJpZ4E&ab_channel=RelaxCafeMusic"
+                 target="_blank">listen</a> and enjoy.   
+                </p><br/>
+                  
+                <strong>TAKE A BREAK</strong> 
+                <p>To accomplish long periods of focused thinking I use 
+                  the Pomodoro Technique and timer.  I do 
+                  <a href="https://www.youtube.com/watch?v=2ybOJMibAbA&ab_channel=TheArtofImprovement"
+                     target="_blank">deep work</a>, or 
+                  uninterrupted work for about 50 minutes and then as a 
+                  reward I take a 10 minute break to do anything I want 
+                  to takes my mind off the task at hand.</p><br/> 
+                  
+                <strong>PRACTICE</strong> 
+                <p>To improve performance at anything you need to practice.  
+                Deliberate practice is the best technique for achieving 
+                expert performance in every field. 
+                
+                But there's much more to deliberate practice than 10,000 hours. 
+                Mastery is also a huge topic that can be overwhelming. I 
+                would suggest Robert Greens book Mastery but there are many 
+                great books on the topic. Here is a summary 
+                <a href="https://www.youtube.com/watch?v=xBjz2hOJFDo&ab_channel=ProductivityGame"
+                  target="_blank">video</a> that might be helpful.</p><br/>     
+                
+                <strong>KNOW THYSELF</strong> 
+                <p>Understand that people learn in different ways. 
+                  There are many different learning styles and each 
+                  has its own advantages and disadvantages,                  
+                  the first step in learning how to approach unfamiliar 
+                  material is discovering your learning style 
+                  <a href="https://how-to-study.com/learning-style-assessment/"
+                     target="_blank">here</a>.
+              </p>    
           </article>
 
           <hr/>
 
           <article class="blog-post" id="aiBlog">
-            <h2 class="blog-post-title mb-1">AI</h2>
-            <p class="blog-post-meta">December 2, 2022 by 
+            <h2 class="blog-post-title mb-1">AI:  
+              Machine vs Deep Learning </h2>
+            <p class="blog-post-meta">January 11, 2023 by 
               <a href="mailto:keeyanajones@yahoo.com">Kee</a></p>
               
-              <p>Artificial intelligence (AI) is the general study of making intelligent machines. Machine 
-                learning (ML), a subset of AI, focuses on the ability of machines to receive data and 
-                learn for themselves without being programmed with rules. ML differs from traditional 
-                programming by allowing you to teach your program with examples rather than a list of 
-                instructions. Instead of writing instructions, or rules, while programming, machine 
-                learning enables you to "train" an algorithm so that it can learn on its own, and 
-                then adjust and improve as it learns more about the information it is processing.
-              </p>
+              <p><strong>Machine Learning</strong>: 
+                Machine learning is a subset, an application of 
+                Artificial Intelligence (AI) that offers the ability to 
+                the system to learn and improve from experience without 
+                being programmed to that level. Machine Learning uses 
+                data to train and find accurate results. Machine learning 
+                focuses on the development of a computer program that 
+                accesses the data and uses it to learn from itself.</p>
 
-              <p>I am a little familiar with these concepts but want to learn more so I've been working
-                on Machine Learning, AI Experiments, examples, problem framing, data sources, responsibly,
-                and more. I recently got into TensorFlow and now I am learning how to use AI and TF 
-                with my development.  I have a few products I want to create in the next few weeks 
-                using TF to see if they would profitable. 
-              </p>
-
+              <p><strong>Deep Learning</strong>: 
+                Deep Learning is a subset of Machine Learning where 
+                the artificial neural network and the recurrent neural 
+                network come in relation. The algorithms are created 
+                exactly just like machine learning but it consists of 
+                many more levels of algorithms. All these networks of 
+                the algorithm are together called the artificial neural 
+                network. In much simpler terms, it replicates just like 
+                the human brain as all the neural networks are connected 
+                in the brain, which exactly is the concept of deep learning. 
+                It solves all the complex problems with the help of 
+                algorithms and its process.</p>
+ 
               <sub>SOURCE: 
                 <a href="https://ai.google/education" target="_blank">
-                  https://ai.google/education</a> <br/>
-                  <a href="https://tensorflow.org" target="_blank">
-                    https://tensorflow.org</a></sub>                         
+                  https://ai.google/education</a> &amp;
+                  <a href="https://www.geeksforgeeks.org/difference-between-machine-learning-and-deep-learning/" target="_blank">
+                    https://www.geeksforgeeks.org/difference-between-machine-learning-and-deep-learning</a></sub>                         
                 </sub>          
           </article>
 
           <hr/>
 
           <article class="blog-post" id="realityBlog">
-            <h2 class="blog-post-title mb-1">Reality</h2>
-            <p class="blog-post-meta">December 2, 2022 by 
+            <h2 class="blog-post-title mb-1">Reality: E<em>X</em>tended</h2>
+            <p class="blog-post-meta">January 12, 2023 by 
               <a href="mailto:keeyanajones@yahoo.com">Kee</a></p>
               
-              <h3>The Metaverse</h3>
-              <p>Last year I told someone about my work and before I could even finish 
-                my sentence, they said, "I live in reality..." and went on to say "now 
-                go and play like your working..."</p>
-                
-              <p>I laughed and thought to myself, goofy the metaverse market is expected to be a $800 billion 
-                market by 2024, according to Bloomberg Intelligence. Roblox CEO David Baszucki, meanwhile, 
-                projects a total addressable market of around $200 billion or more each in the categories 
-                of mobile, streaming content, and social media.</p>
 
-              <p>In fact, there are much more audacious estimates — Morgan Stanley analyst Brian Nowak 
-                vaguely refers to an $8 trillion total addressable market among U.S. consumers — that 
-                come with multiple caveats. Adoption “won't be rapid or easy,” Nowak says, because of 
-                uncertainty over the metaverse experience, consumer distrust toward Facebook with their 
-                personal and enterprise data, and Facebook's lack of enterprise tool expertise.</p>              
+              <h3>What Is Extended Reality?</h3>
 
-              <h3>The future of connection will be in 3D</h3>
-              <p>The metaverse will be a place where we can work, play, and connect with others 
-                in immersive, online experiences.</p>
+              <p>XR is a universal term inclusive to immersive learning 
+                technologies VR, AR, and MR. These technologies extend 
+                reality by adding to or simulating the real world through 
+                digital materials, and are an effective way to modernize 
+                corporate training programs.</p>
 
-              <h3>Virtual Reality</h3>
-              <p>VR technologies immerse you in 3D spaces that go beyond the physical world, 
-                letting you feel like you're with friends and family as you discover new 
-                experiences together.</p>
-
-              <h3>Augmented reality</h3>
-              <p>AR lets you add playful virtual effects to photos and video at the touch or 
-                swipe of a screen, letting you express yourself with the people who matter most.</p>
-
+              <p>By integrating XR into your training, you can immerse your 
+                learners in a multisensory environment that's more interactive, 
+                engaging, and effective long-term.</p>
+                      
                 <sub>SOURCE: 
-                  <a href="https://about.facebook.com/technologies" target="_blank">
-                    https://about.facebook.com/technologies</a>
-                  
-                  &amp;
-
-                  <a href="https://www.marketwatch.com/story/what-is-the-metaverse-and-how-much-will-it-be-worth-depends-on-whom-you-ask-11637781312" 
-                     target="_blank">
-                    https://www.marketwatch.com/story/what-is-the-metaverse</a>                  
+                  <a href="https://roundtablelearning.com/what-is-extended-reality-everything-you-need-to-know" target="_blank">
+                    https://roundtablelearning.com/what-is-extended-reality-everything-you-need-to-know</a> 
                   </sub>   
           </article>
+          
+          <hr/>
 
-          <nav class="blog-pagination" aria-label="Pagination">
-            <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-            <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
-          </nav>
+          <main class="page-content" aria-label="Content">
+            <div class="wrapper">
+            </div>
+          </main>
+
+<nav class="blog-pagination" aria-label="Pagination">
+<a class="btn btn-outline-primary rounded-pill" type="button" href="/blog">
+  Older
+</a>
+<a class="btn btn-outline-secondary rounded-pill disabled">
+  Newer
+</a>
+</nav>
+
+<!-- Vertically centered modal -->
+            
     
         </div>
     
@@ -1237,8 +928,11 @@
               <h4 class="fst-italic">Archives</h4>
               <ol class="list-unstyled mb-0">
 
-                <li><i class="fa-solid fa-calendar-days"></i> <a href="#december2022">December 2022</a></li>
-                
+                <li><i class="fa-solid fa-calendar-days"></i> 
+                  <a href="#january2023">January 2023</a></li>
+
+                <li> - <i class="fa-solid fa-calendar"></i> 
+                       <a href="/blog">December 2022</a></li>                  
                 <li> - <i class="fa-solid fa-calendar"></i> November 2022</li>
                 <li> - <i class="fa-solid fa-calendar"></i> October 2022</li>
                 <li> - <i class="fa-solid fa-calendar"></i> September 2022</li>
@@ -1249,7 +943,6 @@
                 <li> - <i class="fa-solid fa-calendar"></i> April 2022</li>
                 <li> - <i class="fa-solid fa-calendar"></i> March 2022</li>
                 <li> - <i class="fa-solid fa-calendar"></i> February 2022</li>
-                <li> - <i class="fa-solid fa-calendar"></i> January 2022</li>                
               </ol>
             </div>
     
@@ -1327,7 +1020,7 @@
       </div>
     </section>  
     <!-- .blog -->
-
+    
     <!-- Contact -->
     <div class="col-lg-11 mx-auto p-4 py-md-5">     
       <a id="contact"></a>
@@ -1499,7 +1192,7 @@
             </ul>
           </div>
         </div>
-      </div>    
+    </div>    
     <!-- .contact -->
 
     <!-- footer  -->
