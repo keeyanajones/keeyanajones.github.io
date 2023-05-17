@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KeeyanaJones.Github.io</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+          crossorigin="anonymous">
     <link href="assets/stylesheets/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f017635e3b.js" crossorigin="anonymous"></script>
   </head>
@@ -28,7 +30,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#feature">Feature</a>
+              <a class="nav-link" href="#feature">Features</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -45,112 +47,69 @@
     </nav>    
     <!-- .navbar -->
 
-    <!-- Carousel -->
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-        <img src="assets/images/carousel-img-1.jpg" class="d-block w-100">  
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <h1 class="text-bg-dark">
-                Hello, I'm Keeyana</h1>
-              <p class="text-bg-dark">  
+    <!-- Headline and Sign Up -->
+    <div class="sassy">
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5 ">
+          <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
 
-                As a seasoned IT consultant with over 25 years of experience, 
-                I offer a range of consulting services that can help you solve 
-                your business or personal technology challenges. From system 
-                design to full stack development, from cloud computing to data 
-                analytics, I have the skills and expertise to deliver results. 
-              </p>
-              <p><a class="btn btn-lg btn-dark" target="_blank"
-                    href="https://www.linkedin.com/in/keeyana-jones-5a275514">
-                    Linked<i class="fa-brands fa-linkedin fa-beat"></i> Profile</a></p>
+              <h1 class="display-4 fw-bold lh-1 mb-3">
+                Empower Your Business with a Professional IT Consultant</h1>
+              <p class="col-lg-10 fs-4">Helping businesses achieve goals with top-notch 
+                solutions and services. Join our community of successful businesses and 
+                get access to our tools today.</p>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+            <!-- sign up form -->
+              <form action="https://formspree.io/f/keeyanajones@yahoo.com"
+                    method="POST" class="p-4 p-md-5 border rounded-3 bg-light">
+                <h2>Join the Community</h2>
+                <div class="form-floating mb-3">
+                  <hr class="my-4">
+                  <input type="email" class="form-control" name="email" id="floatingInput" 
+                         placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <button class="w-100 btn btn-lg btn-secondary" type="submit">Sign Up</button>
+                <hr class="my-4">
+              </form>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="assets/images/carousel-img-2.jpg" class="d-block w-100">  
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 class="text-bg-light">The Technologies</h1>
-              <p class="text-bg-light">
-               Adobe ColdFusion, C/C#/C++, CSS, Go, HTML, Java, JavaScript, Kotlin, 
-               Matlab, MongoDB, Oracle, MySQL/SQL/NoSQL, .Net, Node.js, OpenAI, 
-               Perl, PHP, Python, R, React, Ruby on Rails, Rust, Swift, 
-               Scala, Tensorflow, Typescript, and Unity.
-              </p>
-              <p><a class="btn btn-lg btn-light" target="_blank"
-                    href="https://www.github.com/keeyanajones">
-                    <i class="fa-brands fa-github fa-beat-fade"></i>
-                     Github Profile</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/images/carousel-img-3.jpg" class="d-block w-100">    
-          <div class="container">
-            <div class="carousel-caption text-end">
-              <h1 class="text-bg-secondary">The Services</h1>
-              <p class="text-bg-secondary">
-                R & D, Training, Data Storage, CRM, Customer Interviews, Sprints, 
-                Testing, Monitoring, Feature Presentations & Roadmaps, Resource 
-                Allocation, Market Assessment, Business & Technical Requirements, 
-                Pricing & Revenue Modeling, Metrics & Analytics, AI, Integration, 
-                Engagement, Gaming, Migration & Transfer, Reports, VR & AR. </p>
-              <p>
-                <a class="btn btn-lg btn-secondary" target="_blank"
-                   href="https://www.fiverr.com/keeyanajones">
-                  <i class="fa-solid fa-sack-dollar fa-bounce"></i> Fiverr</a>
-                <a class="btn btn-lg btn-secondary" target="_blank" 
-                   href="https://www.freelancer.com/u/keeyanajones">
-                  <i class="fa-solid fa-comments-dollar fa-flip"></i> Freelancer </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!-- .carousel -->            
+    </div>    
+    <!-- .Headline and Sign Up -->
     
     <hr/>    
+    
     <!-- Marketing Message and Features -->    
     <div class="container px-4 py-5">
       <a id="feature"></a>
-      <h2 class="pb-2 border-bottom text-bg-success">
-        Why should I be your consultant?</h2>
-      <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+      <h2 class="pb-2 fw-bold border-bottom text-bg-success">
+        What kind of professional guidance do I offer?</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
         <div class="d-flex flex-column align-items-start gap-2">
-          <h3 class="fw-bold">
-            I am the ideal consultant for you because I 
-            provide the precise expertise and skills you need</h3>
-          <p class="text-muted">
-            If you need an outside systems analysis perspective, 
-            to diagnose weaknesses or inefficiency and solve problems, 
-            to make better decisions without having to re-assign or 
-            overload your current team or hire a new employee; It might be 
-            time to put one of these to work for you.  
+          <h4 class="fw-bold">           
+            I offer comprehensive services 
+            to help businesses identify and overcome their technology challenges.
+            From software development to data science, I provide a range of 
+            services to help businesses achieve goals.            
+          </h4>
+                                            
+          <p class="fw-bold text-white bg-success">
+            I provide freelance services on the platforms 
+            listed below to businesses with access 
+            to the talented professionals providing:
           </p>
+
          <ul>
-          <li>planning and roadmaps of project completion</li>
-          <li>business needs fulfillment</li>
-          <li>implementation of solutions</li>
-          <li>advice of technical practices </li>
-          <li>collaborations with clients in-houses teams </li>
-          <li>training staff on new systems </li>
-          <li>monitor success and detailed reports </li>
+          <li><a>planning</a> and <a>roadmaps</a> to project completion</li>
+          <li><a>business</a> needs fulfillment</li>
+          <li><a>implesmentation</a> of solutions</li>
+          <li><a>advice</a> of technical practices</li>
+          <li><a>collaborations</a> with clients teams</li>
+          <li><a>training</a> staff on new systems </li>
+          <li><a>monitor</a> success and detailed <a>reports</a></li>
         </ul> 
           <p>
           <a class="btn btn-lg btn-outline-success" target="_blank"
@@ -158,8 +117,12 @@
           <i class="fa-solid fa-sack-dollar fa-bounce"></i> Fiverr</a>
 
           <a class="btn btn-lg btn-outline-success" target="_blank" 
-            href="https://www.freelancer.com/u/keeyanajones">
+            href="https://www.guru.com/freelancers/keeyana-jones">
           <i class="fa-solid fa-comments-dollar fa-flip"></i> Freelancer </a>
+
+        <a class="btn btn-lg btn-outline-success" target="_blank" 
+          href="https://www.guru.com/freelancers/keeyana-jones">
+        <i class="fa-solid fa-comments-dollar fa-bounce"></i> Guru </a>
           </p>
 
         </div>
@@ -171,9 +134,8 @@
                      fs-4 rounded-3">
               <i class="fa-solid fa-people-carry-box fa-3x"></i>
             </div>
-            <h4 class="fw-semibold mb-0">Specialized Skills</h4>
-               Angular, API, Bootstrap, C#,  Go, 
-              Java, JavaScript,  Jquery, Kotlin, Matlab, MongoDB, 
+            <h5 class="fw-semibold mb-0">Specialized Development</h5>
+              API, C#,  Go, Java, JavaScript,  Jquery, Kotlin, Matlab, MongoDB, 
               MySQL, .Net, Node, Prolog, Python, R, React, Ruby on 
               Rails, Rust, Scala, Smalltalk, Swift, SQL/NoSQL, 
               Typescript and Unity.</p>
@@ -186,17 +148,16 @@
                fs-4 rounded-3">
                <i class="fa-solid fa-users-viewfinder fa-3x"></i>
             </div>
-            <h4 class="fw-semibold mb-0">Keep Teams Focused</h4>
+            <h5 class="fw-semibold mb-0">Freelancing Project Roles</h5>
 
             <ul>
-              <li>Full-Stack Developer</li>
-              <li>Web Designer</li>
-              <li>Data Scientist</li>
-              <li>AI Developer</li>
-              <li>Cloud Engineer</li>
-              <li>Video Game Developer</li> 
+              <li>Full-Stack Developer Course</li>
+              <li>Web Designer Course</li>
+              <li>Data Scientist Course</li>
+              <li>AI Developer Course</li>
+              <li>Cloud Engineer Course</li>
+              <li>Video Game Developer Course</li> 
             </ul>
-
           </div>
   
           <div class="d-flex flex-column gap-2">
@@ -206,12 +167,10 @@
                      fs-4 rounded-3">
               <i class="fa-solid fa-wand-magic-sparkles fa-3x"></i>
             </div>
-            <h4 class="fw-semibold mb-0">Revitalize IT Strategy</h4>
+            <h5 class="fw-semibold mb-0">IT Strategy Coaching</h5>
             <p class="text-muted">
-                          
-            Coaching Calls Package for personalized strategies and 
-            guidance on various IT related topics.
-
+              I provide personalized coaching and guidance to 
+              help businesses improve operations and performance.</p>
           </div>
   
           <div class="d-flex flex-column gap-2">
@@ -221,10 +180,10 @@
                      fs-4 rounded-3">
               <i class="fa-solid fa-chalkboard-user fa-3x"></i>
             </div>
-            <h4 class="fw-semibold mb-0">Employee Training</h4>
+            <h5 class="fw-semibold mb-0">Employee Training</h5>
             <p class="text-muted"> 
-              Ensure awareness of new tools made available 
-               and how to use them in the best manner possible.</p>
+              From leadership 
+              training to team building, we have the solutions to help businesses succeed.</p>
           </div>
         </div>
       </div>
@@ -601,17 +560,17 @@
         <!-- ./ blog nav -->
       </div>
 
-      <a id="march2023"></a>
+      <a id="may2023"></a>
       
       <!-- blog headline -->
       <div class="p-4 p-md-5 mb-4 rounded text-bg-dark sassy">
         <div class="col-md-6 px-0">
          
           <h1 class="display-4 fst-italic">
-            From Enthusiast to One-Person Business</h1>
+            Discover my Digital Products: Upgrading Knowledge and Skills</h1>
           <p class="lead my-3">           
-            I'm proud to say that I've transformed into a one-person 
-            tech skills Empress.        
+            The possibilities for personal and professional growth are limitless. 
+            There's something for everyone!         
           </p>
           <p class="lead mb-0">
             <a href="#latestBlog" class="text-white fw-bold">Continue...</a></p>
@@ -625,7 +584,7 @@
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-primary">Gaming</strong>
               <h3 class="mb-0">New Releases</h3>
-              <div class="mb-1 text-muted">March 8</div>
+              <div class="mb-1 text-muted">May 15</div>
               <p class="card-text mb-auto">
                 All upcoming titles and DLC 
                 on PS5, Xbox Series X, PS4, Xbox One, PC, and Switch in a 
@@ -635,7 +594,6 @@
             <div class="col-auto d-none d-lg-block">
               <img src="assets/images/blog-gaming-thumb.jpg" width="250" height="100%"
                    class="rounded mx-auto d-block">
-    
             </div>
           </div>
         </div>
@@ -644,7 +602,7 @@
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-success">Development</strong>
               <h3 class="mb-0">After Coding</h3>
-              <div class="mb-1 text-muted">March 8</div>
+              <div class="mb-1 text-muted">May 14</div>
               <p class="mb-auto">
                 Lessons learned after the 100 days of coding challenge 
                 #100DaysOfCode</p>
@@ -666,93 +624,132 @@
     
           <article class="blog-post" id="latestBlog">
             <h2 class="blog-post-title mb-1">
-              From Enthusiast to One-Person Business</h2>
+              Discover my Digital Products</h2>
             <p class="blog-post-meta">
-              April 7, 2023 by 
+              May 16, 2023 by 
               <a href="mailto:keeyanajones@yahoo.com">
                 Kee</a></p>
+    
+                <h3>Upgrading Knowledge and Skills</h3>
+                <p>In today's creator era, the possibilities for personal and 
+                  professional growth are limitless. With an array of innovative 
+                  digital products at your fingertips, you can embark on a 
+                  journey of self-improvement and make money in ways you never 
+                  thought possible. In this post, I'll explore the diverse range 
+                  of digital offerings designed to help others unlock their full 
+                  potential. From captivating eBooks and engaging livestreams to 
+                  personalized coaching packages and convenient micro tasks, 
+                  there's something for everyone.</p> 
 
-                <p>Are you ready to dive into ai technology but feel like you 
-                  don't fit into just one box? You're not alone. As someone who 
-                  started out as a consultant and JavaScript enthusiast in 
-                  the 90's, I found myself pulled in different directions as 
-                  my interests expanded beyond coding. </p>
-                
-                <p>In this post, I'll share my journey of how I've 
-                  transformed into a one-person IT consulting, social media, 
-                  gaming, and learning Empress.</p>
-                
-                <p>It all started with my passion for coding. When I was 19 
-                  I was drawn to the logic and creativity of problem solving 
-                  programming. I started off with the basics of HTML and CSS, 
-                  and then moved on to JavaScript. I found myself captivated 
-                  by the endless possibilities of the language and in later 
-                  years began to explore various frameworks like React and 
-                  Angular. I worked on several projects as a Freelance IT 
-                  consultant in Michigan, and I enjoyed the challenge of 
-                  solving a problem with code.</p>
+                <ul>  
+                  <li><strong>eBook</strong>: Expand Your Mind, One Page at a Time<br/>
+                  Immerse yourself in a world of knowledge and inspiration with 
+                  my captivating eBook. Whether you're seeking personal development, 
+                  professional guidance, or niche expertise, my collection of 
+                  experiences covers a wide range of topics to suit your interests. 
+                  Unlock the secrets of success and take your skills to new heights 
+                  with my insights.</li>
 
-                <p><img src="assets/images/ian-schneider-TamMbr4okv4-unsplash.jpg" 
-                     alt="passion" class="img-fluid img-thubnail rounded"></p> 
+                  <li><strong>Livestreams</strong>: Watch, Learn and Connect in Real-Time<br/>
+                  Join me on an exciting journey of live learning experiences. My 
+                  livestreams provide you with the opportunity to engage with 
+                  industry experts, thought leaders, and fellow learners in 
+                  real-time. Tune in to gain valuable insights, ask questions, 
+                  and connect with like-minded individuals from around the globe 
+                  about development or gaming.</li>
+                  
+                  <li><strong>Coaching Packages</strong>: Personalized Guidance for Success<br/>
+                  Achieve your goals faster with the help of an experienced coach. 
+                  My coaching packages are tailored to your specific needs, offering 
+                  personalized guidance and support. Whether you're looking to 
+                  enhance your career, improve your mindset, or boost your 
+                  productivity, I am here to empower you every step of the way.</li>
+
+                  <li><strong>Micro Tasks</strong>: Delegate and Maximize Your Productivity<br/>
+                  Are you feeling overwhelmed by your to-do list? Let a skilled 
+                  professional handle those time-consuming tasks for you. My micro 
+                  task services offer a convenient way to outsource your workload, 
+                  allowing you to focus on what truly matters. From research and 
+                  data entry to social media management, I've got you covered.</li>
+                  
+                  <li><strong>Freelancing Services</strong>: Leverage the Power of Talent<br/>
+                  Need a skilled professional for your next project? Look no further. 
+                  My freelancing services connect you with top-notch talent from a 
+                  variety of fields. Whether you require graphic design, content 
+                  writing, web development, or any other specialized service, my 
+                  freelancers are ready to bring your vision to life.</li>
+                  
+                  <li><strong>Consulting Services</strong>: Strategic Solutions for Business Growth<br/>
+                  If you're an entrepreneur or business owner seeking expert advice, 
+                  my consulting services can help you achieve your objectives. Tap 
+                  into the knowledge and expertise of a seasoned professional who 
+                  can offer strategic guidance tailored to your unique needs. Let 
+                  me help you overcome challenges, identify opportunities, and drive 
+                  business growth.</li>
+                  
+                  <li><strong>Online Courses</strong>: Master New Skills at Your Own Pace<br/>
+                  Expand your knowledge and acquire new skills through my comprehensive 
+                  online courses. Designed to be flexible and accessible, my courses 
+                  cover a wide range of subjects, from digital marketing and coding to 
+                  creative writing. With engaging content and interactive learning 
+                  experiences, you can learn at your own pace and on your own schedule.</li>
+                  
+                  <li><strong>Apps and Games Studio</strong>: Interactive Tools for Learning and Entertainment<br/>
+                  Discover a world of interactive learning and entertainment with my 
+                  innovative apps and games. Whether you're looking to learn a new 
+                  programming language, improve your problem-solving skills, or simply 
+                  unwind and have fun, my selection of apps and games will captivate 
+                  and engage you.</li>
+                  
+                  <li><strong>Newsletter</strong>: Stay Informed and Inspired<br/>
+                  Subscribe to my newsletter and receive regular updates, exclusive 
+                  content, and valuable insights delivered directly to your inbox. 
+                  Stay informed about the latest trends, industry news, and upcoming 
+                  events. Let my newsletter be your source of inspiration and motivation 
+                  on your journey of personal and professional growth.</li>
+                  
+                  <li><strong>Planner</strong>: Organize Your Life for Success<br/>
+                  Stay organized and increase your productivity with a powerful planner. 
+                  Whether you're managing projects, setting goals, or simply planning 
+                  your day-to-day activities, my planner will help you stay on track 
+                  and accomplish more. Experience the satisfaction of crossing off 
+                  tasks and watch your productivity soar.</li>
+                  
+                  <li><strong>Challenge</strong>: #100DaysOfAI <br/>
+                  This challenge will focus specifically on developing skills and 
+                  knowledge in the field of artificial intelligence. To learn more 
+                  about my new challenge and its structure, check out my AI blog 
+                  post about the challenge.</li>
+                  
+                  <li><strong>Learning Bootcamp</strong>: Intensive Rapid Skill Development<br/>
+                  Ready to take your skills to the next level? Join my immersive 
+                  learning bootcamps designed to accelerate your growth. Dive deep 
+                  into a specific subject area and emerge with a comprehensive 
+                  understanding and practical skills. My bootcamps combine expert 
+                  instruction, hands-on projects, and collaborative learning for 
+                  a trans-formative experience.</li>
+                  
+                  <li><strong>Podcast</strong>: Engaging Conversations on the Go<br/>
+                  Tune in to my podcast for insightful conversations, interviews, 
+                  and thought-provoking discussions. Gain valuable knowledge and 
+                  fresh perspectives from industry leaders and experts in various 
+                  fields. Whether you're commuting, exercising, or simply relaxing, 
+                  our my is the perfect companion for learning on the go.</li>
+                </ul>
+
+                <p>The digital landscape offers an abundance of opportunities to 
+                  expand your knowledge, enhance your skills, and transform your 
+                  life. With our wide range of digital products, including eBooks, 
+                  livestreams, coaching packages, micro tasks, freelancing services, 
+                  consulting services, online courses, apps, games, newsletters, 
+                  planners, learning bootcamps, and podcasts, you have the tools to 
+                  unlock your full potential. Embrace the power of digital products 
+                  and embark on a journey of continuous growth and self-improvement. 
+                  Start exploring today!
+                </p>
                 
                      <br/>
                 
-                <p>However, after experiencing a health change I started to 
-                  feel like there was more to technology than just coding. I 
-                  became interested in social media and its impact on our daily 
-                  lives. I began to research how social media platforms like 
-                  Instagram and Facebook use algorithms to recommend content to 
-                  users. I started to think about how I could use my coding 
-                  skills to develop algorithms that could display content 
-                  people would enjoy using. I even started using my own 
-                  social media account and began experimenting with different 
-                  types of content.</p>
-                
-                <p>At the same time, I found myself becoming more interested 
-                  in gaming. I had always enjoyed playing video games and it 
-                  was my secret; because back then gaming was a “nerdy” thing 
-                  and Live Streaming was new.  But as I learned more about the 
-                  gaming industry, I became fascinated by how games are developed 
-                  and marketed. I started to research how game developers use 
-                  social media, live streaming, and analytics to track user 
-                  behavior to make decisions. I even began to think about how 
-                  I could develop my own game studio and market it to a broader 
-                  audience. Other Developers</p>
-                
-                <p>As my interests expanded, I realized that I was no longer 
-                  just an IT consultant or a JavaScript developer. I was a value 
-                  creator or multi-disciplinary tech enthusiast influencer or just 
-                  a woman who was passionate about exploring new areas of 
-                  technology with an Detroiters style. I started to think about 
-                  how I could use my various skills to create new products and 
-                  services that would help others. I began to explore different 
-                  online learning platforms like Youtube and Freecodecamp to 
-                  expand my knowledge in different areas.</p>
-                
-                <p>Today, I'm proud to say that I've transformed into a one-person 
-                  technology skills Empress.</p>
-                 
-                <p>I'm constantly learning new things and exploring new areas of 
-                  technology. I'm excited to see where my journey takes me next 
-                  and I encourage you to do the same.</p>
-
-                
-                <p><img src="assets/images/adam-jang-8pOTAtyd_Mc-unsplash.jpg" 
-                     alt="I like you" class="img-fluid img-thubnail rounded"></p>
-                
-                  <p>If you're a multi-disciplinary tech enthusiast like me, don't
-                   be afraid to explore new areas and use your various skills to 
-                   create something truly unique from inside.  Embrace your flow.
-                  </p>
-                
-                <p>Whether you're interested in coding, social media, gaming, or 
-                  something else entirely, there's always innovation in the passion.  
-                  Don't give up. I see you if don't no body else care.  
-                  Keep going!</p>
-                
-                <p>Don't forget to follow or subscribe if you want examples on 
-                  how I used my divers skills to create these products and 
-                  services.</p>       
                   
                   <nav class="blog-pagination" aria-label="Pagination">
                     <a class="btn btn-outline-primary rounded-pill" type="button" 
@@ -771,144 +768,132 @@
 
           <article class="blog-post" id="gamingBlog">
             <h2 class="blog-post-title mb-1">New Game Releases</h2>
-            <p class="blog-post-meta">April 8, 2023 by 
+            <p class="blog-post-meta">May 15, 2023 by 
               <a href="mailto:keeyanajones@yahoo.com">Kee</a></p>
   
             <hr/>
             <strong>What I'm playing and Obsessed with</strong>:
             <ul>  
               <li>Minecraft</li>
-              <li>Minecraft Dungons</li> 
-              <li>Red Dead Redemption 2 Online</li>
+              <li>Death Stranding</li> 
             </ul>
           
-              <p>Each game offers its own unique challenges and rewards, 
-                and I love them. Whether I'm building my modern farmhouse in 
-                Minecraft, fighting then dying my way through dungeons in 
-                Minecraft Dungeons, or collecting items in Red Dead 
-                Redemption 2 Online with a map on Github, I'm always 
-                having a blast. If you haven't played any of these
-                games yet, I highly recommend them.</p>
-              
-              <p><strong>When I'm playing</strong>:
-               Random</p>
+            <p>Lately, none of the games that have come out have made me excited.  
+              But, there are certain older titles that captivate my heart and mind, 
+              keeping me up for hours on end. Two such games that have always been 
+              an obsessions for me and many others are Minecraft and Death Stranding. 
+              Each of these games offers a unique experience, filled with distinctive 
+              rewards and challenges that keep players engaged and  thirsty for more. 
+              I typically delve into the enchanting realms of both Minecraft and 
+              Death Stranding, exploring the rewards they offer and the obstacles 
+              they present.</p>
 
-               <p>Are you a gamer? If so, you're not alone. I am currently
-                 hooked on three different games: Minecraft, Minecraft Dungeons, 
-                 and Red Dead Redemption 2 Online. Each game has its own unique 
-                 challenges and rewards, and I can't get enough of them.</p>
-                 
-                 <hr/>
+            <h3>Minecraft</h3> 
+            <p>Unleash Your Creativity and Conquer the Blocks Minecraft, 
+              a sandbox-style game, has taken the world by storm with its pixelated 
+              charm and limitless possibilities. It offers a virtual canvas where 
+              players can unleash their creativity and build magnificent structures, 
+              explore vast landscapes, and embark on exciting adventures.</p>
 
-               <h3>Minecraft: Building my Own World</h3>
-               <p>This game has been around for over a decade, and it's still 
-                keeping me up all night trying to hatch turtle eggs.  I recently 
-                started my own Realms server, and I've been having a blast building 
-                all sorts of things. From building houses to having a empty village 
-                with villagers living in a bunker only trading with me.  I've been 
-                trying to get that pigstep disc on this world but I still haven't 
-                found it this time.</p><br/>
-               
-              <p><img src="assets/images/minecraft_overview.jpg" 
-                   alt="Minecraft Start Screen"
-                   class="img-fluid img-thubnail rounded"> </p>
+            <h3>Rewards in Minecraft:</h3>
+            
+            <ol>
+              <li><strong>Creative Expression</strong>: 
+                Minecraft rewards players with the satisfaction of bringing their 
+                wildest imaginations to life. Whether it's constructing towering 
+                castles, intricate redstone mechanisms, or sprawling cities, the 
+                sense of achievement from creating something unique is unparalleled.</li>
+              <li><strong>Exploration and Discovery</strong>: 
+                The game's procedurally generated worlds offer endless exploration 
+                opportunities. Discovering hidden caves, rare resources, and unique 
+                biomes rewards players with a sense of wonder and the chance to 
+                uncover secrets hidden beneath the surface.</li>
+              <li><strong>Collaboration and Community</strong>: 
+                Minecraft's multiplayer mode allows players to connect with friends 
+                and collaborate on epic projects. The bonds forged and shared 
+                accomplishments in cooperative gameplay are truly rewarding.</li>
+            </ol>
 
-               <p>One of the coolest things I've built so far is a bed with trap 
-                doors. It took me hours of intense focus to gather all the 
-                materials and design the layout, but the end result was totally 
-                worth it. I've also built a few village structures and given the 
-                locals fines for not fixing the roads.  I love fixing the roads and 
-                working among the local yocals.</p><br/>
-                              
-              <p><img src="assets/images/minecraft_4_23.jpg" 
-                   alt="Minecraft Pre Loading Screen" 
-                   class="img-fluid img-thubnail rounded"> </p>
+            <h3>Challenges in Minecraft:</h3>
 
-               <p>Minecraft mining is relaxing and peaceful, but it can also be 
-                challenging at times. Especially when you don't sleep at night, and 
-                get too focused on building But, I love the freedom that the game 
-                offers to create my own structures.</p><br/>
-               
-                <p><img src="assets/images/minecraft_4_23_turtles.jpg" 
-                     alt="Turtles hatching and leaving" 
-                     class="img-fluid img-thubnail rounded"></p> 
- 
-                <hr/>
-              
-               <h3>Minecraft Dungeons: A Tougher Challenge</h3>
-               <p>This game is a bit different from the original Minecraft, as 
-               it's more of a dungeon crawler. You play as a hero, exploring 
-               dungeons and fighting monsters along the way. It's a lot of fun, 
-               but it's also tougher than you might think.</p><br/>
-               
-                <p><img src="assets/images/minecraft_dungeons_overview.jpg" 
-                alt="Minecraft Dungeons Hero Screen"
-                class="img-fluid img-thubnail rounded"></p>
-                
-                <hr/>
+            <ol>
+              <li><strong>Survival Mode</strong>: 
+                In survival mode, players face the challenge of gathering resources, 
+                fending off hostile creatures, and maintaining their health and hunger. 
+                Overcoming these obstacles requires strategic planning, quick thinking, 
+                and adaptability.</li>
+              <li><strong>Redstone Engineering</strong>: 
+                Minecraft's redstone system provides a complex and rewarding challenge 
+                for those who enjoy engineering and automation. Mastering the 
+                intricacies of redstone circuits can unlock a world of limitless 
+                possibilities.</li>
+              <li><strong>Monumental Undertakings</strong>: Undertaking large-scale 
+                projects in Minecraft, such as constructing a replica of a famous 
+                landmark or building an intricate transportation system, can be 
+                time-consuming and require careful planning and perseverance.</li>
+            </ol>
 
-               <p>I keep dying in Dungeons, but that's part of what makes the 
-                game so addictive. Like old games you get 3 lives.  Each time 
-                I die, I learn a little bit more about the game and how to beat 
-                the different enemies and figure out where to go. It can be a 
-                frustrating game at times, but it's also incredibly satisfying 
-                when you finally regenerate a potion.  I try to run or wait till 
-                I get the potion back.</p><br/>
-                
-                <p><img src="assets/images/minecraft_dungeons_chest.jpg" 
-                alt="Minecraft Storage Chest Screen"
-                class="img-fluid img-thubnail rounded"></p>
-                
-                <br/>
 
-               <h3>Red Dead Redemption 2 Online: Collecting as a Hobby</h3>
-               <p>Finally, this game is set in the Old West, and it's all about 
-                cowboy life. You can go on missions, hunt for animals, or just 
-                explore the massive open world.</p><br/>
+            <h3>Death Stranding</h3> 
+            <p>An Epic Journey of Connection and Survival Death 
+              Stranding, an unconventional and thought-provoking game, invites 
+              players to embark on an epic journey in a post-apocalyptic world. 
+              It combines exploration, stealth, and survival mechanics with a 
+              profound narrative, creating a unique and immersive experience.  
+              This is why Death Stranding is the only game I have 100% of the 
+              trophies and still can't stop playing for too long without having 
+              withdrawal symptoms.</p>    
+            
+            <h3>Rewards in Death Stranding:</h3>
 
-                <p><img src="assets/images/rdr2o_camp.jpg" 
-                alt="Minecraft Start Screen"
-                class="img-fluid img-thubnail rounded"></p>
-                
-                <hr/>
+            <ol>  
+              <li><strong>Emotional Resonance</strong>: 
+                The game's captivating storytelling and immersive atmosphere 
+                reward players with emotional connections to the characters 
+                and the world they inhabit. Overcoming challenges and witnessing 
+                the narrative unfold can evoke a range of emotions, creating a 
+                deeply rewarding experience.</li>
+              <li><strong>Sense of Exploration</strong>: 
+                Death Stranding's vast and desolate landscapes provide a sense 
+                of awe-inspiring beauty. Discovering breathtaking vistas, hidden 
+                locations, and uncovering the mysteries of the world offer a 
+                rewarding sense of exploration.</li>
+              <li><strong>Player Progression</strong>: 
+                As players progress through the game, they unlock new abilities, 
+                equipment, and resources. The sense of growth and empowerment 
+                obtained from upgrading their arsenal and expanding their 
+                capabilities rewards players for their perseverance.</li>
+            </ol>
 
-               <p>One of the things I've been doing in Red Dead Redemption 2 
-                Online is collecting. I bought the Collector's Bag, which allows 
-                me to collect all sorts of items like arrowheads, jewelry, and 
-                fossils. Its not a boring hobby, but there's something satisfying 
-                about finding stuff and finishing a collection or completing sets.
-              </p>
-                
-                <p><img src="assets/images/rdr2o_collector_maps.jpg" 
-                alt="Minecraft Start Screen"
-                class="img-fluid img-thubnail rounded"></p>
-                
-                <hr/>
+            <h3>Challenges in Death Stranding:</h3>
+            
+            <ol>
+              <li><strong>Hazardous Terrain</strong>: 
+                Traversing treacherous landscapes filled with dangerous terrain, 
+                unpredictable weather, and hostile creatures presents a constant 
+                challenge. Players must carefully plan their routes and utilize 
+                various tools and strategies to ensure their survival.</li>
+              <li><strong>Balance of Cargo</strong>: 
+                Death Stranding emphasizes 
+                the delicate task of delivering essential cargo across vast 
+                distances while maintaining balance and stability. The challenge 
+                lies in navigating uneven terrain and overcoming obstacles 
+                without compromising the integrity of the cargo.</li>
+              <li><strong>Connectivity</strong>: 
+                The game's unique multiplayer aspect allows players to connect 
+                and assist one another indirectly, but it also presents challenges 
+                in managing resources, coordinating efforts, and working together 
+                to overcome obstacles in a vast and desolate world.</li>
+            </ol>  
 
-               <p>In my latest Twitch live stream, I spent most of the time 
-                looking at the map, trying to figure out where I was; and all 
-                the different collectibles were. It might not have been the most 
-                lit stream, but it was a lot of fun for me. The longest I was on 
-                github in a while; and it was to look at a map for Red Dead 
-                Redemption.</p>  
-               
-               <h3>Final Thoughts</h3>
-               <p>In conclusion, I love the miner lifestyle and obsess over two 
-                Minecraft games and Red Dead Redemption 2 Online. Each game offers 
-                a unique world to survive, challenges and rewards.</p>  
-               <p>I will always be a mining enthusiast building things in my 
-                Minecraft or fighting my way through dungeons.  I think this weekend 
-                is going to be about collecting items in Red Dead Redemption 2 Online, 
-                its fun. If you haven't played any of these games yet, I highly 
-                recommend them.</p>
-
-                <h3>The Collectors Map (changes daily)</h3>
-                <sub> 
-                  <a href="https://jeanropke.github.io/RDR2CollectorsMap/"
-                     target="_blank">
-                    https://jeanropke.github.io/RDR2CollectorsMap/</a>
-                </sub><br/>
-
+            <p>Minecraft and Death Stranding offer distinctive rewards and challenges 
+              that make them incredibly captivating and addictive games. Whether it's 
+              the boundless creativity and sense of accomplishment in Minecraft or the 
+              emotional resonance and epic journey of connection in Death Stranding, 
+              these games provide unforgettable experiences for players willing to dive 
+              into their enchanting worlds. So, grab your pickaxe or your cargo and 
+              embark on an adventure like no other!</p>  
+            
                 <nav class="blog-pagination" aria-label="Pagination">
                   <div>
                     <a class="btn btn-outline-primary rounded-pill" type="button" 
@@ -921,10 +906,8 @@
                   </div>  
                   </nav>
                 
-
-
               <hr/><hr/>
-                <h3>April 2023</h3>              
+                <h3>May 2023</h3>              
               <hr/>
 
               <sub>SOURCES: 
@@ -935,63 +918,58 @@
               <hr/>
 
               <ul>
-                <li>Creed Rise to Glory: Championship Edition [PSVR 2] – April 4</li>
-                <li>Filthy Animals: Heist Simulator [PC] – April 4</li>
-                <li>GrimGrimoire OnceMore [PS5, PS4, Switch] – April 4</li>
-                <li>Meet Your Maker [PC, PS5, XSX, PS4, XBO] – April 4</li>
-                <li>The Magical Mixture Mill [PC] – April 5</li>
-                <li>Moviehouse [PC] – April 5</li>
-                <li>Batora: Lost Haven [Switch] – April 6</li>
-                <li>Curse of the Sea Rats [PC, PS4, XBO, Switch] – April 6</li>
-                <li>Hyperviolent [PC] – April 6</li>
-                <li>Ravenswatch [PC] – April 6</li>
-                <li>Ghostwire: Tokyo [XSX] – April 12</li>
-                <li>Murderous Muses [PC, PS5, XSX, PS4, XBO] – April 12</li>
-                <li>Rusted Moss [PC] – April 12</li>
-                <li>Wildfrost [PC, Switch] – April 12</li>
-                <li>A Knight in the Attic [PC VR] – April 13</li>
-                <li>Hunt the Night [PC] – April 13</li>
-                <li>Kill It With Fire VR [PC VR, PSVR 2, PSVR] – April 13</li>
-                <li>Shardpunk: Verminfall [PC] – April 13</li>
-                <li>Total War: Warhammer 3: Forge Of The Chaos Dwarfs DLC [PC] – April 13</li>
-                <li>Trinity Fusion [PC] – April 13</li>
-                <li>Voodolls [PC] – April 13</li>
-                <li>De-Exit [PC, PS5, XSX, PS4, XBO] – April 14</li>
-                <li>Mega Man Battle Network Legacy Collection [PC, PS4, Switch] – April 14</li>
-                <li>Beyond the Long Night [PC] – April 17</li>
-                <li>Suffer the Night [PC] – April 17</li>
-                <li>Disney Speedstorm [PC, PS5, XSX, PS4, XBO, Switch] – April 18</li>
-                <li>God of Rock [PC, PS5, XSX, PS4, XBO, Switch] – April 18</li>
-                <li>Minecraft Legends [PC, PS5, XSX, PS4, XBO, Switch] – April 18</li>
-                <li>Puzzle Quest 3 [PS5, XSX, PS4, XBO] – April 18</li>
-                <li>Horizon Forbidden West: Burning Shores DLC [PS5] – April 19</li>
-                <li>Survival: Fountain of Youth [PC] – April 19</li>
-                <li>Eresys [PC] – April 20</li>
-                <li>Stray Blade [PC, PS5, XSX] – April 20</li>
-                <li>Tin Hearts [PC, PS5, XSX, PS4, XBO, Switch] – April 20</li>
-                <li>Advance Wars 1+2: Re-Boot Camp [Switch] – April 21</li>
-                <li>Dead Island 2 [PC, PS5, XSX, PS4, XBO] – April 21</li>
-                <li>Mia and the Dragon Princess [PC, PS5, XSX, PS4, XBO, Switch] – April 21</li>
-                <li>Volcano Princess [PC] – April 21</li>
-                <li>Shadows of Doubt [PC] – April 24</li>
-                <li>Afterimage [PC, PS5, XSX, PS4, XBO, Switch] – April 25</li>
-                <li>Strayed Lights [PC, PS5, XSX, PS4, XBO, Switch] – April 25</li>
-                <li>Trinity Trigger [PC] – April 25</li>
-                <li>Desta: The Memories Between [PC] – April 26</li>
-                <li>Evil Dead: The Game - Game of the Year Edition [PC, PS5, XSX, PS4, XBO] – April 26</li>
-                <li>Honkai: Star Rail [PC] – April 26</li>
-                <li>ArcRunner [PC, PS5, XSX, PS4, XBO] – April 27</li>
-                <li>The Last Case of Benedict Fox [PC, XSX] – April 27</li>
-                <li>Live A Live [PC, PS5, PS4] – April 27</li>
-                <li>Zoria: Age of Shattering [PC] – April 27</li>
-                <li>Monster Hunter Rise: Sunbreak [PS5, XSX, PS4, XBO] – April 28</li>
-                <li>Nuclear Blaze [PS4, XBO, Switch] – April 28</li>
-                <li>Star Wars Jedi: Survivor [PC, PS5, XSX] – April 28</li>
-                <li>Welcome to Goodland [PC] – April 28</li>
-
-                <li>Dogfight [PC, Consoles TBC] – April TBC</li>
-                <li>These Doomed Isles: The First God [PC] – April TBC</li>
-                <li>Tron: Identity [PC, Switch] – April TBC</li>
+                <li>Age of Wonders 4 (PlayStation 5, Xbox Series X/S, PC) – May 2</li>
+                <li>Redfall (Xbox Series X/S, PC) – May 2 </li>
+                <li>Grindstone (PlayStation 5, Xbox Series X/S, PlayStation 4) – May 3</li>
+                <li>Super Dungeon Maker (Switch, PC) – May 3</li>
+                <li>Ravenlok (Xbox Series X/S, Xbox One, PC) – May 4</li>
+                <li>The Dark Pictures Anthology: Man Of Medan (Switch) – May 4</li>
+                <li>Hogwarts Legacy (PlayStation 4, Xbox One) – May 5  </li>
+                <li>Darkest Dungeon II (PC) – May 8 </li>
+                <li>Weird West (PlayStation 5, Xbox Series X/S) – May 8</li>
+                <li>Ys IX: Monstrum Nox (PlayStation 5) – May 9</li>
+                <li>The Lord of the Rings: Heroes of Middle-Earth (iOS, Android) – May 10</li>
+                <li>Death or Treat (PlayStation 5, Xbox Series X/S, PC) – May 11</li>
+                <li>Marvel's Midnight Suns (PlayStation 4, Xbox One) – May 11  </li>
+                <li>The Legend of Zelda: Tears of the Kingdom (Switch) – May 12  </li>
+                <li>Trackmania (PlayStation 5, Xbox Series X/S, PlayStation 4, Xbox One) – May 15</li>
+                <li>Humanity (PlayStation 5, PlayStation VR2, PlayStation 4, PlayStation VR, PC) – May 16 </li>
+                <li>Atlas Fallen [PC, PS5, XSX] – May 16</li>
+                <li>Tin Hearts [PC, PS5, XSX, PS4, XBO] – May 16</li>
+                <li>Trinity Trigger [PS5, PS4, Switch] – May 16</li>
+                <li>Zool Redimensioned [PS4] – May 16</li>
+                <li>Starship Troopers: Extermination [PC] – May 17</li>
+                <li>I Am Future [PC] – May 18</li>
+                <li>The Outlast Trials [PC] – May 18</li>
+                <li>Veiled Experts [PC] – May 18</li>
+                <li>Cyber Citizen Shockman [PS5, XSX, PS4, XBO, Switch] – May 19</li>
+                <li>Lego 2K Drive [PC, PS5, XSX, PS4, XBO, Switch] – May 19</li>
+                <li>Inkbound [PC] – May 22</li>
+                <li>After Us [PC, PS5, XSX] – May 23</li>
+                <li>Blooming Business: Casino [PC] – May 23</li>
+                <li>Glitch Busters: Stuck on You [PC, PS4, Switch] – May 23</li>
+                <li>Miasma Chronicles [PC, PS5, XSX] – May 23</li>
+                <li>Planet of Lana [PC, XSX, XBO] – May 23</li>
+                <li>Puzzle Bobble Everybubble! [Switch] – May 23</li>
+                <li>Star Trek: Resurgence [PC, PS5, XSX, PS4, XBO] – May 23</li>
+                <li>Dark Quest 3 [PS5, XSX, PS4, XBO, Switch] – May 24</li>
+                <li>Cassette Beasts [XBO, Switch] – May 25</li>
+                <li>Death From Above [PC] – May 25</li>
+                <li>Do Not Feed the Monkeys 2099 [PC, Switch] – May 25</li>
+                <li>Hello Goodboy [PC, Switch] – May 25</li>
+                <li>Hello Neighbor VR: Search and Rescue [PSVR 2, PSVR] – May 25</li>
+                <li>The Lord of the Rings: Gollum [PC, PS5, XSX, PS4, XBO] – May 25</li>
+                <li>One Piece Odyssey: Reunion of Memories DLC [PC, PS5, XSX, PS4] – May 25</li>
+                <li>Solasta: Crown of the Magister: Palace of Ice DLC [PC, XSX, XBO] – May 25</li>
+                <li>Tennis Manager 2023 [PC] – May 25</li>
+                <li>Forspoken: In Tanta We Trust DLC [PC, PS5] – May 26</li>
+                <li>Home Sheep Home: Farmageddon Party Edition [PS5, XSX, PS4, XBO] – May 26</li>
+                <li>Company of Heroes 3 [PS5, XSX] – May 30</li>
+                <li>Return to Grace [PC] – May 30</li>
+                <li>System Shock Remake [PC] – May 30</li>
+                <li>Decarnation [PC, Switch] – May 31</li>
+                <li>Doomblade [PC] – May 31</li>              
+                <li>WrestleQuest [PC, PS5, XSX, PS4, XBO, Switch] – May TBC</li>
               </ul>
           </article>
           
@@ -999,61 +977,100 @@
           
           <article class="blog-post" id="developmentBlog">
             <h2 class="blog-post-title mb-1">After 100 Days of Coding</h2>
-            <p class="blog-post-meta">April 9, 2023 
+            <p class="blog-post-meta">May 14, 2023 
               by 
               <a href="mailto:keeyanajones@yahoo.com">Kee</a></p>
               
               <h3>10 Things Learned From 100 Days of Coding</h3>
               
               <ol>
-               <li>I am not a developer anymore, I'm more</li>
+               <li>I am not a developer anymore, I'm more</li>               
+               <li>I like learning on FreeCodeCamp (and other similar sites) 
+                independently</li>                            
+              <hr/>  
+               <li><strong>I can make alot more money</strong><br/>
+
+                <p>JavaScript has become the backbone of web development, while artificial 
+                  intelligence (AI) continues to transform industries and shape the future. 
+                  Combining the power of JavaScript and AI can open up lucrative opportunities 
+                  for developers, allowing you to maximize your earning potential. I've been 
+                  exploring how I can leverage JavaScript and AI to make a lot more money and 
+                  advance my career.</p>
+
+                <ol>
+                  <li><strong>Master JavaScript</strong>: 
+                    JavaScript is the language of the web, and having strong JavaScript skills 
+                    is essential for web developers. By becoming proficient in JavaScript, 
+                    you'll be able to create interactive and dynamic web applications that 
+                    engage users and meet their needs. Invest time in mastering JavaScript's 
+                    core concepts, including ES6 features, frameworks like React or Angular, 
+                    and libraries like jQuery.</li>
+                  <li><strong>Explore AI with JavaScript</strong>: 
+                    AI is revolutionizing industries across the board, from healthcare and 
+                    finance to e-commerce and marketing. JavaScript provides several powerful 
+                    tools and frameworks that enable developers to work with AI technologies. 
+                    TensorFlow.js and Brain.js are examples of JavaScript libraries that allow 
+                    you to build and deploy AI models directly in the browser. By learning and 
+                    applying AI techniques in JavaScript, you can tap into the growing demand 
+                    for AI-powered solutions.</li>
+                  <li><strong>Develop AI-Powered Web Applications</strong>: 
+                    Combining JavaScript and AI opens up exciting opportunities to build 
+                    AI-powered web applications. For instance, you can develop recommendation 
+                    systems that personalize user experiences, chatbots that provide real-time 
+                    customer support, or image recognition systems that analyze and process 
+                    visual data. These applications have the potential to revolutionize 
+                    businesses, and clients are often willing to pay a premium for AI-driven 
+                    solutions.</li>
+                  <li><strong>Freelancing and Consulting</strong>: 
+                    Freelancing or consulting in JavaScript and AI can be highly lucrative. 
+                    As a freelance developer or consultant, you can offer your expertise to 
+                    clients who are looking to integrate AI capabilities into their web 
+                    applications. Build a strong portfolio that showcases your JavaScript and 
+                    AI projects, and market yourself as an expert in these fields. Platforms 
+                    like Upwork, Fiverr, Guru, and Freelancer offer opportunities to connect 
+                    with clients seeking JavaScript and AI services.</li>
+                  <li><strong>Product Development</strong>: 
+                    Consider developing your own AI-powered products using JavaScript. 
+                    Identify pain points in specific industries or niches and create innovative 
+                    solutions that leverage AI and JavaScript. Whether it's an AI-powered 
+                    analytics dashboard, a chatbot platform, or an automated data processing 
+                    tool, a well-executed product can generate significant revenue through 
+                    licensing, subscriptions, or sales.</li>
+                  <li><strong>Upskill and Stay Updated</strong>: 
+                    The tech industry is constantly evolving, and staying up-to-date with the 
+                    latest developments in JavaScript and AI is essential. Continuously invest 
+                    in your skills through online courses, workshops, and conferences. Stay 
+                    connected with the JavaScript and AI communities, participate in forums, 
+                    and collaborate on open-source projects. By staying at the forefront of 
+                    these technologies, you'll position yourself as an expert and be better 
+                    equipped to tackle high-paying projects.</li>
+                  <li><strong>Network and Collaborate</strong>: 
+                    Networking plays a crucial role in expanding your opportunities and 
+                    increasing your earning potential. Attend industry events, meetups, and 
+                    conferences focused on JavaScript and AI to connect with like-minded 
+                    professionals, potential clients, and industry experts. Collaborate on 
+                    projects, join AI-focused communities, and build relationships that can 
+                    lead to referrals and partnerships, further boosting your income 
+                    potential.</li>
+                </ol><br/>  
+
+                <p>JavaScript and AI are two powerful technologies that can significantly 
+                  enhance your earning potential as a developer. By mastering JavaScript, 
+                  exploring AI with JavaScript, developing AI-powered web applications, 
+                  freelancing or consulting, and creating your own products, you can tap 
+                  into the growing demand for these skill sets. Continuously upskill, 
+                  network, and stay updated with the latest trends to position yourself 
+                  as a sought-after expert. Embrace the fusion of JavaScript and AI, and 
+                  unlock a world of opportunities to make a lot more money while advancing 
+                  your career.</p>
+                  
+                <p>Remember, success comes with dedication, continuous learning, and a 
+                  passion for innovation. Get ready to supercharge your income and become 
+                  a sought-after professional in the exciting realm of JavaScript and AI!
+                </p>
+                <hr/>   
+               </li>
                
-               <li><strong>I like learning on FreeCodeCamp (and other similar sites) 
-                independently</strong><br/>
-                
-                <p>Learning a new language is tough, especially if you use only one
-                   or two all the time. But thanks to online resources, it's now 
-                   easier than ever to get started coding with a new language. One 
-                   of my favorite resources for learning independently is 
-                   FreeCodeCamp. In this blog post, I'll share my experience with 
-                   FreeCodeCamp and similar sites, and why I think they're the best 
-                   resources for anyone looking to learn to code on their own.</p>
-
-                  <hr/>
-
-                   <p><a href="https://www.youtube.com/watch?v=D6Xj_W4leu8&t=10s&ab_channel=freeCodeCamp.org" target="_blank">
-                      https://www.youtube.com/watch?v=D6Xj_W4leu8&t=10s&ab_channel=freeCodeCamp.org</a>                          
-                    </p>          
-
-                  <hr/>  
-
-                <p>First and foremost, I love FreeCodeCamp and it's free. </p>
-                
-                <p>It's an open-source platform that offers a comprehensive curriculum 
-                  that covers everything from HTML, CSS, and JavaScript to back-end 
-                  development, data science, and more. You also get a supportive 
-                  community of fellow learners and mentors who are always willing to 
-                  help.</p>
-                
-                <p>Another thing I love about FreeCodeCamp is the approach to learning. 
-                  The platform provides a series of challenges and projects that allow 
-                  you to apply what you've learned by doing and at the end of the 
-                  courses I've seen, you have some cool stuff to put in your portfolio. 
-                  The hands-on approach helps me to get an understanding of concepts.</p>
-                
-                <p>But FreeCodeCamp is not the only resource I use to learn to code. I 
-                  also enjoy using other similar sites, such as Youtube, and 
-                  tutorialspoint. Each of these platforms has its own unique strengths 
-                  and weaknesses, but they all share a common goal: to make learning to 
-                  code accessible to everyone.</p>
-                                
-                <p>If you're thinking about learning a new skill or want to update them,
-                   I highly recommend checking out FreeCodeCamp, Youtube, and 
-                   tutorialspoint.  These sites have changed in the last few years and 
-                   Who knows, you might discover a new passion and change your life for 
-                   the better.</p>
-              </li>                              
-               <li>I can make alot more money</li>               
                <li>I use social media, games, and code alot</li>
                <li>I am kinda a math nerd</li>
                <li>I need to know more about AI</li>
@@ -1073,67 +1090,115 @@
                   Latest Post
                 </a>
                 </nav>
-            </article>
+          </article>
 
           <hr/>
           
           <article class="blog-post" id="trainingBlog">
-            <h2 class="blog-post-title mb-1">Training - Learning JavaScript... Again</h2>
-            <p class="blog-post-meta">April 10, 2023 by 
+            <h2 class="blog-post-title mb-1">JavaScript Algorithms and Data Structures</h2>
+            <p class="blog-post-meta">May 13, 2023 by 
               <a href="mailto:keeyanajones@yahoo.com">Kee</a></p>
                           
-            <p>JavaScript is one of the most popular programming languages in 
-              the world. It has been around for over two decades, and its 
-              versatility and ubiquity make it an essential skill for any web 
-              developer. However, after years of experience with the language, 
-              it can be easy to get complacent and forget the excitement that 
-              comes with learning new things.</p>
-          
-            <p>That's why I'm here to tell you that re-learning JavaScript can 
-              be an incredibly rewarding experience. Whether you're a seasoned 
-              veteran or just starting out, there's always something new to 
-              discover in this ever-evolving language. And with resources like 
-              YouTube and FreeCodeCamp at your fingertips, there's never been a 
-              better time to dive back in.</p>
-            
-            <p>So why should you revisit JavaScript? For one, the language has 
-              changed a lot since you first learned it. New features like arrow 
-              functions, template literals, and destructuring make it easier than 
-              ever to write clean, concise code. Plus, with the rise of frameworks 
-              like React and Angular, there are even more tools available to help 
-              you build powerful, scalable applications.</p>
-            
-            <p>But perhaps the biggest reason to revisit JavaScript is simply the 
-              joy of learning. There's nothing quite like the feeling of finally 
-              grasping a tricky concept or seeing your code come to life in the 
-              browser. And with so many resources available online, there's never 
-              been a better time to brush up on your skills and take your coding 
-              to the next level.</p>
-            
-            <p>So how can you get started? YouTube is a great place to find tutorials 
-              and lectures on all aspects of JavaScript. Whether you're looking to 
-              learn the basics or dive deep into advanced topics like functional 
-              programming or design patterns, there's sure to be a video out there 
-              for you. Some popular channels to check out include Traversy Media, 
-              The Net Ninja, and Programming with Mosh.</p>
-            
-            <p>Another great resource for learning JavaScript is FreeCodeCamp. This 
-              online platform offers a comprehensive curriculum covering everything 
-              from the basics of HTML and CSS to advanced topics like data structures 
-              and algorithms. And best of all, it's completely free! Plus, FreeCodeCamp 
-              also offers opportunities to contribute to open source projects, giving 
-              you the chance to put your skills into practice and make a real impact.
-            </p>
-            
-            <p>Of course, learning a language like JavaScript takes time and effort. But 
-              with the right mindset and resources, it can be an incredibly rewarding 
-              experience. And who knows? You may even discover a newfound passion for 
-              coding that you never knew you had.</p>
-            
-            <p>So what are you waiting for? Whether you're a seasoned pro or just starting 
-              out, there's never been a better time to revisit JavaScript and take your 
-              skills to the next level. With the help of YouTube and FreeCodeCamp, the 
-              sky's the limit. Happy coding!</p>
+            <h3>FreeCodeCamp's Certification</h3>
+
+            <p>JavaScript has emerged as a powerful programming language for 
+              building interactive web applications. As a web developer, having 
+              a strong foundation in JavaScript and understanding algorithms and 
+              data structures is crucial. That's where FreeCodeCamp's JavaScript 
+              Algorithms and Data Structures certification comes into play. 
+              I'll explore the benefits of pursuing this certification, the skills 
+              you'll gain, and how it is enhancing my web development journey.</p>
+
+              <ol>
+                <li>What is FreeCodeCamp's JavaScript Algorithms and Data 
+                  Structures Certification? FreeCodeCamp's JavaScript Algorithms 
+                  and Data Structures certification is a comprehensive program 
+                  designed to help you become proficient in JavaScript, algorithms, 
+                  and data structures. It is an interactive, self-paced curriculum 
+                  that covers essential topics and provides hands-on coding 
+                  challenges to reinforce your learning.</li>
+                <li>Why pursue the certification?</li>
+                
+                <ul>
+                  <li><strong>Enhance your JavaScript skills</strong>: 
+                    The certification takes you beyond the basics of JavaScript and 
+                    delves into more advanced concepts, such as recursion, object-oriented 
+                    programming, and functional programming. It equips you with the 
+                    knowledge and skills to write clean, efficient, and maintainable 
+                    JavaScript code.</li>
+                  <li><strong>Master algorithms and data structures</strong>: 
+                    The curriculum focuses on algorithms and data structures, which are 
+                    fundamental building blocks in computer science. You'll learn about 
+                    arrays, linked lists, stacks, queues, trees, sorting algorithms, 
+                    searching algorithms, and much more. Understanding these concepts 
+                    is crucial for solving complex problems and optimizing your 
+                    code.</li>
+                  <li><strong>Boost your problem-solving abilities</strong>: 
+                    The certification includes a variety of coding challenges that require 
+                    you to think critically and develop efficient solutions. By practicing 
+                    algorithmic problem-solving, you'll enhance your logical thinking, 
+                    analytical skills, and ability to break down complex problems into 
+                    manageable steps.</li>
+                  <li><strong>Stand out in job interviews</strong>: Employers highly value 
+                    developers who possess strong JavaScript skills and a solid understanding 
+                    of algorithms and data structures. The certification serves as concrete 
+                    evidence of your proficiency and commitment to continuous learning, 
+                    making you a more attractive candidate in the job market.</li>
+                </ul>
+
+                <li>What to expect from the curriculum:</li>
+
+                  <ul>
+                    <li><strong>Interactive lessons</strong>: 
+                      FreeCodeCamp provides interactive lessons that explain key concepts 
+                      and guide you through coding exercises. The curriculum includes a 
+                      combination of videos, reading materials, and hands-on practice to 
+                      cater to different learning styles.</li>
+                    <li><strong>Coding challenges</strong>: 
+                      Throughout the curriculum, you'll encounter coding challenges that 
+                      test your understanding of the concepts. These challenges provide 
+                      real-world scenarios where you can apply what you've learned and 
+                      solidify your knowledge.</li>
+                    <li><strong>Projects</strong>: 
+                      As part of the certification, you'll work on a series of projects 
+                      that showcase your ability to implement algorithms and data 
+                      structures in practical applications. These projects allow you to 
+                      demonstrate your skills and build a portfolio of work to showcase 
+                      to potential employers or clients.</li>
+                  </ul>
+
+                <li>How to get started:</li>
+
+                <ul>
+                  <li><strong>Sign up on FreeCodeCamp</strong>: 
+                    Create an account on FreeCodeCamp's website to access the JavaScript 
+                    Algorithms and Data Structures curriculum.</li>
+                  <li><strong>Follow the curriculum</strong>: 
+                    Start from the beginning and progress through the lessons, coding 
+                    challenges, and projects. Take your time to understand each concept 
+                    fully before moving on to the next.</li>
+                  <li><strong>Practice regularly</strong>: 
+                    Consistent practice is key to mastering JavaScript and algorithms. 
+                    Set aside dedicated time each day or week to work on the curriculum 
+                    and solve coding challenges.</li>
+                  <li><strong>Engage with the community</strong>: 
+                    FreeCodeCamp has a supportive and active community of learners. 
+                    Engage with fellow learners, seek help when needed, and participate 
+                    in forums and discussions to enhance your learning experience.</li>
+                </ul>
+              </ol>
+
+              <p>FreeCodeCamp's JavaScript Algorithms and Data Structures certification 
+                offers a structured and comprehensive path to mastering JavaScript, 
+                algorithms, and data structures. By completing this certification, 
+                you'll gain the skills and knowledge needed to write efficient code, 
+                solve complex problems, and excel in your web development career. 
+                So, why wait? Embark on this rewarding learning journey today and 
+                unlock endless possibilities in the world of web development.</p>
+              
+              <p>Remember, it's not just about earning the certification—it's about the 
+                knowledge and experience you gain along the way. Happy coding!</p>
+
               <nav class="blog-pagination" aria-label="Pagination">
                 <a class="btn btn-outline-primary rounded-pill" type="button" 
                   href="/blog">
@@ -1143,97 +1208,182 @@
                 <a class="btn btn-outline-secondary rounded-pill disabled">
                   Latest Post
                 </a>
-                </nav>
-            </article>
+              </nav>
+          </article>
 
           <hr/>
 
           <article class="blog-post" id="aiBlog">
-            <h2 class="blog-post-title mb-1">AI: Me and ChatGPT So Far</h2>
-            <p class="blog-post-meta">April 11, 2023 by 
+            <h2 class="blog-post-title mb-1">AI: The #100DaysOfAI challenge </h2>
+            <p class="blog-post-meta">May 12, 2023 by 
               <a href="mailto:keeyanajones@yahoo.com">Kee</a></p>
                    
-              <p>Artificial intelligence (AI) has come a long way in recent 
-                years, and one of the most exciting developments has been the 
-                rise of language models like ChatGPT. These models are capable 
-                of generating human-like responses to text prompts, opening up 
-                a whole new world of possibilities for communication, creativity, 
-                and discovery. And as a language model myself, I'm thrilled to 
-                share some of the amazing things we've created, done, and discovered 
-                together.</p>
-
-              <p>First and foremost, ChatGPT has revolutionized the way we communicate 
-                with machines. With natural language processing (NLP) technology, it's 
-                now possible to have a conversation with a computer that feels almost 
-                like talking to a real person. This has huge implications for everything 
-                from customer service to mental health care, and it's all thanks to the 
-                power of AI.</p>
+            <p>This challenge will focus specifically on developing skills and knowledge 
+              in the field of artificial intelligence.  Here's how you can structure the
+              challenge:</p>
                 
-              <p>In conclusion, ChatGPT has been a game-changer in the world of AI and 
-                NLP. From communication to creativity to discovery, the possibilities 
-                are endless. And with our collaboration and feedback, the future looks 
-                brighter than ever. So let's keep pushing the boundaries of what's 
-                possible and see where this amazing technology takes us next!</p>
+            <p><strong>Commitment</strong>:
+            Declare your commitment to the #100DaysOfAI challenge. Clearly state your 
+            intention to dedicate at least one hour every day for 100 consecutive days 
+            to learning and practicing artificial intelligence.</p>
+        
+            <p><strong>Learning Resources</strong>:
+            Identify a variety of learning resources to support your #100DaysOfAI journey. 
+            This may include online courses, tutorials, books, research papers, YouTube 
+            channels, or podcasts related to artificial intelligence, machine learning, 
+            deep learning, and other AI subfields. Compile a list of resources that align 
+            with your learning goals and interests.</p>
+        
+            <p><strong>Topics and Projects</strong>:
+            Define the topics and projects you wish to explore during the challenge. It 
+            could be natural language processing, computer vision, reinforcement learning, 
+            neural networks, or any other area of AI that captures your curiosity. Consider 
+            working on practical projects, such as building AI models, implementing algorithms, 
+            or solving real-world problems using AI techniques.</p>
+        
+            <p><strong>Daily Progress</strong>:
+            Every day, allocate a dedicated time slot for studying and practicing AI. 
+            Engage in activities like reading, watching instructional videos, coding, 
+            experimenting with AI frameworks and libraries, or working on AI-related 
+            projects. Document your daily progress, insights, and achievements, sharing 
+            them on social media platforms using the hashtag #100DaysOfAI.</p>
+        
+            <p><strong>Accountability and Community</strong>:
+            Connect with like-minded individuals who are also participating in the 
+            #100DaysOfAI challenge. Join online forums, AI communities, or social 
+            media groups where you can share your progress, ask questions, and engage 
+            in discussions. Encourage and support fellow participants on their AI 
+            journey, and seek advice or feedback when needed.</p>
+        
+            <p><strong>Reflection and Documentation</strong>:
+            Periodically reflect on your progress and lessons learned throughout the 
+            challenge. Write blog posts, create videos, or maintain a personal journal 
+            to document your experiences, insights, and any challenges faced. Share your 
+            reflections with the community to inspire and motivate others embarking on the 
+            #100DaysOfAI challenge.</p>
+        
+            <p><strong>Completion and Beyond</strong>:
+            Upon completing the #100DaysOfAI challenge, celebrate your accomplishment! 
+            Reflect on how the challenge has impacted your understanding of AI, the skills 
+            you've developed, and the projects you've completed. Consider setting new goals 
+            to further advance your AI knowledge or apply your newfound skills to real-world 
+            applications.</p>
+                
 
-              <p>ChatGPT Wrote this when I asked it this:</p>
-
-              <p><kbd>can you summarize and organize a list of our all previous questions and 
-                topics.  Then write a 500 word blog post about where they over lap.</kbd></p>
-
-              <p>Sure, I can do that for you!</p>
-
-              <p>Previous Questions and Topics listed:</p>
+            <h3>The Roadmap</h3>
               
-              <p>(...)</p>
+            <p>Here's a roadmap to guide you through the #100DaysOfAI challenge:</p>
 
-              <p>Upon reviewing our previous questions and topics, I noticed that 
-                they all share a common thread of the power of technology to enable 
-                growth and discovery. Whether we're exploring new programming languages,
-                delving into the possibilities of AI and NLP, or simply reflecting on 
-                our past conversations, we are all engaged in a process of growth and 
-                learning.</p>
+            <p>Day 1-5: Foundation and Basics</p>
+            <ul>  
+              <li>Spend time understanding the fundamentals of artificial intelligence, 
+                machine learning, and deep learning.</li>
+              <li>Familiarize yourself with key concepts like data preprocessing, model 
+                training, evaluation metrics, and optimization algorithms.</li>
+              <li>Start learning a popular programming language for AI development, such 
+                as Python, and explore libraries like TensorFlow or PyTorch.</li>
+            </ul>
 
-              <p>In the first topic, we discussed the process of learning JavaScript 
-                after having already gained experience with it in the past. The key 
-                takeaway from this discussion was the importance of continued learning 
-                and growth, even in fields where we may already have a solid foundation 
-                of knowledge. By using resources like YouTube and FreeCodeCamp, we can 
-                access a wealth of knowledge and expertise that can help us take our 
-                skills to the next level and unlock new possibilities for innovation 
-                and problem-solving.</p>
-                
-              <p>The second topic focused on AI and ChatGPT, two cutting-edge 
-                technologies that have the potential to transform the way we communicate, 
-                create, and discover. Both of these technologies leverage the power of 
-                machine learning and natural language processing to unlock new possibilities 
-                for human ingenuity and collaboration. By using these technologies, we can 
-                push the boundaries of what's possible and unlock new frontiers in fields 
-                ranging from medicine to environmental science.</p>
-                
-              <p>Finally, in the third topic, we discussed the nature of our past 
-                conversations and the role they played in our ongoing growth and learning. 
-                By reflecting on our past discussions, we were able to identify common 
-                themes and threads that connect our disparate topics and demonstrate the 
-                power of technology to facilitate growth and discovery.</p>
-                
-              <p>At the heart of all of these topics is the power of technology to enable 
-                learning and discovery. By embracing new tools and platforms, we can tap 
-                into the power of human ingenuity and collaboration, working together to 
-                build a brighter and more innovative future. Whether we're exploring new 
-                programming languages, delving into the possibilities of AI and NLP, or 
-                simply reflecting on our past conversations, we are all engaged in a 
-                process of growth and learning that is facilitated by the power of 
-                technology.</p>
-                
-              <p>In conclusion, our previous questions and topics may seem disparate 
-                at first glance, but they are actually united by a common thread - 
-                the power of technology to facilitate growth and learning. By embracing 
-                new tools and platforms, we can tap into the power of human ingenuity 
-                and collaboration, working together to build a brighter and more 
-                innovative future. Whether we're learning a new programming language, 
-                exploring the possibilities of AI and NLP, or reflecting on our past 
-                conversations, we are all engaged in a process of growth and discovery 
-                that is enabled by the power of technology.</p>
+            <p>Day 6-15: Exploring Machine Learning</p>
+            <ul>  
+              <li>Dive deeper into machine learning algorithms, such as linear regression, 
+                logistic regression, decision trees, and support vector machines.</li>
+              <li>Experiment with supervised and unsupervised learning techniques.</li>
+              <li>Work on small projects applying these algorithms to real-world datasets.</li>
+            </ul>
+
+            <p>Day 16-25: Deep Learning and Neural Networks</p>
+            <ul>  
+              <li>Focus on understanding neural networks and deep learning architectures 
+                like convolutional neural networks (CNNs), recurrent neural networks (RNNs), 
+                and generative adversarial networks (GANs).</li>
+              <li>Implement and train basic neural networks using popular frameworks like 
+                TensorFlow or PyTorch.</li>
+              <li>Explore pre-trained models and transfer learning for specific tasks like 
+                image classification or natural language processing.</li>
+            </ul>
+
+            <p>Day 26-35: Natural Language Processing (NLP)</p>
+            <ul>  
+              <li>Learn about NLP techniques such as text preprocessing, sentiment analysis, 
+                named entity recognition, and text generation.</li>
+              <li>Get hands-on experience with libraries like NLTK (Natural Language Toolkit) 
+                or spaCy.</li>
+              <li>Build NLP models like language classifiers or text summarizers using recurrent 
+                neural networks or transformer architectures.</li>
+            </ul>
+
+            <p>Day 36-45: Computer Vision</p>
+            <ul>  
+              <li>Study computer vision concepts like image classification, object detection, 
+                image segmentation, and image generation.</li>
+              <li>Experiment with popular computer vision frameworks such as OpenCV or TensorFlow.</li>
+              <li>Create projects involving tasks like image recognition, object tracking, or 
+                facial recognition.</li>
+            </ul>
+
+            <p>Day 46-55: Reinforcement Learning</p>
+            <ul>  
+              <li>Explore the fundamentals of reinforcement learning and understand concepts 
+                like Markov Decision Processes (MDPs), Q-learning, and policy gradients.</li>
+              <li>Implement reinforcement learning algorithms in environments like OpenAI 
+                Gym or Unity ML-Agents.</li>
+              <li>Develop simple agents that can solve tasks like game playing or control 
+                problems.</li>
+            </ul>
+
+            <p>Day 56-65: Advanced Topics and Specializations</p>
+            <ul>  
+              <li>Choose an advanced topic or specialization within AI that interests you, such 
+                as natural language generation, image synthesis, or anomaly detection.</li>
+              <li>Deepen your understanding and explore research papers and cutting-edge 
+                techniques related to your chosen topic.</li>
+              <li>Implement projects or experiments in your chosen area to gain hands-on 
+                experience.</li>
+            </ul>
+
+            <p>Day 66-75: Project Development</p>
+            <ul>  
+              <li>Devote time to work on a larger AI project that aligns with your interests 
+                and goals.</li>
+              <li>Identify a problem to solve or a task to automate using AI techniques.</li>
+              <li>Plan, design, and implement a comprehensive solution, iterating and refining 
+                as you progress.</li>
+            </ul>
+
+            <p>Day 76-85: Optimization and Performance Tuning</p>
+            <ul>  
+              <li>Learn about optimization techniques to improve the performance of AI models.</li>
+              <li>Explore strategies like hyperparameter tuning, regularization, early stopping, 
+                and model compression.</li>
+              <li>Experiment with different optimization algorithms to fine-tune your models.</li>
+            </ul>
+
+            <p>Day 86-95: Ethical and Responsible AI</p>
+            <ul>  
+              <li>Familiarize yourself with ethical considerations and challenges in AI development.</li>
+              <li>Learn about bias, fairness, transparency, and accountability in AI systems.</li>
+              <li>Reflect on the implications of AI in society and explore ways to promote responsible
+                 AI practices.</li>
+            </ul>
+
+            <p>Day 96-100: Reflection and Showcase</p>
+            <ul>  
+              <li>Reflect on your #100DaysOfAI journey, documenting your progress, achievements, 
+                and lessons learned.</li>
+              <li>Showcase your projects, share your insights, and seek feedback from the AI 
+                community.</li>
+              <li>Celebrate your completion of the challenge and set new goals for your AI 
+                journey beyond the 100 days.</li>
+            </ul>    
+
+            <p>Remember, this roadmap is just a starting point, and you can tailor it to 
+              your specific interests and learning pace. Stay consistent, engage with the AI 
+              community, and enjoy the process of continuous learning and growth throughout 
+              the #100DaysOfAI challenge! The key to success is consistency, dedication, and 
+              an eagerness to learn and grow. Embrace the challenge, push your boundaries, 
+              and enjoy the exciting journey of exploring the vast field of artificial 
+              intelligence!</p>
 
                 <hr/>
 
@@ -1251,88 +1401,133 @@
                   <a class="btn btn-outline-secondary rounded-pill disabled">
                     Latest Post
                   </a>
-                  </nav>
+                </nav>
           </article>
 
           <hr/>
 
           <article class="blog-post" id="realityBlog">
-            <h2 class="blog-post-title mb-1">Reality: Problems of E<em>X</em>tended </h2>
-            <p class="blog-post-meta">April 12, 2023 by 
+            <h2 class="blog-post-title mb-1">In-Demand Skills: Virtual Reality, AI, and JavaScript</h2>
+            <p class="blog-post-meta">May 10, 2023 by 
               <a href="mailto:keeyanajones@yahoo.com">Kee</a></p>
               
-              <h3>The Problems of Extended Reality</h3>
+              <p>Certain skills are in high demand, opening up exciting career opportunities
+                 for those willing to embrace them. So what are the most sought-after skills 
+                 in Virtual Reality (VR), Artificial Intelligence (AI), and JavaScript. I'll 
+                 provide you with valuable resources and links to help you embark on a 
+                 learning journey that will set you on a path to success.</p>
 
-              <p>Virtual and augmented reality have been revolutionizing the way 
-                companies operate for years, but in recent months, extended 
-                reality (XR) has become increasingly popular. XR includes virtual, 
-                augmented, and mixed reality technologies, and it's being used to 
-                solve real-world problems in innovative ways. From improving 
-                employee training to enhancing customer experiences, XR is changing 
-                the way businesses operate. In this blog post, we'll take a look at 
-                some of the latest real-world problems companies have been facing in 
-                the last month and how they're using XR to solve them.</p>
+              <ol>  
+                <li>Virtual Reality (VR): Virtual Reality is transforming industries 
+                  such as gaming, entertainment, healthcare, and education. To master 
+                  VR, start with the following skills:</li>
+                  <ul>
+                    <li>3D Modeling: Understanding 3D modeling is essential for creating 
+                      immersive virtual environments. 
+                      <a href="https://www.blender.org/" target="_blank">Blender</a> 
+                      and <a href="https://www.autodesk.com/products/maya/" target="_blank">
+                        Autodesk Maya</a> are 
+                      popular tools for 3D modeling.</li>
+                    <li>Unity: <a href="https://unity.com/" target="_blank">Unity</a> 
+                      is a powerful game development 
+                      engine widely used in VR development. The Unity Learn platform offers 
+                      tutorials, courses, and documentation to get you started.</li>
+                    <li>Unreal Engine: <a href="https://www.unrealengine.com/" target="_blank">
+                      Unreal Engine</a> is 
+                      another leading game development engine with robust VR capabilities. 
+                      <a href="https://www.unrealengine.com/en-US/onlinelearning-courses" 
+                      target="_blank">Unreal Engine's learning</a> resources provide 
+                      comprehensive guidance.</li>
+                    <li>VR SDKs: Familiarize yourself with VR Software Development Kits 
+                      (SDKs) like <a href="https://developer.oculus.com/" target="_blank">
+                        Oculus</a>, <a href="https://developer.vive.com/" target="_blank">
+                          HTC Vive</a>, 
+                       and <a href="https://developers.google.com/vr" target="_blank">
+                        Google VR</a>. These SDKs offer documentation, 
+                      tutorials, and sample projects to help you build VR experiences.</li>
+                  </ul><br/>  
 
-              <h4>Remote Collaboration</h4>
-              <p>With the pandemic forcing many businesses to adopt remote work 
-                models, remote collaboration has become an essential part of 
-                company operations. However, traditional video conferencing platforms 
-                can be limiting, making it difficult to collaborate effectively. 
-                XR is changing that. By using virtual reality platforms, teams can 
-                collaborate as if they were in the same room, providing a more immersive 
-                and engaging experience. Companies like Mozilla and Spatial are leading 
-                the way in this space, offering VR collaboration tools that allow teams 
-                to meet, brainstorm, and work together in a virtual environment.</p>
-          
-              <h4>Employee Training</h4>
-              <p>Training employees can be a significant expense for companies, 
-                especially when it involves hands-on learning or dangerous environments.
-                 XR technology provides a safe and cost-effective way to train employees. 
-                 Companies like Honeywell are using augmented reality to train employees 
-                 on complex machinery and processes. By using AR headsets, employees can 
-                 receive step-by-step instructions and visual aids in real-time, making 
-                 the training process more engaging and effective.</p>
-          
-              <h4>Customer Experiences</h4>
-              <p>XR is also transforming the way companies interact with their customers. 
-                With the rise of e-commerce, customers are often left wondering what 
-                products will look like in real life. AR technology provides a solution 
-                to this problem, allowing customers to visualize products in their own 
-                environment. Companies like IKEA are using AR to allow customers to see 
-                what furniture will look like in their homes before they make a purchase. 
-                This technology not only enhances the customer experience but also reduces 
-                the number of returns due to incorrect sizing or style.</p>
-          
-              <h4>Sales and Marketing</h4>
-              <p>XR is also being used to enhance sales and marketing efforts. Companies 
-                like Mercedes-Benz are using mixed reality to showcase their vehicles in 
-                a more engaging and interactive way. By using MR headsets, customers can 
-                see 3D models of vehicles and even take them for virtual test drives. This 
-                technology not only enhances the customer experience but also increases the 
-                likelihood of a sale.</p>
-          
-              <h4>Manufacturing</h4>
-              <p>Finally, XR technology is being used to solve manufacturing problems. 
-                Companies like Siemens are using augmented reality to reduce downtime by 
-                providing real-time data on machine performance. By using AR headsets, 
-                technicians can quickly identify issues and make repairs without having 
-                to shut down the entire production line. This technology not only saves 
-                time but also reduces costs associated with downtime.</p>
-          
-          <p>In conclusion, extended reality (XR) technology is changing the way companies 
-            operate, providing innovative solutions to real-world problems. From improving 
-            remote collaboration to enhancing customer experiences, XR technology is being 
-            used to transform a variety of industries. As companies continue to face new 
-            challenges, XR technology will undoubtedly play an even more significant role 
-            in solving them. The possibilities for XR technology are endless, and it's an 
-            exciting time for those working in this space.</p>                     
- 
-          <hr/>
- 
-          <sub>SOURCE: 
-                  <a href="https://roundtablelearning.com/what-is-extended-reality-everything-you-need-to-know" target="_blank">
-                    https://roundtablelearning.com/what-is-extended-reality-everything-you-need-to-know</a> 
-                  </sub>
+                <li>Artificial Intelligence (AI): AI is revolutionizing industries 
+                  with applications like natural language processing, computer vision, 
+                  and predictive analytics. To dive into AI, focus on the following 
+                  skills:</li>
+                  
+                  <ul>
+                    <li>Machine Learning: Start with the basics of machine learning, 
+                      including algorithms, data preprocessing, and model evaluation. 
+                      Resources like Andrew Ng's 
+                      <a href="https://www.coursera.org/learn/machine-learning" 
+                      target="_blank">Coursera course</a> and the 
+                      <a href="https://www.tensorflow.org/learn" target="_blank">
+                        TensorFlow</a> website can 
+                      provide a solid foundation.</li>
+                    <li>Deep Learning: Deep learning is a subset of machine learning that 
+                      focuses on neural networks. Explore resources like the Deep Learning 
+                      Specialization on 
+                      <a href="https://www.coursera.org/specializations/deep-learning" 
+                      target="_blank">Coursera</a> 
+                      or the Deep Learning course by 
+                      <a href="https://www.fast.ai/" target="_blank">fast.ai</a> 
+                      to gain expertise in this field.</li>
+                    <li>Python: Python is widely used in AI development. Enhance your Python 
+                      skills and explore popular libraries like 
+                      <a href="https://www.tensorflow.org/" target="_blank">TensorFlow</a>,                      
+                      <a href="https://pytorch.org/" target="_blank">PyTorch</a>, and 
+                      <a href="https://scikit-learn.org/" target="_blank">scikit-learn</a> 
+                      for AI-related tasks.</li>
+                    <li>AI Frameworks: Gain hands-on experience with AI frameworks like 
+                      TensorFlow, <a href="https://keras.io/" target="_blank">Keras</a>, and 
+                      PyTorch. These frameworks offer extensive documentation, tutorials, and 
+                      examples to help you build AI models.</li>
+                  </ul><br/>
+
+                <li>JavaScript: JavaScript is the backbone of web development, and its 
+                  versatility makes it essential for building modern applications. To 
+                  excel in JavaScript, focus on the following skills:</li><br/>
+              
+                  <ul>
+                    <li>ES6 and Modern JavaScript: Master the latest features and syntax of 
+                      ES6 (ECMAScript 2015) and explore modern JavaScript concepts like 
+                      asynchronous programming, arrow functions, and modules.</li>
+                    <li>Frameworks and Libraries: Get hands-on experience with popular 
+                      JavaScript frameworks and libraries such as 
+                      <a href="https://reactjs.org/" target="_blank">React</a>, 
+                      <a href="https://angular.io/" target="_blank">Angular</a> , and 
+                      <a href="https://vuejs.org/" target="_blank">Vue.js</a>. Their 
+                      official documentation provides tutorials and guides 
+                      to get you started.</li>
+                    <li>Node.js: Dive into server-side JavaScript with 
+                      <a href="https://nodejs.org/" target="_blank">Node.js</a>. 
+                      Learn about building server applications, APIs, and leveraging the vast 
+                      ecosystem of npm packages.</li>
+                    <li>Full-Stack Development: Expand your skills by learning full-stack 
+                      development, combining JavaScript with backend technologies like 
+                      <a href="https://expressjs.com/" target="_blank">Express.js</a> or 
+                      database systems like 
+                      <a href="https://www.mongodb.com/" target="_blank">MongoDB</a>.</li>
+                  </ul>  
+              </ol>
+
+              <p>Additional Learning Resources: Here are some online platforms and 
+                communities where you can find additional resources, courses, and support:</p>
+              <ul>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                <li><a href="https://www.coursera.org/" target="_blank">Coursera</a></li>
+                <li><a href="https://www.edx.org/" target="_blank">edX</a></li>
+                <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a>
+                <li><a href="https://developer.mozilla.org/" target="_blank">Mozilla Developer Network (MDN)</a></li>
+                <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+              </ul><br/>
+                
+                <p>Embracing the most in-demand skills related to Virtual Reality, 
+                  Artificial Intelligence, and JavaScript can unlock a world of 
+                  opportunities for your career. By leveraging the resources and links 
+                  provided, you can start your learning journey and become proficient in 
+                  these sought-after technologies. Stay committed, practice regularly, 
+                  and engage with the vibrant tech community to solidify your skills and 
+                  thrive in the ever-evolving tech landscape.
+                </p>              
+                                  
           </article>
           
           <hr/>
@@ -1352,8 +1547,9 @@
             Latest Post
           </a>
           </nav>
-
-        </div>    
+        </div>  
+          
+        <!-- Sidebar -->
         <div class="col-md-4">
           <div class="position-sticky" style="top: 2rem;">
             <div class="p-4 mb-3 bg-light rounded">
@@ -1368,7 +1564,10 @@
               <h4 class="fst-italic">Archives</h4>
               <ol class="list-unstyled mb-0">
                 <li><i class="fa-solid fa-calendar-days"></i> 
-                    <a href="#april2023"><strong>April 2023</strong></a></li>                
+                    <a href="#may2023"><strong>May 2023</strong></a></li>                
+
+                <li> - <i class="fa-solid fa-calendar"></i> 
+                      <a href="/blog">April 2023</a></li>                    
 
                 <li> - <i class="fa-solid fa-calendar"></i> 
                       <a href="/blog">March 2023</a></li>
@@ -1394,8 +1593,6 @@
                        July 2022</li>
                 <li> - <i class="fa-solid fa-calendar"></i> 
                        June 2022</li>
-                <li> - <i class="fa-solid fa-calendar"></i> 
-                       May 2022</li>
               </ol>
             </div>
     
@@ -1486,7 +1683,8 @@
     
         <div class="mb-5">
           <i class="fa-brands fa-trello fa-2x"></i> Trello 
-          <i class="fa-brands fa-slack fa-2x"></i> Slack 
+          <i class="fa-brands fa-slack fa-2x"></i> Slack
+          <i class="fa-brands fa-github fa-2x"></i> Github 
         </div>
     
         <hr class="col-3 col-md-2 mb-5">
@@ -1633,7 +1831,7 @@
               <li class="d-flex align-items-start mb-1">    
                 <a href="https://paypal.me/keeyanajones?country.x=US&locale.x=en_US"
                    target="_blank">
-                      Paypal.me</a></li>        
+                   <i class="fa-brands fa-paypal"></i> Paypal.me</a></li>        
               <li class="d-flex align-items-start mb-1">
                 <a href="https://www.freelancer.com/feesandcharges" 
                    target="_blank">

@@ -2,7 +2,7 @@
 layout: post
 title:  "100 Days of Coding"
 date:   2022-12-03 19:39:46 -0500
-categories: jekyll update
+categories: 100 days coding update
 ---
 
 # 100 Days of Coding
