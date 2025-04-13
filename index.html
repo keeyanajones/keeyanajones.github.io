@@ -12,7 +12,6 @@
     <link href="assets/stylesheets/brands.css" rel="stylesheet">
     <link href="assets/stylesheets/solid.css" rel="stylesheet">
     <link href="assets/stylesheets/all.css" rel="stylesheet">
-  
   </head>
   
   <body>
@@ -120,7 +119,7 @@
             <i class="fa-solid fa-sack-dollar small"></i> Freelancer </a>
 
             <a class="btn btn-lg btn-outline-success" target="_blank" 
-              href="https://www.google.com/cloud/keeyana-jones">
+              href="https://cloud.google.com/marketplace">
             <i class="fa-brands fa-google"></i> Marketplace </a>
 
             I also provide freelance services on the platforms listed below to businesses:
@@ -573,8 +572,6 @@
       </div>
       <!-- .blog headline -->
  
-
-
       <div class="row mb-2">
         <div class="col-md-6">
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -859,22 +856,22 @@
             TERRAFORM: Vertex AI Workbench Instance
             <code class="text-dark">
 <pre>
-            resource "google_vertex_ai_workbench_instance" "llm_workbench" {
-              provider = google-beta
-              name =  "llm-workbench-instance"
-              location = "us-central"
-              machine_type = "n1-standard-4"
-              owner = "email@example.com"
-            
-            
-              vm_image{
-                image_family = "tf-latest-cpu"
-              }
-            
-              labels = {
-                env = "development"
-              }
-            }
+resource "google_vertex_ai_workbench_instance" "llm_workbench" {
+  provider = google-beta
+  name =  "llm-workbench-instance"
+  location = "us-central"
+  machine_type = "n1-standard-4"
+  owner = "email@example.com"
+
+
+  vm_image{
+    image_family = "tf-latest-cpu"
+  }
+
+  labels = {
+    env = "development"
+  }
+}
 </pre>            
             </code>
 
@@ -888,15 +885,15 @@
             BASH 
             <code  class="text-dark">
 <pre>              
-            gcloud ai endpoints create llm-endpoint\
-            --region=us-central1
-            
-            gcloud ai models deploy \
-            --model=text-bison@001 \
-            --endpoint=llm-endpoint \
-            --region=central1 \
-            --machine-type=n1-standard-4 \
-            --traffic-split=deployed-model=100
+gcloud ai endpoints create llm-endpoint\
+--region=us-central1
+
+gcloud ai models deploy \
+--model=text-bison@001 \
+--endpoint=llm-endpoint \
+--region=central1 \
+--machine-type=n1-standard-4 \
+--traffic-split=deployed-model=100
 </pre>            
             </code>
 
@@ -910,17 +907,17 @@
             PYTHON
             <code  class="text-dark">
 <pre>              
-            from google.cloud import aiplatform
-            
-            aiplatform.init(project="my-project_id", location="us-central1")
-            
-            endpoint = aiplatform.Endpoint("llm-endpoint")
-            
-            response = endpoint.predict(
-              instance[{"content": "Tell me a short story about a coding bird."}]
-            )
-            
-            print(response.predictions[0]["content"])
+from google.cloud import aiplatform
+
+aiplatform.init(project="my-project_id", location="us-central1")
+
+endpoint = aiplatform.Endpoint("llm-endpoint")
+
+response = endpoint.predict(
+  instance[{"content": "Tell me a short story about a coding bird."}]
+)
+
+print(response.predictions[0]["content"])
 </pre>
             </code>
 
@@ -934,22 +931,22 @@
             TERRAFORM : Autoscaling
             <code  class="text-dark">
 <pre>
-            resource "google_vertex_ai_endpoint" "llm_endpoint" {
-              provider = google-beta
-              name =  "llm-endpoint"
-              location = "us-central"
-            
-              deployed_models {
-                model = "text-bison@001"
-                traffic_split {
-                  "0" = 100
-                }
-                autoscaling_config {
-                  min_replica_count = 1
-                  max_replica_count = 5 
-                }
-              }
-            }
+resource "google_vertex_ai_endpoint" "llm_endpoint" {
+  provider = google-beta
+  name =  "llm-endpoint"
+  location = "us-central"
+
+  deployed_models {
+    model = "text-bison@001"
+    traffic_split {
+      "0" = 100
+    }
+    autoscaling_config {
+      min_replica_count = 1
+      max_replica_count = 5 
+    }
+  }
+}
 </pre>
           </code>
 
@@ -1001,16 +998,16 @@
               DOCKERFILE
               <code class="text-dark">
 <pre>                
-              FROM python:3.9-slim
-              
-              WORKDIR /app
-              
-              COPY requirements.txt .
-              RUN pip install --no-cache-dir -r requirements.txt
-              
-              COPY . .
-              
-              CMD ["python", "app.py"]
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD ["python", "app.py"]
 </pre> 
               </code> 
 
@@ -1025,34 +1022,34 @@
               YAML
               <code class="text-dark">
 <pre>                  
-              apiVersion: apps/v1
-              kind: Deployment
-              metadata:
-                name: ai-app-deployment
-              spec:
-                replicas: 3
-                selector:
-                  matchLabels:
-                    app: ai-app
-                template:
-                  metadata:
-                    labels:
-                      app: ai-app
-                  spec:
-                    containers:
-                    - name: ai-app-container
-                      image: gcr.io/your-project/ai-app-image:latest
-                      resources:
-                      request:
-                        cpu: "500m"
-                        memory: "1Gi"
-                      Limits: 
-                        cpu: "1000m"
-                        memory: "2Gi"
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-app-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ai-app
+  template:
+    metadata:
+      labels:
+        app: ai-app
+    spec:
+      containers:
+      - name: ai-app-container
+        image: gcr.io/your-project/ai-app-image:latest
+        resources:
+        request:
+          cpu: "500m"
+          memory: "1Gi"
+        Limits: 
+          cpu: "1000m"
+          memory: "2Gi"
 </pre>
               </code>              
               
-              <p>This YSML file create a deployment with three replicas of our AI 
+              <p>This YAML file create a deployment with three replicas of our AI 
                 application. We're also specifying resource requests and limits to keep 
                 things running smoothly.</p>
               
@@ -1063,10 +1060,10 @@
               BASH
               <code class="text-dark">
 <pre>
-              kubectl autoscale deployment ai-app-deployment \
-                --cpu-percent=80 \
-                --min=3
-                --max=10
+kubectl autoscale deployment ai-app-deployment \
+  --cpu-percent=80 \
+  --min=3
+  --max=10
 </pre>
               </code>              
               
@@ -1130,25 +1127,23 @@
               PYTHON
               <code class="text-dark">
 <pre>              
-              import apache_beam as beam
-              from apache_beam.options.pipline_options import PipelineOptions
-              
-              def process_xr_data(element):
-              # perform data transformations and enrichments
-              return element
-              
-              with beam.PipeLine(option=PipelineOptions()) as p:
-              (p
-              | 'Read from Pub/Sub' >> beam.io.ReadFromPubSub(topic='projects/your-project/topics/xr-data')
-              | 'Process Data' >> beam.Map(process_xr-data)
-              | 'Write to BigQuery' >> beam.io.WriteToBigQuery(
-                table='your-project:xr_dataset.xr_data_table',
-                schema='your-schema_string',
-                create_disposition=beam.io.BigQueryDisposition.CREATE_IF_NEEDED,
-                write_disposition=beam.io.BigQueryDisposition.WRITE_APPEND) 
-                 )
-              
-              ) 
+import apache_beam as beam
+from apache_beam.options.pipline_options import PipelineOptions
+
+def process_xr_data(element):
+# perform data transformations and enrichments
+return element
+
+with beam.PipeLine(option=PipelineOptions()) as p:
+(p
+| 'Read from Pub/Sub' >> beam.io.ReadFromPubSub(topic='projects/your-project/topics/xr-data')
+| 'Process Data' >> beam.Map(process_xr-data)
+| 'Write to BigQuery' >> beam.io.WriteToBigQuery(
+    table='your-project:xr_dataset.xr_data_table',
+    schema='your-schema_string',
+    create_disposition=beam.io.BigQueryDisposition.CREATE_IF_NEEDED,
+    write_disposition=beam.io.BigQueryDisposition.WRITE_APPEND) 
+)
 </pre>
               </code>              
 
@@ -1162,24 +1157,24 @@
               PYTHON
               <code class="text-dark">
 <pre>
-              from google.cloud import bigquery
-              
-              def handle_ar_interaction(data, context):
-                client = bigQuery.Client()
-                table_id = "your-project.xr_dataset.ar_interactions"
-              
-                rows_to_insert = [
-                  {
-                    "user_id": data["user_id"],
-                    "object_id": data["object_id"],
-                    "timestamp": context.timestamp,
-                }
-              ]
-              errors = client.insert_rows_json(table_id, rows_to_insert)
-                if error == []:
-                  print("New rows have been added.")
-                else
-                  print("Encountered errors while inserting rows: {}" .format(errors))
+from google.cloud import bigquery
+
+def handle_ar_interaction(data, context):
+  client = bigQuery.Client()
+  table_id = "your-project.xr_dataset.ar_interactions"
+
+  rows_to_insert = [
+    {
+      "user_id": data["user_id"],
+      "object_id": data["object_id"],
+      "timestamp": context.timestamp,
+  }
+]
+errors = client.insert_rows_json(table_id, rows_to_insert)
+  if error == []:
+    print("New rows have been added.")
+  else
+    print("Encountered errors while inserting rows: {}" .format(errors))
 </pre>
               </code>              
               
