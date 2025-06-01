@@ -1,6 +1,7 @@
 
 <!doctype html>
 <html lang="en">
+  <!-- Head --> 
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,10 +14,11 @@
     <link href="assets/stylesheets/solid.css" rel="stylesheet">
     <link href="assets/stylesheets/all.css" rel="stylesheet">
   </head>
-  
+  <!-- .head --> 
+
   <body>
     <!-- Navbar --> 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" 
            href="https://github.com/keeyanajones/keeyanajones.github.io"
@@ -31,19 +33,19 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">
-                Home</a>
+                HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#feature">Features</a>
+              <a class="nav-link" href="#feature">FEATURE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link" href="#portfolio">PORTFOLIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
+              <a class="nav-link" href="#blog">BLOG</a>
             </li>            
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -58,11 +60,11 @@
             <div class="col-lg-7 text-center text-lg-start">
 
               <h1 class="display-4 fw-bold lh-1 mb-3">
-                Your GCP Partner for AI &amp;  Data Innovation</h1>
+               AI &amp;  Data Innovation</h1>
               <p class="col-lg-10 fs-4">
-                I specialize in devlivering powerful solutions on the Google Cloud, 
-                enpowering you to leverage the full potential of Vertex AI and advanced 
-                data engineering. My expert team provides pre built solutions and ongoing 
+                Devlivering powerful solutions with Google Cloud, 
+                enpowering you to leverage the full potential of AI, advanced 
+                data engineering, pre built solutions and ongoing 
                 support to ensure your success.
               </p>
             </div>
@@ -90,94 +92,1763 @@
     <hr/>    
     
     <!-- Marketing Message and Features -->    
-    <div class="container px-2 py-2">
+    <div class="container px-2 py-2 bg-light">
       <a id="feature"></a>
-      <h2 class="pb-2 fw-bold border-bottom text-bg-success">
-        Why Choose Me?</h2>
-
+      <h2 class="pb-2 fw-bold border-bottom text-bg-dark">
+        My Solutions and Tools    
+      </h2>
         <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-4 py-4">
-        <div class="d-flex flex-column align-items-start gap-2">
-          <h4 class="fw-bold">           
-           Find my solutions on    
-          </h4>
-
+          <div class="d-flex flex-column align-items-start gap-2">
           <ul>
-            <li><strong>Unlock Your Data's Potential:</strong> I empower you to extract meaningul insights and drive data driven decisions, leading to tangivle business outcomes.</li>
-            <li><strong>Deep GCP Expertise:</strong> I am an expert in leveraging Google Clouds AI and data services.</li>
-            <li><strong>Proven Solutions:</strong> My solutions are built on industry best practices and proven methodologies.</li>
-            <li><strong>Dedicated Support:</strong> I provide comprehensive support to ensure your success.</li>
-            <li><strong>Seamless Marketplace Integration:</strong> Deploy and mange my solutions direcly within GCP.</li>
-          </ul> 
+            <!-- Button : 1 Preconfigured AI Workbench Enviornments -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+                  data-bs-toggle="modal" data-bs-target="#myModal1">
+                  <strong>Pre-configured AI Workbench Enviornments</strong>
+                </button></li>
 
-          <p class="fw-bold text-white bg-light">
-            <a class="btn btn-lg btn-outline-success" target="_blank"
+            <!-- Modal : 1 Preconfigured AI Workbench Enviornments -->
+            <div class="modal" id="myModal1" tabindex="-1"  
+                 aria-labelledby="myModal1label" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal1">
+                      Pre-configured AI Workbench Enviornments</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">                    
+                    <p>Ready to use, integrated development environmnets for machine learing tasks.
+                      Providing developers with a streamlined, secure, and collaborative platform 
+                      for developing experimenting with, and deploying machine learning models, 
+                      ultimately accelerating their ML workflows and reducing operational complexities.
+                    </p>
+
+                    <h5><strong>Supercharge Your AI/ML Development on GCP</strong></h5>
+
+                    <p>Accelerate your AI/ML workflows with our suite of developer-focused tools, 
+                      designed for seamless integration with Google Cloud.</p>
+
+                    <h6><strong>1. Managed AI Notebooks (Vertex AI Workbench):</strong></h6>
+
+                    <ul>
+                      <li>Spin up preconfigured environments for rapid experimentation and development.</li>
+                      <li><strong>Pricing:</strong> Pay-as-you-go based on compute resources (CPU/GPU) 
+                        and storage.</li>
+                      <li><strong>Typical Starting Cost:</strong> $0.20 - $2.00+ per hour depending on 
+                        instance type (see GCP pricing calculator for details).</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">Explore Vertex AI Workbench Pricing</button><br/><br/>
+
+                    <h6><strong>2. Serverless AI Functions (Cloud Functions for AI):</strong></h6>
+
+                    <ul>
+                      <li>Deploy event-driven AI logic without managing infrastructure.</li>
+                      <li><strong>Pricing:</strong> Pay-per-execution based on invocations, duration, and memory.</li>
+                      <li><strong>Typical Starting Cost:</strong> $0.20 per million invocations + 
+                        $0.000002 per GB-second (after free tier).</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">See Cloud Functions Pricing</button><br/><br/>
+
+                   <h6><strong>3. Scalable AI APIs (Powered by Vertex AI):</strong></h6>
+
+                   <ul>
+                      <li>Integrate pre-trained and custom AI models into your applications via robust APIs.</li>
+                      <li><strong>Pricing:</strong> Usage-based per API call or unit processed (e.g., per image, text characters).</li>
+                      <li><strong>Typical Starting Cost:</strong> Varies by API (e.g., Vision API from \$0.001 per image, 
+                        Natural Language API from \$0.001 per 1,000 characters).</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">Explore Vertex AI APIs</button><br/><br/>
+
+                    <h6><strong>4. Automated ML Pipelines (Vertex AI Pipelines):</strong></h6>
+
+                    <ul>
+                      <li>Orchestrate and automate your end-to-end ML workflows for efficiency and reproducibility.</li>
+                      <li><strong>Pricing:</strong> Step-based execution costs + underlying compute resources.</li>
+                      <li><strong>Typical Starting Cost:</strong> $0.01 per pipeline step execution + compute costs.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">See Vertex AI Pipelines Pricing</button><br/><br/>
+
+                    <h6><strong>5. Model Deployment & Inference (Vertex AI Prediction):</strong></h6>
+
+                    <ul>
+                      <li>Deploy your trained models for real-time and batch predictions at scale.</li>
+                      <li><strong>Pricing:</strong> Per-prediction requests or dedicated compute instance uptime.</li>
+                      <li><strong>Typical Starting Cost (Online):</strong> $0.0005 per prediction (for standard models).</li>
+                      <li><strong>Typical Starting Cost (Batch):</strong> Based on compute hours used.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">Explore Vertex AI Prediction Pricing</button><br/><br/>
+
+                    <h6><strong>6. Integrate Third-Party AI/ML (GCP Marketplace):</strong></h6>
+
+                    <ul>
+                      <li>Access a wide range of partner AI/ML solutions directly within GCP.</li>
+                      <li><strong>Pricing:</strong> Set by individual vendors (subscription, usage-based, licenses).</li>
+                      <li><strong>Typical Starting Cost:</strong> Varies significantly by product.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">Browse GCP Marketplace AI/ML</button><br/><br/>
+
+                    <p><strong>Key Benefits for Developers:</strong></p>
+
+                    <ul>
+                      <li><strong>Leverage GCP Infrastructure:</strong> Built for seamless integration with Google Cloud services.</li>
+                      <li><strong>Scalability & Reliability:</strong> Designed to handle demanding AI/ML workloads.</li>
+                      <li><strong>Cost Optimization:</strong>Pay-as-you-go pricing models to suit various project scales.</li>
+                      <li><strong>Simplified Workflows:</strong> Tools to streamline development, deployment, and management.</li>
+                    </ul>  
+                    
+                  </div>
+
+                  <div class="modal-footer bg-light">                    
+                      Ready to build intelligent applications on GCP? 
+                    <button type="button" class="btn btn-sm btn-outline-dark"> Get Started with Vertex AI</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button : 2 Tools for evaluating fairness and bias -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+                  data-bs-toggle="modal" data-bs-target="#myModal2">
+                  <strong>Tools for Evaluating Fairness and Bias</strong>
+                </button></li>
+            
+            <!-- Modal : 2 Tools for evaluating fairness and bias-->
+            <div class="modal" id="myModal2" tabindex="-1" 
+                 aria-labelledby="myModal2" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal2">
+                      Tools for Evaluating Fairness and Bias</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal" 
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>A variety of tools and techniques developed to help identify, measure, and 
+                      mitigate bias.  
+                      It's a ongoing and multifacated process. Utilizing the tools, understanding
+                       key fairness metrics, and implementting robust auditing practices are 
+                       essential steps towards building more equitable and trustworthy AI Systems.
+                    </p>
+
+                    <h5><strong>Ensure Fair & Ethical AI: Flexible Pricing for Every Stage</strong></h5>
+
+                    <p>Building responsible AI shouldn't be complex. Choose the option that best 
+                      fits your workflow:</p>
+                    
+                    <h6><strong>1. Integrate Directly (Evaluation as a Service - API)</strong></h6>
+                    
+                    <ul>
+                      <li><strong>For Developers & Pipelines:</strong> Embed fairness and bias checks
+                         seamlessly into your existing ML pipelines.</li>
+                      <li><strong>Pay-As-You-Go:</strong> Scale with your needs. Starting at $5 per 
+                        100 evaluations.</li>
+                      <li><strong>Get Started Quickly:</strong> Access API keys and documentation to 
+                        integrate in minutes.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">Get API Keys &amp; Docs</button><br/><br/>
+                                        
+                    <h6><strong>2. Comprehensive Monitoring (SaaS Platform)</strong></h6>
+                    
+                    <ul>
+                      <li><strong>For Teams & Continuous Oversight:</strong> An intuitive platform for in-depth analysis, visualization, and ongoing monitoring of your AI models.</li>
+                      <li><strong>Tiered Subscription Plans:</strong> Starting from $29 month, scale with your models, datasets, and team size.</li>
+                      <li><strong>Unlock Powerful Features:</strong> Benefit from automated evaluations, advanced metrics, and collaborative tools.</li>
+                    </ul><br/>
+                      
+                    <button type="button" class="btn btn-sm btn-dark">View SaaS Pricing &amp; Features</button><br/><br/>
+                    
+                    <h6><strong>3. Automate in Vertex AI (Pipeline Components)</strong></h6>
+                    
+                    <ul>
+                      <li><strong>For GCP Professionals:</strong> Seamlessly integrate fairness and bias evaluation directly into your Vertex AI Pipelines.</li>
+                      <li><strong>Flexible Cost:</strong> Choose per-pipeline-run pricing or a convenient component library subscription for frequent use ($19 month).</li>
+                      <li><strong>Streamline Your Workflow:</strong> Automate essential fairness checks within your existing MLOps processes.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">Explore Vertex AI Integration</button><br/><br/>
+                    
+                    <h6><strong>Key Benefits Across All Options:</strong></h6>
+                    
+                    <ul>
+                      <li><strong>Build Trustworthy AI:</strong> Proactively identify and mitigate bias in your models.</li>
+                      <li><strong>Reduce Risk:</strong> Avoid potential legal and reputational issues.</li>
+                      <li><strong>Improve Model Performance:</strong> Ensure fairness across diverse user groups.</li>
+                    </ul>                                      
+                   
+                  </div>
+
+                  <div class="modal-footer bg-light">
+                    Need a Custom Solution or Enterprise Pricing? 
+                    <a href="https://github.com/keeyanajones/" target="_blank">Contact Me</a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button : 3 Prompt Engineering Toolkits -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal3">
+              <strong>Prompt Engineering Toolkits</strong>
+            </button></li>
+
+            <!-- Modal : 3 Prompt Engineering Toolkits -->
+            <div class="modal" id="myModal3" tabindex="-1" 
+                  aria-labelledby="myModal3" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal3">
+                      Prompt Engineering Toolkits</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Resources designed to help users create, manage, test, and 
+                      optimize prompts for LLMs and other generative AI models. Enhance 
+                      the ability to interact with and extract valuable outputs from AI 
+                      models, leading to more effective and effcient AI applications.
+                    </p>
+
+                    <h5><strong>Supercharge Your LLM Workflow with Powerful &amp; Flexible 
+                      Prompt Engineering Toolkits</strong></h5>
+
+                    <p>Unlock the full potential of Large Language Models with our range of tools, 
+                      designed for everyone from individual developers to enterprise teams.</p>
+                    
+                    <h6><strong>1. Get Started for Free & Scale as You Grow:</strong></h6>
+                    
+                    <p><strong>SaaS Platform:</strong> Visually design, test, and manage prompts. 
+                      Start with our <strong>Free Tier</strong> (limited features), then scale with 
+                      paid plans from just $19 month.</p>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Explore SaaS Plans &amp; Free Tier</button><br/><br/>
+                    
+                    
+                    <p><strong>Developer API:</strong> Integrate prompt generation and optimization 
+                      directly into your applications. Our <strong>Free Tier</strong> includes a limited 
+                      number of calls, with pay-as-you-go pricing starting at $0.005 per 
+                      1,000 API calls.</p>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Get API Access &amp; View Pricing</button><br/><br/>
+                    
+                    <h6><strong>2. Built for Your Cloud Environment (Vertex AI Integration):</strong></h6>
+                    
+                    <p>Seamlessly embed prompt engineering into your MLOps workflows with our 
+                      pre-built <strong>Vertex AI Pipeline Components</strong>. Choose flexible pricing 
+                      <strong>per pipeline run</strong> or subscribe to our component library for just 
+                      $49 month.</p>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Integrate with Vertex AI</button><br/><br/>
+                    
+                    <p>Jumpstart your development with our preconfigured 
+                      <strong>Vertex AI Workbench Notebooks</strong>, featuring popular libraries and 
+                      examples. Priced based on flexible <strong>compute usage</strong> or a low 
+                      one-time access fee of $29.</p>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      See Vertex AI Notebook Options</button><br/><br/>
+                    
+                    <h6><strong>3. Local Development & Foundational Knowledge:</strong></h6>
+                    
+                    <p>Our comprehensive <strong>Downloadable Toolkit</strong>, featuring code 
+                      templates and best practices, is available for a low 
+                      <strong>one-time purchase of $99</strong>. Subscribe for ongoing updates 
+                      and advanced resources for only $19 month.</p>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Learn More About the Downloadable Toolkit</button><br/><br/>
+ 
+                    <p><strong>Key Benefits:</strong></p>
+ 
+                    <ul>
+                      <li>Save time and effort in prompt creation.</li>
+                      <li>Improve the quality and consistency of your LLM outputs.</li>
+                      <li>Optimize prompts for better performance and cost-efficiency.</li>
+                      <li>Integrate seamlessly into your existing workflows and infrastructure.</li>
+                    </ul>
+                
+                  </div>
+
+                  <div class="modal-footer bg-light">
+                    Need a Custom Solution or Enterprise Pricing? 
+                    <a href="https://github.com/keeyanajones/" target="_blank">Contact Me</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button : 4 Automated Deployment -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal4">
+              <strong>Automated Deployment</strong>
+            </button> 
+
+            <!-- Modal : 4 Automated Deployment -->
+            <div class="modal" id="myModal4" tabindex="-1" 
+                  aria-labelledby="myModal4" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal4">
+                      Automated Deployment</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Tools and systems to automatically move code changes form development 
+                      through testing staging and into production enviornments.
+                      In Modern DevOps practices, enabling organizations to deliver fast, 
+                      reliable, and with less risk. 
+                    </p>
+
+                    <h5><strong>Flexible Deployment Automation for Every Project</strong></h5>
+
+                    <ul>
+                      <li><strong>Simple & Visual:</strong> Get started quickly with our Free 
+                        Tier SaaS platform and easily build deployment pipelines. Paid plans 
+                        from $10 user/month.</li>
+                      <li><strong>Automate Your ML Models:</strong> Integrate directly with 
+                        Vertex AI Pipelines using our components, priced per run or $15 month 
+                        for the library.</li>
+                      <li><strong>Power of Infrastructure as Code:</strong> Leverage our 
+                        customizable templates for consistent and repeatable deployments. 
+                        One-time purchase from $20 user/month or subscribe for updates.</li>
+                      <li><strong>Ready-to-Code Environments:</strong> Our preconfigured Vertex 
+                        AI Notebooks offer a fast start, priced by compute or a $100 one-time fee.</li>
+                    </ul>
+
+                  </div>
+
+                  <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Start with Free Saas</button>
+                      
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Automate ML Deployments</button>
+                      
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Explore IaC Templates</button>
+                      
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Launch a Preconfigured Notebook</button>
+                      
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            and 
+
+            <!-- Button : 5 Feature Ingestion Pipelines -->
+            <button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal5">
+              <strong>Feature Ingestion Pipelines</strong>
+            </button></li>
+
+            <!-- Modal : 5 Feature Ingestion Pipelines -->
+            <div class="modal" id="myModal5" tabindex="-1" 
+                  aria-labelledby="myModal5" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal5">
+                      Feature Ingestion Pipelines</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>The automated process of collecting, transforming, validating, and 
+                      storing raw data into a usable format (feature) within a feature store
+                      or a similar system, making it radily availablefor model training and 
+                       inference.
+                    </p>
+
+                    <h5><strong>Automate Your Feature Engineering for Scalable & Reliable ML</strong></h5>
+
+                    <p>Efficiently prepare your data with our flexible and powerful feature ingestion 
+                      solutions, designed for every skill level and project size.</p>
+                    
+                    <h6><strong>1. Visually Build & Scale (SaaS Platform):</strong></h6>
+                    
+                    <ul>
+                      <li>Our intuitive <strong>SaaS Platform</strong> offers a no-code 
+                        interface to design and manage your ingestion pipelines.</li>
+                      <li><strong>Free Tier</strong> available for experimentation.</li>
+                      <li>Paid plans scale with your data volume and features, starting 
+                        from just $39 month.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Explore SaaS Plans &amp; Free Tier</button><br/><br/>
+                    
+                    <h6><strong>2. Integrate Seamlessly with Vertex AI:</strong></h6>
+                    
+                    <ul>
+                      <li><strong>Vertex AI Pipeline Components:</strong> Embed automated 
+                        ingestion directly into your MLOps workflows.</li>
+                      <li>Flexible pricing <strong>per pipeline run</strong>.</li>
+                      <li>Access our library of reusable components for only $29 month.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Integrate with Vertex AI Pipelines</button><br/><br/>
+                    
+                    <h6><strong>3. Deploy on GCP with Infrastructure as Code:</strong></h6>
+                    
+                    <ul>
+                      <li>Leverage our customizable <strong>Terraform Templates</strong> for 
+                        repeatable and scalable feature ingestion pipelines on Google Cloud.</li>
+                      <li>Get started with a <strong>one-time purchase from $79</strong>.</li>
+                      <li>Subscribe for ongoing updates and new templates.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Browse GCP Ingestion Templates</button><br/><br/>
+                    
+                    <h6><strong>4. Get Started Quickly (Preconfigured Notebooks):</strong></h6>
+                    
+                    <ul>
+                      <li>Our preconfigured <strong>Vertex AI Notebooks</strong> provide a ready-to-code 
+                        environment with essential tools and examples.</li>
+                      <li>Priced by flexible <strong>compute usage</strong>.</li>
+                      <li>Option for a one-time access fee of $99.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Launch a Preconfigured Notebook</button><br/><br/>
+                    
+                    <p><strong>Key Benefits:</strong></p>
+                    
+                    <ul>
+                      <li>Automate tedious data preparation tasks.</li>
+                      <li>Ensure data quality and consistency for ML models.</li>
+                      <li>Scale your feature engineering efforts efficiently.</li>
+                      <li>Integrate seamlessly with your existing GCP ecosystem.</li>
+                    </ul>                    
+                  </div>
+
+                  <div class="modal-footer bg-light">
+                    Need a Custom Solution or Enterprise Pricing? 
+                    <a href="https://github.com/keeyanajones/" target="_blank">Contact Me</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button : 6 Feature Engineering Pipelines and Management -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal6">
+              <strong>Feature Engineering Pipelines and Management</strong>
+            </button></li>
+
+            <!-- Modal : 6 Feature Engineering Pipelines and Management -->
+            <div class="modal" id="myModal6" tabindex="-1" 
+                  aria-labelledby="myModal6" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal6">
+                      Feature Engineering Pipelines and Management</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Automated processes and strategies for transforming raw data into meaningful
+                      features that can be effectively used to train and serve machine learning models,
+                      and the systems for organizing, storing, and governing these features. 
+                    </p>
+
+                    <h5><strong>Streamline & Scale Your Feature Engineering for Optimal ML Performance</strong></h5>
+
+                    <p>Unlock the power of well-engineered features with our flexible and comprehensive
+                       solutions, catering to various skill levels and project needs.</p>
+                    
+                    <h6><strong>1. Visually Design & Manage (SaaS Platform):</strong></h6>
+
+                    <ul>
+                      <li>Build, run, and track your feature engineering pipelines with our 
+                        intuitive, no-code/low-code platform.</li>
+                      <li>Start with our <strong>Free Tier</strong> to explore the basics.</li>
+                      <li>Scale with paid plans based on your usage and features, starting from 
+                        just $49 month.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Explore SaaS Plans &amp; Free Tier</button><br/><br/>
+                    
+                    <h6><strong>2. Automate within Vertex AI (Pipeline Components):</strong></h6>
+                    
+                    <ul>
+                      <li>Seamlessly integrate feature engineering into your MLOps workflows using 
+                        our pre-built <strong>Vertex AI Pipeline Components</strong>.</li>
+                      <li>Choose flexible pricing <strong>per pipeline run</strong>.
+                      <li>Access our growing library of components for a low monthly subscription of
+                         $39 month.
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Integrate with Vertex AI Pipelines</button><br/><br/>
+                    
+                    <h6><strong>3. Code-First Flexibility (Reusable Templates):</strong></h6>
+                    
+                    <ul>
+                      <li>Accelerate your development with our customizable <strong>Python & Terraform 
+                        Templates</strong> for common and advanced feature engineering tasks on GCP.</li>
+                      <li>Get started with a one-time purchase from $89.</li>
+                      <li>Subscribe for ongoing updates, new templates, and advanced recipes.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Browse Reusable Code Templates</button><br/><br/>
+                    
+                    <h6><strong>4. Jumpstart Your Development (Preconfigured Notebooks):</strong></h6>
+                    
+                    <ul>
+                      <li>Our preconfigured <strong>Vertex AI Notebooks</strong> provide a 
+                        ready-to-code environment with popular libraries and practical examples for 
+                        building and managing feature pipelines.</li>
+                      <li>Priced by flexible <strong>compute usage</strong> on Vertex AI.</li>
+                      <li>Option for a convenient one-time access fee of $129.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Launch a Preconfigured Notebook</button><br/><br/>
+                    
+                    <p><strong>Key Benefits:</strong></p>
+                    
+                    <ul>
+                      <li>Accelerate model development and deployment.</li>
+                      <li>Improve model accuracy and performance.</li>
+                      <li>Ensure feature consistency and reusability.</li>
+                      <li>Simplify the complexity of feature engineering workflows.</li>
+                    </ul>                  
+
+                  </div>
+
+                  <div class="modal-footer bg-light">
+                    Need a Custom Solution or Enterprise Pricing? 
+                    <a href="https://github.com/keeyanajones/" target="_blank">Contact Me</a>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button : 7 Feature Group Management and Tools -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal7">
+              <strong>Feature Group Management and Tools</strong>
+            </button></li>
+
+            <!-- Modal : 7 Feature Group Management and Tools -->
+            <div class="modal" id="myModal7" tabindex="-1" 
+                  aria-labelledby="myModal7" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal7">
+                      Feature Group Management and Tools</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Automated processess and strategies for transforming raw data into 
+                      meaningful features that can be effectively used to train as the systesms
+                       for organizing, storing, and governing these models.
+                    </p>
+
+                    <h5><strong>Organize, Discover, and Govern Your Features for Scalable ML</strong></h5>
+
+                    <p>Streamline your machine learning workflows with our flexible and 
+                      powerful feature group management solutions, designed for individual 
+                      users and enterprise teams.</p>
+                    
+                    <h6><strong>1. Centralized Feature Management (SaaS Platform):</strong></h6>
+                    
+                    <ul>  
+                      <li>Intuitively organize, discover, and govern your feature groups with our 
+                        user-friendly platform.</li>
+                      <li>Start exploring with our <strong>Free Tier</strong> (limited features).</li>
+                      <li>Scale with paid plans based on the number of feature groups and users, 
+                        starting from just $39 month.</li>
+                    </ul><br/>
+                    
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Explore SaaS Plans &amp; Free Tier</button><br/><br/>
+                    
+                    <h6><strong>2. Supercharge Vertex AI Feature Store:</strong></h6>
+                    
+                    <ul>  
+                      <li>Enhance your Vertex AI experience with our specialized tools and 
+                        extensions for advanced feature group management.</li>
+                      <li>Priced affordably, starting at just $15 user month.</li>
+                    </ul><br/>
+                    
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Enhance Your Feature Store</button><br/><br/>
+                    
+                    <h6><strong>3. Automate Infrastructure Setup (IaC Templates):</strong></h6>
+                    
+                    <ul>
+                      <li>Quickly deploy well-organized feature group structures on GCP using 
+                        our preconfigured Infrastructure-as-Code templates.</li>
+                      <li>Get started with a one-time purchase of $69.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                     Get Automation Templates</button><br/><br/>
+                    
+                    <h6><strong>4. Learn and Experiment (Preconfigured Notebooks):</strong></h6>
+                    
+                    <ul>
+                      <li>Our ready-to-use <strong>Vertex AI Notebooks</strong> provide an ideal 
+                        environment to learn best practices for feature group management within 
+                        Vertex AI.</li>
+                      <li>Priced by flexible <strong>compute usage</strong> on GCP.</li>
+                      <li>Option for a convenient one-time access fee of $99.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Launch a Preconfigured Notebook</button><br/><br/>
+                  
+                    <p><strong>Key Benefits:</strong></p>
+                    
+                    <ul>
+                      <li>Improve feature discoverability and reusability.</li>
+                      <li>Enforce consistent organizational structures for your features.</li>
+                      <li>Enhance collaboration and governance across ML teams.</li>
+                      <li>Simplify the management of large numbers of features.</li>
+                    </ul>
+
+                  </div>
+
+                  <div class="modal-footer bg-light">
+                    Need a Custom Solution or Enterprise Pricing? 
+                    <a href="https://github.com/keeyanajones/" target="_blank">Contact Me</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button : 8 Feature Lineage Tracking and Visualization -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal8">
+              <strong>Feature Lineage Tracking and Visualization</strong>
+            </button></li>
+
+            <!-- Modal : 8 Feature Lineage Tracking and Visualization -->
+            <div class="modal" id="myModal8" tabindex="-1" 
+                  aria-labelledby="myModal8" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal8">
+                      Feature Lineage Tracking and Visualization</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Building transparent, reliable, and governable machine learning systems.
+                     The complete history and dependencies of a feature, tracing it back to its 
+                     raw data sources and showing all the transformations applied to it
+                     along the way. Visualization helps understand complex relationships and data 
+                     flows. 
+                    </p>
+
+                    <h5><strong>Gain End-to-End Visibility into Your ML Features</strong></h5>
+
+                    <p>Unlock transparency and governance in your machine learning workflows with 
+                      our flexible lineage tracking solutions.</p>
+                    
+                    <h6><strong>1. Fully Automated Tracking & Visualization (SaaS Platform):</strong></h6>
+                    
+                    <ul>
+                      <li>Effortlessly trace your features from their origin to the models they 
+                        power with our intuitive platform.</li>
+                      <li>Start exploring with our <strong>Free Tier</strong> (limited features).</li>
+                      <li>Scale with paid plans based on the number of tracked features, starting 
+                        from just $59 month.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Explore SaaS Plans &amp; Free Tier</button><br/><br/>
+                    
+                    <h6><strong>2. Deep Integration with Vertex AI Metadata:</strong></h6>
+                    
+                    <ul>
+                      <li>Enhance your Vertex AI environment with our specialized tools and 
+                        extensions for advanced lineage tracking and visualization.</li>
+                      <li>Priced affordably, starting at just $25 user month.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Enhance Vertex AI Lineage</button><br/><br/>
+                    
+                    <h6><strong>3. Implement Custom Tracking with Code:</strong></h6>
+                    
+                    <ul>
+                      <li>Quickly integrate robust lineage tracking into your existing data and 
+                        ML pipelines using our customizable code templates and libraries.</li>
+                      <li>Get started with a one-time purchase of $99.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Get Lineage Tracking Code</button><br/><br/>
+                    
+                    <h6><strong>4. Learn and Experiment in Ready-to-Code Environments:</strong></h6>
+                    
+                    <ul>
+                      <li>Our preconfigured <strong>Vertex AI Notebooks</strong> provide an ideal 
+                        environment to learn and experiment with feature lineage tracking best 
+                        practices.</li>
+                      <li>Priced by flexible <strong>compute usage</strong> on GCP.</li>
+                      <li>Option for a convenient one-time access fee of $149.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Launch a Preconfigured Notebook</button><br/><br/>
+                    
+                    <p><strong>Key Benefits:</strong></p>
+                    
+                    <ul>
+                      <li>Ensure reproducibility and auditability of your ML workflows.</li>
+                      <li>Understand data dependencies and potential impact of changes.</li>
+                      <li>Facilitate collaboration and knowledge sharing across teams.</li>
+                      <li>Improve governance and compliance for your ML systems.</li>
+                    </ul>
+                    
+                  </div>
+
+                  <div class="modal-footer bg-light">
+                    Need a Custom Solution or Enterprise Pricing? 
+                    <a href="https://github.com/keeyanajones/" target="_blank">Contact Me</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button : 9 Retrieval Argumented Generation Frameworks -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal9">
+              <strong>Retrieval Argumented Generation Frameworks</strong>
+            </button></li>
+
+            <!-- Modal : 9 Retrieval Argumented Generation Frameworks -->
+            <div class="modal" id="myModal9" tabindex="-1" 
+                  aria-labelledby="myModal9" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal9">
+                      Retrieval Argumented Generation Frameworks</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Tools and libraries designed to simplify the process of building 
+                      RAG pipelines. These frameworks significantly simplify the 
+                      development of powerful and knowledgeable aI applications. 
+                    </p>
+
+                    <h5><strong>Enhance Your LLMs with Context-Aware Generation Frameworks</strong></h5>
+
+                    <p>Build smarter, more accurate AI applications by grounding your language 
+                      models in external knowledge. Choose the RAG solution that fits your needs:</p>
+
+                    <h6><strong>1. End-to-End RAG Platform (SaaS):</strong></h6>
+
+                    <ul>
+                      <li>Easily build, deploy, and manage RAG pipelines with our intuitive, low-code 
+                        platform.</li>
+                      <li>Start exploring with our <strong>Free Tier</strong> (limited usage).</li>
+                      <li>Scale with paid plans based on your application needs, starting from just 
+                        $79 month.</li> 
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Explore SaaS Plans &amp; Free Tier</button><br/><br/>
+
+                    <h6><strong>2. Seamless Integration with Vertex AI Pipelines:</strong></h6>
+
+                    <ul>
+                      <li>Leverage pre-built and optimized RAG components directly within your 
+                        Vertex AI MLOps workflows.</li>
+                      <li>Flexible pricing <strong>per component execution</strong>.
+                      <li>Access our growing library of RAG components for a monthly subscription 
+                        of $49 month.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Integrate with Vertex AI</button><br/><br/>
+
+                    <h6><strong>3. Code-First RAG Implementation (Reusable Templates):</strong></h6>
+                    
+                    <ul>
+                      <li>Quickly implement highly customizable RAG pipelines using our well-documented 
+                      code templates and libraries (Python, LangChain, etc.).</li>
+                      <li>Get started with a one-time purchase of $129.</li>
+                    </ul><br/>
+                    
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Get RAG Code Template</button><br/><br/>
+
+                    <h6><strong>4. Hands-on RAG Learning (Preconfigured Notebooks):</strong></h6>
+
+                    <ul>
+                      <li>Our ready-to-use **Vertex AI Notebooks** provide a pre-configured 
+                        environment with examples to learn and experiment with RAG implementation 
+                        on GCP.</li>
+                      <li>Priced by flexible <strong>compute usage</strong> on Vertex AI.</li>
+                      <li>Option for a convenient one-time access fee of $199.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Launch a RAG Notebook</button><br/><br/>                    
+
+                    <p><strong>Key Benefits:</strong></p>
+
+                    <ul>
+                      <li>Improve the accuracy and reliability of LLM responses.</li>
+                      <li>Reduce hallucinations by grounding generation in factual data.</li>
+                      <li>Enhance the contextuality and relevance of AI applications.</li>
+                      <li>Accelerate the development and deployment of RAG-powered solutions.</li>
+                    </ul>
+                  
+                  </div>
+
+                  <div class="modal-footer bg-light">
+                    Need a Custom Solution or Enterprise Pricing? 
+                    <a href="https://github.com/keeyanajones/" target="_blank">Contact Me</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button : 10 Low Code/No Code Generative AI Platforms -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal10">
+              <strong>Low Code/No Code Generative AI Platforms</strong>
+            </button></li>
+
+            <!-- Modal : 10 Low Code/No Code Generative AI Platforms -->
+            <div class="modal" id="myModal10" tabindex="-1" 
+                  aria-labelledby="myModal10" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal10">
+                      Low Code/No Code Generative AI Platforms</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p> Enabling individuals with limited or no code skills to build 
+                      applications through visual interfaces and pre-built componenets.
+                    </p>
+
+                    <h5><strong>Unleash Your Creativity with Generative AI - No Code Required</strong></h5>
+
+                    <p>Empowering everyone to create amazing content, regardless of technical expertise.</p>
+
+                    <h6><strong>1. Effortless Creation (No-Code Platform):</strong></h6>
+
+                    <ul>
+                      <li>Generate text, images, code, and more with our intuitive visual interface.</li>
+                      <li>Start exploring with our generous <strong>Free Tier</strong> 
+                        (limited generations).</li>
+                      <li>Scale your creations with paid plans starting at just $29 month 
+                        (based on generation volume and features).</li>
+                    </ul><br/> 
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Start Creating for Free</button><br/><br/>
+
+                    <h6><strong>2. Build Custom GenAI Apps (Low-Code Toolkit):</strong></h6>
+
+                    <ul>
+                      <li>Accelerate your development with our SDK and visual components, designed for 
+                        rapid GenAI application building.</li>
+                      <li>Developer-focused plans start at $49 developer month, unlocking advanced 
+                        features and integrations.</li>
+                    </ul> <br/> 
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Explore Low-Code Toolkit</button><br/><br/>
+
+                    <h6><strong>3. Get Started Quickly on GCP (Preconfigured Notebooks):</strong></h6>
+
+                    <ul>
+                      <li>Quick launch into the world of low-code GenAI on Google Cloud with our 
+                        ready-to-use Vertex AI Notebooks.</li>
+                      <li>Flexible pricing based on <strong>compute usage</strong> on GCP.</li>
+                      <li>Option for a convenient one-time access fee of $79.</li>
+                    </ul> <br/> 
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Launch a GenAI Notebook on GCP</button><br/><br/>
+                    
+                    <p><strong>Key Benefits:</strong></p>
+
+                    <ul>
+                      <li>Generate high-quality content with ease.</li>
+                      <li>Build custom AI applications without extensive coding.</li>
+                      <li>Integrate generative AI into your existing workflows.</li>
+                      <li>Experiment and innovate quickly.</li>
+                    </ul>  
+
+                  </div>
+
+                  <div class="modal-footer bg-light">
+                    Need a Custom Solution or Enterprise Pricing? 
+                    <a href="https://github.com/keeyanajones/" target="_blank">Contact Me</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button : 11 Specialized AI applications -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal11">
+              <strong>Specialized AI Applications</strong>
+            </button></li>
+            
+            <!-- Modal : 11 Specialized AI applications -->
+            <div class="modal" id="myModal11" tabindex="-1" 
+                  aria-labelledby="myModal11" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal11">
+                      Specialized AI Applications</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Designed to address specific needs and challengens within 
+                      particular domains or industries.
+                    </p>
+
+                    <h5><strong>Unlock AI Power Tailored to Your Unique Needs</strong></h5>
+
+                    <p>Discover specialized AI applications designed to transform your business.</p>
+
+                    <ul>
+                      <li><strong>AI Solutions for [Specific Industry/Use Case 1]:</strong> 
+                        Drive efficiency and innovation. Starting from **\$XXX/month** for 
+                        [basic tier/features]. **Explore our plans.**</li>
+                      <li><strong>Custom AI for [Specific Industry/Use Case 2]:</strong> 
+                        Tailored to your specific challenges. **Request a personalized quote.**</li>
+                      <li><strong>Specialized AI for [Specific Function/Benefit]:</strong> 
+                        Achieve [key outcome] with AI built for your goals. **Schedule a 
+                        consultation to discuss pricing.**</li>
+                    </ul><br/>
+                      
+                    <p>Our pricing is designed to align with the specific value and impact we 
+                      deliver to your business. Contact us today for a personalized discussion 
+                      and proposal.</p>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Explore Princing Plans</button><br/><br/>
+                      
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Request a Custom Quote</button><br/><br/>
+                    
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Schedule a Consultation</button><br/><br/>
+                                        
+                  </div>
+
+                  <div class="modal-footer bg-light">                    
+                    <a href="https://github.com/keeyanajones/" target="_blank">
+                      Learn About Our Specialized Solutions</a>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button : 12 Customizable Monitoring Dashboards -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal12">
+              <strong>Customizable Monitoring Dashboards</strong>
+            </button></li>
+
+            <!-- Modal : 12 Customizable Monitoring Dashboards -->
+            <div class="modal" id="myModal12" tabindex="-1" 
+                  aria-labelledby="myModal12" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal12">
+                      Customizable Monitoring Dashboards</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Visual interfaces that allow users to tailor the information they see 
+                      regarding the performance, health, and status of systmes, application, 
+                      infrastructure, and business processes to gain specific insights.  
+                    </p>
+
+                    <h5><strong>Visualize Your Data, Your Way with Flexible Monitoring Dashboards</strong></h5>
+
+                    <p>Gain the tailored insights you need to optimize your AI/ML models, 
+                      infrastructure, and business metrics.</p>
+
+                    <h6><strong>1. Cloud-Based Monitoring Platform:</strong></h6>
+
+                    <ul>
+                      <li>Build and share unlimited custom dashboards with our intuitive 
+                        drag-and-drop interface.</li>
+                      <li>Start exploring with our generous <strong>Free Tier</strong> 
+                        (limited features).</li>
+                      <li>Scale with paid plans based on the number of users and advanced 
+                        features, starting from just $29/month.</li>
+                    </ul><br/>    
+                    
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Explore Platform Princing Plans &amp; Free Tier</button><br/><br/>
+
+                    <h6><strong>2. Seamlessly Integrated within AI/ML Platform:</strong></h6>
+
+                    <ul>
+                      <li>Enjoy powerful and customizable monitoring dashboards as part of 
+                        your existing AI/ML Platform subscription.</li>
+                      <li>Advanced dashboarding features are included in our 
+                        <strong>Pro and Enterprise plans</strong> (see pricing details).</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      See AI/ML Platform Platform Pricing</button><br/><br/>
+
+                    <h6><strong>3. Embeddable Dashboard SDK for Developers:</strong></h6>
+
+                    <ul>
+                      <li>Empower your own applications with our flexible and customizable dashboard 
+                        components.</li>
+                      <li>Developer-focused plans start at $49 developer month, unlocking advanced 
+                        integration capabilities.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Learn About Our Dashboard SDK</button><br/><br/>
+
+                    <h6><strong>4. Quick Start on Google Cloud (Vertex AI Notebooks):</strong></h6>
+
+                    <ul>
+                      <li>Quickly spin up preconfigured Vertex AI Notebooks with popular 
+                        visualization libraries to build custom dashboards on GCP.</li>
+                      <li>Priced by flexible <strong>compute usage</strong> on Vertex AI.</li>
+                      <li>Option for a convenient one-time access fee of $69.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Launch a Dashboarding Notebook on GCP</button><br/><br/>
+                    
+                    <p><strong>Key Benefits:</strong></p>
+                    
+                    <ul>
+                      <li>Create dashboards tailored to your specific needs and workflows.</li>
+                      <li>Gain real-time visibility into critical metrics.</li>
+                      <li>Proactively identify and address potential issues.</li>
+                      <li>Share insights and collaborate effectively with your team.</li>
+                    </ul>  
+
+                  </div>
+
+                  <div class="modal-footer bg-light">
+                    Need a Custom Solution or Enterprise Pricing? 
+                    <a href="https://github.com/keeyanajones/" 
+                       target="_blank">Contact Me</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button : 13 Advanced Drift Detection Mechanisms  -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal13">
+              <strong>Advanced Drift Detection Mechanisms</strong>
+            </button></li>
+
+            <!-- Modal : 13 Advanced Drift Detection Mechanisms  -->
+            <div class="modal" id="myModal13" tabindex="-1" 
+                  aria-labelledby="myModal13" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal13">
+                      Advanced Drift Detection Mechanisms </h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p> Beyond basic statistical comparisons for identifying changes in 
+                      data or model behavior over time.
+                      Gain nuance and timely understanding of data and models evolve in 
+                      production, enabling proactive maintenance and ensuring the continued 
+                      reliablity and accuracy of ai systems. 
+                    </p>
+
+                    <h5><strong>Proactively Detect and Mitigate Model Drift for Consistent Performance</strong></h5>
+
+                    <p>Ensure the reliability and accuracy of your AI/ML models with our advanced 
+                      drift detection solutions, designed for various needs and platforms.</p>
+
+                    <h6><strong>1. Intelligent Drift Monitoring Platform:</strong></h6>
+
+                    <ul>  
+                      <li>Leverage sophisticated algorithms to detect data, concept, and 
+                        prediction drift.</li>
+                      <li>Start with our <strong>Free Tier</strong> (limited models and checks).</li>
+                      <li>Scale with paid plans based on the number of models monitored and advanced 
+                        features, starting from just $49 month.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Explore Platform Plans &amp; Free Tier</button><br/><br/>
+
+                    <h6><strong>2. Seamlessly Integrated into AI/ML Platform:</strong></h6>
+
+                    <ul>
+                      <li>Benefit from advanced drift detection capabilities as a 
+                        core feature within our integrated AI/ML platform.</li>
+                      <li>Included in our <strong>Pro and Enterprise plans</strong> 
+                        (see detailed pricing).</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      See AI/ML Platform Pricing</button><br/><br/>
+                    
+                    <h6><strong>3. Embed Robust Drift Detection (SDK for Developers):</strong></h6>
+
+                    <ul>
+                      <li>Integrate our advanced drift detection algorithms directly into your 
+                        own ML monitoring systems and applications.</li>
+                      <li>Developer-focused plans start at $79 developer month, unlocking 
+                        comprehensive drift analysis tools.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Learn About Our Drift Detection SDK</button><br/><br/>
+
+                    <h6><strong>4. Quick Start on Google Cloud (Vertex AI Notebooks):</strong></h6>
+                    
+                    <ul>
+                      <li>Quickly set up and experiment with advanced drift detection techniques 
+                        on Vertex AI using our preconfigured notebooks.</li>
+                      <li>Priced by flexible <strong>compute usage</strong> on GCP.</li>
+                      <li>Option for a convenient one-time access fee of $99.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Launch a Drift Detection Notebook on GCP</button><br/><br/>
+                     
+                    <p><strong>Key Benefits:</strong></p>
+                    
+                    <ul>
+                      <li>Proactively identify and alert on various types of model drift.</li>
+                      <li>Minimize model performance degradation and ensure reliability.</li>
+                      <li>Gain insights into the reasons behind drift for faster remediation.</li>
+                      <li>Integrate seamlessly with your existing ML workflows and platforms.</li>
+                    </ul>  
+
+                  </div>
+
+                  <div class="modal-footer bg-light">
+                    Need a Custom Solution or Enterprise Pricing? 
+                    <a href="https://github.com/keeyanajones/" target="_blank">Contact Me</a>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button : 14 Online Feature Serving Optimizations -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal14">
+              <strong>Online Feature Serving Optimizations</strong>
+            </button></li>
+
+            <!-- Modal : 14 Online Feature Serving Optimizations -->
+            <div class="modal" id="myModal14" tabindex="-1" 
+                  aria-labelledby="myModal14" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal14">
+                      Online Feature Serving Optimizations</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>For deploying machine learning models that require realtime predictions.  
+                      Meet the low latency and high throuhput requirements of realtime machine 
+                      learning applications. 
+                    </p>
+
+                    <h5><strong>Deliver Real-Time Features with Unmatched Efficiency</strong></h5>
+
+                    <p>Supercharge your online ML applications with our suite of feature serving 
+                      optimization solutions.</p>
+
+                    <h6><strong>1. Intelligent Feature Serving Platform:</strong></h6>
+
+                    <ul>
+                      <li>Reduce latency and serving costs with our smart caching and pre-computation 
+                        engine.</li>
+                      <li>Pay only for what you use, with usage-based pricing starting at just 
+                        $0.01 per 1,000 requests.</li>
+                    </ul><br/>   
+                    
+                    <button type="button" class="btn btn-sm btn-dark">
+                      See Detailed Platform Pricing</button><br/><br/>
+
+                   <h6><strong>2. Optimized Serving for Vertex AI Feature Store:</strong></h6>
+
+                   <ul>
+                      <li>Enhance your Vertex AI Feature Store performance with our optimized serving 
+                        layer, included in our <strong>Enterprise plans</strong> or available as an add-on 
+                        starting at $49 month.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Explore Vertex AI Optimization</button><br/><br/>
+
+                    <h6><strong>3. High-Performance Optimization Libraries:</strong></h6>
+
+                    <ul>
+                      <li>Integrate our efficient caching and data handling libraries directly 
+                        into your serving applications.</li>
+                      <li>Flexible licensing options, with a one-time license starting at $99 or
+                         a subscription at $29 month.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Get Optimization Libraries</button><br/><br/>
+                    
+                    <h6><strong>4. Quick Deploy Optimized GCP Infrastructure:</strong></h6>
+
+                    <ul>
+                      <li>Accelerate your setup with our preconfigured Terraform templates for 
+                        deploying optimized serving infrastructure on Google Cloud.</li>
+                      <li>Get started with a one-time purchase of $149.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Get Infrastructure Templates</button><br/><br/>
+                    
+                    <h6><strong>5. Experiment and Learn with Notebooks:</strong></h6>
+
+                    <ul>
+                      <li>Quick prototype and evaluate optimization techniques on Vertex AI 
+                        using our preconfigured notebooks.</li>
+                      <li>Priced by flexible <strong>compute usage</strong> on GCP, plus a 
+                        $79 one-time access fee.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Launch Optimization Notebook</button><br/><br/>
+                    
+                    <p><strong>Key Benefits:</strong></p>
+
+                    <ul>
+                      <li>Achieve ultra-low latency for real-time predictions.</li>
+                      <li>Significantly reduce feature serving costs.</li>
+                      <li>Improve the scalability and reliability of your online ML systems.</li>
+                      <li>Integrate seamlessly with your existing infrastructure and workflows.</li>
+                    </ul> 
+                  </div>
+
+                  <div class="modal-footer bg-light">
+                    Need a Custom Solution or Enterprise Pricing? 
+                    <a href="https://github.com/keeyanajones/" target="_blank">Contact Me</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button : 15 Recommendation System Builders -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal15">
+              <strong>Recommendation System Builders</strong>
+            </button></li>
+
+            <!-- Modal : 15 Recommendation System Builders -->
+            <div class="modal" id="myModal15" tabindex="-1" 
+                  aria-labelledby="myModal15" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal15">
+                      Recommendation System Builders</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p> Platforms, frameworks, and tools designed to simplify the 
+                      process of creating, deploying, and managing Recommendation systems.
+                      Democratizing access to personalizeation technologies, enabling 
+                      businesses of all sizes to enhance user engagement, drive conversations, 
+                      and improve customer satisfaction.
+                    </p>
+
+                    <h5><strong>Build Powerful & Personalized Recommendation Engines for Your 
+                      Applications</strong></h5>
+
+                    <p>Create engaging user experiences with our flexible suite of recommendation 
+                      building tools, catering to various skill levels and deployment needs.</p>
+
+                    <h6><strong>1. Visually Build & Deploy (No-Code/Low-Code Builder):</strong></h6>
+
+                    <ul>
+                      <li>Design and launch your recommendation system with our intuitive visual 
+                        interface.</li>
+                      <li>Start exploring with our <strong>Free Tier</strong> (limited data and 
+                        recommendations).</li>
+                      <li>Scale with paid plans based on your usage and features, starting from just 
+                        $69 month.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Start Building for Free</button><br/><br/>
+
+                    <h6><strong>2. Build Custom Solutions (Developer SDK):</strong></h6>
+
+                    <ul>
+                      <li>Integrate our flexible recommendation algorithms and tools directly into 
+                        your applications.</li>
+                      <li>Choose between a one-time license starting at $149 or a subscription at 
+                        $39 month.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Explore Developer SDK</button><br/><br/>
+
+                    <h6><strong>3. Quick Start on Google Cloud (Preconfigured Notebooks):</strong></h6>
+
+                    <ul>
+                      <li>Leverage the power of Vertex AI with our ready-to-use notebooks, pre-loaded 
+                        with relevant libraries and examples.</li>
+                      <li>Priced by flexible <strong>compute usage</strong> on GCP, plus a 
+                        $99 one-time access fee.</li>
+                    </ul><br/>  
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Launch a Recommendation Notebook</button><br/><br/>  
+
+                    <h6><strong>4. Accelerate Deployment (Specialized Templates):</strong></h6>
+
+                    <ul>
+                      <li>Quickly deploy recommendation systems for common use cases 
+                        (e.g., product, content, media) with our customizable templates.</li>
+                      <li>Get started with a one-time purchase from $49 per template.</li>
+                    </ul><br/>  
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Browse Recommendation Templates</button><br/><br/>  
+
+                    <p><strong>Key Benefits:</strong></p>
+
+                    <ul>
+                      <li>Increase user engagement and conversion rates.</li>
+                      <li>Deliver personalized experiences at scale.</li>
+                      <li>Leverage a variety of proven recommendation algorithms.</li>
+                      <li>Integrate seamlessly with your existing applications and infrastructure.</li>
+                    </ul>
+                    
+                  </div>
+
+                  <div class="modal-footer bg-light">
+                    Need a Custom Solution or Enterprise Pricing? 
+                    <a href="https://github.com/keeyanajones/" target="_blank">Contact Me</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Button : 16 Time Series Forecasting Solutions -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal16">
+              <strong>Time Series Forecasting Solutions</strong>
+            </button></li>
+
+            <!-- Modal : 16 Time Series Forecasting Solutions -->
+            <div class="modal" id="myModal16" tabindex="-1" 
+                  aria-labelledby="myModal16" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal16">
+                      Time Series Forecasting Solutions</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Vertex Forecast provides both AutoML for automated model selction and training 
+                      and more configurable options using sequence-to-sequence models. Its ARIMA_PLUS 
+                      pipeline is designed to automatically handle common time series challenges like 
+                      missing data and outliers.  
+                    </p>
+
+                    <h5><strong>Predict the Future with Our Flexible Time Series Forecasting Solutions</strong></h5>
+
+                    <p>Unlock accurate insights and optimize your planning with our range of forecasting 
+                      tools, designed for various expertise levels.</p>
+
+                    <h6><strong>1. Automated Forecasting Platform:</strong></h6>
+
+                    <ul>  
+                      <li>Effortlessly generate accurate forecasts with our intuitive AI-powered platform.</li>
+                      <li>Start with our <strong>Free Tier</strong> (limited time series and data).</li>
+                      <li>Scale with paid plans based on your forecasting needs, starting from just 
+                        $79 month.</li>
+                    </ul><br/>
+                    
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Start Forecasting for Free</button><br/><br/>
+
+                    <h6><strong>2. Build Custom Solutions (Developer SDK):</strong></h6>
+
+                    <ul>
+                      <li>Integrate our powerful time series algorithms and tools directly into your
+                         applications.</li>
+                      <li>Choose between a one-time license starting at $199 or a subscription at $49 
+                        month.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Explore Developer SDK</button><br/><br/>
+
+                    <h6><strong>3. Quick Start on Google Cloud (Preconfigured Notebooks):</strong></h6>
+
+                    <ul>  
+                      <li>Leverage the power of Vertex AI with our ready-to-use notebooks, 
+                        pre-loaded with relevant libraries and examples.</li>
+                      <li>Priced by flexible <strong>compute usage</strong> on GCP, plus a
+                         $99 one-time access fee.</li>
+                    </ul><br/>  
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Launching a Forecasting Notebook</button><br/><br/>
+
+                    <h6><strong>4. Accelerate Deployment (Specialized Templates):</strong></h6>
+
+                    <ul>
+                      <li>Quickly deploy forecasting solutions for common business needs
+                         (e.g., demand, sales) with our customizable templates.</li>
+                      <li>Get started with a one-time purchase from $99 per template.</li>
+                    </ul><br/>  
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Browse Forecasting Templates</button><br/><br/>
+
+                    <p><strong>Key Benefits:</strong></p>
+
+                    <ul>
+                      <li>Improve forecast accuracy for better decision-making.</li>
+                      <li>Automate the forecasting process to save time and resources.</li>
+                      <li>Leverage a variety of advanced forecasting models.</li>
+                      <li>Integrate seamlessly with your existing data and systems.</li>
+                    </ul>
+
+                  </div>
+
+                  <div class="modal-footer bg-light">
+                    Need a Custom Solution or Enterprise Pricing? 
+                    <a href="https://github.com/keeyanajones/" target="_blank">Contact Me</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Button : 17 NLP Solutions -->
+            <li><button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal17">
+              <strong>Natural Language Processing Solutions</strong>
+            </button>
+
+            <!-- Modal : 17 NLP Solutions -->
+            <div class="modal" id="myModal17" tabindex="-1" 
+                  aria-labelledby="myModal17" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal17">
+                      NLP (Natural Language Processing) Solutions</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Designed to enable computers to understand, intrpret, and generate human
+                      language.
+                    </p>
+
+                    <h5><strong>Unlock the Power of Language with Our Flexible NLP Solutions</strong></h5>
+
+                    <p>Transform text into actionable insights and build intelligent 
+                      language-based applications with our comprehensive suite of tools.</p>
+
+                    <h6><strong>1. Comprehensive NLP Platform:</strong></h6>
+
+                    <ul>
+                      <li>Access a wide range of powerful NLP APIs for text analysis, generation, 
+                        translation, and more.</li>
+                      <li>Get started with our flexible pay-as-you-go pricing at just 
+                        $0.001 per 1,000 characters processed.</li>
+                      <li>Scale your operations with subscription plans offering higher volumes 
+                        and advanced features, starting from $99/month.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Explore NLP Platform Pricing</button><br/><br/>
+
+                    <h6><strong>2. Developer-Friendly NLP Libraries & SDKs:</strong></h6>
+
+                    <ul>
+                      <li>Integrate advanced NLP capabilities directly into your applications with 
+                        our robust libraries (Python, Java, etc.).</li>
+                      <li>Choose the licensing that fits your needs: a one-time license starting 
+                        at $199 or a flexible subscription from $49/month.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Get NLP Libraries &amp; SDK's</button><br/><br/>
+
+                    <h6><strong>3. Quick Start NLP on Google Cloud:</strong></h6>
+
+                    <ul>
+                      <li>Leverage the power of Vertex AI with our preconfigured notebooks, 
+                        designed for rapid NLP prototyping and development.</li>
+                      <li>Priced by flexible <strong>compute usage</strong> on GCP, plus a $79 one-time 
+                        access fee.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Launch an NLP Notebook on GCP</button><br/><br/>
+
+                    <h6><strong>4. Specialized NLP Models & APIs:</strong></h6>
+
+                    <ul>
+                      <li>Tap into our fine-tuned NLP models for industry-specific tasks like 
+                        legal document analysis or medical text processing.</li>
+                      <li>Access specialized APIs with usage-based pricing starting at 
+                        $0.005 per 1,000 characters or explore custom enterprise solutions.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                     Discover Specialized NLP Models</button><br/><br/>
+
+                    <h6><strong>5. No-Code/Low-Code NLP Development:</strong></h6>
+
+                    <ul>  
+                      <li>Build and deploy simple NLP applications like chatbots and text 
+                        classifiers with our intuitive visual platform.</li>
+                      <li>Subscription plans start at $79 month (based on application features 
+                        and usage).</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                      Try Our No-code NLP Platform</button><br/><br/>
+
+                    <p><strong>Key Benefits:</strong></p>
+
+                    <ul>
+                      <li>Extract valuable insights from unstructured text data.</li>
+                      <li>Automate language-based tasks to improve efficiency.</li>
+                      <li>Build intelligent applications with natural language understanding 
+                        and generation.</li>
+                      <li>Scale your NLP capabilities with our flexible pricing options.</li>
+                    </ul>  
+
+                  </div>
+
+                  <div class="modal-footer bg-light">
+                    Need a Custom NLP Solution or Enterprise Pricing? 
+                    <a href="https://github.com/keeyanajones/" target="_blank">Contact Me</a>                     
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            and
+
+            <!-- Button : 18 Vision Solutions -->
+            <button type="button" class="btn btn-outline-dark btn-sm" 
+              data-bs-toggle="modal" data-bs-target="#myModal18">
+              <strong>Vision Solutions</strong>
+            </button></li>
+
+            <!-- Modal : 18 Vision Solutions -->
+            <div class="modal" id="myModal18" tabindex="-1" 
+                  aria-labelledby="myModal18" aria-hidden="true">
+              <div class="modal-dialog modal-lg bg-light">
+                <div class="modal-content">
+                  <div class="modal-header text-bg-dark">
+                    <h5 class="modal-title" id="myModal18">
+                      Vision Solutions</h5>
+                    <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p> Empower machines to see and interpret the visual world leading 
+                      to a wide array of applications across industries.
+                    </p>
+
+                    <h5><strong>Transform Visual Data into Actionable Insights with Our Vision Solutions</strong></h5>
+
+                    <p>Unlock the power of computer vision with our flexible suite of tools, catering 
+                      to various needs and deployment scenarios.</p>
+
+                    <h6><strong>1. Scalable Cloud Vision API Platform:</strong></h6>
+
+                    <ul>  
+                      <li>Leverage powerful pre-trained APIs for object detection, image classification, 
+                        OCR, and more.</li>
+                      <li>Get started with our flexible pay-as-you-go pricing at just 
+                        $0.001 per image analyzed.</li>
+                      <li>Scale your applications with subscription plans offering higher volumes
+                         and advanced features, starting from $149 month.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                     Explore Cloud Vision API Pricing</button><br/><br/>
+                    
+                    <h6><strong>2. Flexible Vision AI Toolkit & SDK:</strong></h6>
+
+                    <ul>
+                      <li>Build custom vision applications with our robust toolkit (Python, C++, etc.).</li>
+                      <li>Choose the licensing that fits your development needs: a one-time license 
+                        starting at $299 or a flexible subscription from $69 month.</li>
+                    </ul><br/>  
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                     Get Our Vision AI Toolkit</button><br/><br/>
+
+                    <h6><strong>3. Quick Start Vision AI on Google Cloud:</strong></h6>
+
+                    <ul>
+                      <li>Leverage the power of Vertex AI with our preconfigured notebooks, 
+                        optimized for vision AI development and experimentation.</li>
+                      <li>Priced by flexible <strong>compute usage</strong> on GCP, plus a 
+                        $99 one-time access fee.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                     Launch a Vision AI Notebook on GCP</button><br/><br/>
+                    
+                    <h6><strong>4. Specialized Vision AI Models & APIs:</strong></h6>
+                    
+                    <ul>
+                      <li>Tap into our fine-tuned vision models for industry-specific tasks 
+                        like manufacturing quality control or retail analytics.</li>
+                      <li>Access specialized APIs with usage-based pricing starting at 
+                        $0.005 per image analyzed or explore custom enterprise solutions.</li>
+                    </ul><br/>
+
+                    <button type="button" class="btn btn-sm btn-dark">
+                     Discover Specialized Vision AI Models</button><br/><br/>
+
+                    <h6><strong>5. Intelligent Edge AI Vision Solutions:</strong></h6>
+                    
+                    <ul>
+                      <li>Deploy real-time visual intelligence on edge devices for applications 
+                        like security and automation.</li>
+                      <li>Software licenses start at $49 per device/stream per month, with 
+                        flexible hardware + subscription bundles available.</li>
+                    </ul><br/>
+                    
+                    <button type="button" class="btn btn-sm btn-dark">
+                     Learn About Edge AI Pricing</button><br/><br/>
+
+                    <p><strong>Key Benefits:</strong></p>
+
+                    <ul>  
+                      <li>Automate visual inspection and analysis.</li>
+                      <li>Extract valuable insights from images and videos.</li>
+                      <li>Build intelligent applications with computer vision capabilities.</li>
+                      <li>Scale your vision solutions with flexible pricing options.</li>
+                    </ul>  
+                    
+                  </div>
+                  <div class="modal-footer bg-light">
+                    Need a Custom Vision Solution or Enterprise Pricing? 
+                    <a href="https://github.com/keeyanajones/" target="_blank">Contact Me</a> 
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+
+          <p class="fw-bold">I also provide freelance services:
+            <a class="btn btn-sm btn-outline-dark" target="_blank"
               href="https://www.fiverr.com/keeyanajones">
             <i class="fa-solid fa-sack-dollar small"></i> Fiverr</a>
-
-            <a class="btn btn-lg btn-outline-success" target="_blank" 
-              href="https://www.guru.com/freelancers/keeyana-jones">
-            <i class="fa-solid fa-sack-dollar small"></i> Freelancer </a>
-
-            <a class="btn btn-lg btn-outline-success" target="_blank" 
-              href="https://cloud.google.com/marketplace">
-            <i class="fa-brands fa-google"></i> Marketplace </a>
-
-            I also provide freelance services on the platforms listed below to businesses:
+            <a class="btn btn-sm btn-outline-dark" target="_blank" 
+              href="https://github.com/keeyanajones/marketplace">
+            <i class="fa-brands fa-google"></i> My Marketplace </a>
           </p>
-
-
         </div>
         <div class="row row-cols-1 row-cols-sm-2 g-4">
           <div class="d-flex flex-column gap-2">
             <div
               class="feature-icon-small d-inline-flex align-items-center 
-                     justify-content-center text-bg-success bg-gradient 
+                     justify-content-center text-bg-dark bg-gradient 
                      fs-4 rounded-3">
-              <i class="fa-solid fa-people-carry-box fa-3x"></i>
+              <i class="fa-solid fa-people-carry-box fa-6x"></i>
             </div>
-            <h5 class="fw-semibold mb-0">Cross-Functional Collabs</h5>
-            <p class="text-muted">Collaboration between technical and business teams.</p>
+            <h5 class="fw-semibold mb-0">Pipeline Components</h5>
+            <p>Self contained reusable building blocks that perform 
+              specific tasks within an AI workflow.</p>
           </div>
   
           <div class="d-flex flex-column gap-2">
             <div
               class="feature-icon-small d-inline-flex align-items-center 
-              justify-content-center text-bg-success bg-gradient
+              justify-content-center text-bg-dark bg-gradient
                fs-4 rounded-3">
-               <i class="fa-solid fa-users-viewfinder fa-3x"></i>
+               <i class="fa-solid fa-users-viewfinder fa-6x"></i>
             </div>
-            <h5 class="fw-semibold mb-0">Freelancing Projects</h5>
-
-            <ul>
-              <li><i class="fa-solid fa-comments-dollar text-success fa-flip"></i><sup>Fiverr</sup> Cloud Architect </li>
-              <li><i class="fa-solid fa-comments-dollar text-danger"></i><sup>Fiverr</sup> AI / MLOps / DevOps </li>
-              <li><i class="fa-solid fa-comments-dollar text-danger"></i><sup>Freelancer</sup> Data Scientist </li>
-            </ul>
+            <h5 class="fw-semibold mb-0">Governance Frameworks</h5>
+            <p>Structured systems to oversee the entire lifecycle of their 
+            models, statistical and financial.</p>
           </div>
   
           <div class="d-flex flex-column gap-2">
             <div
               class="feature-icon-small d-inline-flex align-items-center 
-                     justify-content-center text-bg-success bg-gradient 
+                     justify-content-center text-bg-dark bg-gradient 
                      fs-4 rounded-3">
-              <i class="fa-solid fa-wand-magic-sparkles fa-3x"></i>
+              <i class="fa-solid fa-robot fa-6x"></i>
             </div>
-            <h5 class="fw-semibold mb-0">Customer-Centric Agility</h5>
-            <p class="text-muted">
-              Build a team that can adapt to changing and understand customer needs.
+            <h5 class="fw-semibold mb-0">Prebuilt AI Agents</h5>
+            <p>Ready to use, automomus entities to perform 
+              tasks or sets of tasks with minimal human interventions.
             </p>
           </div>
   
           <div class="d-flex flex-column gap-2">
             <div
               class="feature-icon-small d-inline-flex align-items-center 
-                     justify-content-center text-bg-success bg-gradient 
+                     justify-content-center text-bg-dark bg-gradient 
                      fs-4 rounded-3">
-              <i class="fa-solid fa-chalkboard-user fa-3x"></i>
+              <i class="fa-solid fa-chalkboard-user fa-6x"></i>
             </div>
-            <h5 class="fw-semibold mb-0">Specialized Development</h5>
-            API, Python, Ruby on Rails, Scala, Swift, SQL/NoSQL, 
-            Typescript</p>
+            <h5 class="fw-semibold mb-0">Explainablity Visualization</h5>
+            <p>Graphical or interactive ways to understand
+              aspects of a machine learning models behavior.
+            </p>
           </div>
         </div>
       </div>
@@ -434,7 +2105,7 @@
               <img src="assets/images/portfolio-plugin-thumb.jpg">
   
               <div class="card-body">
-                <h2>MARKETPLACE</h2>
+                <h2>MY MARKETPLACE</h2>
                 <p class="card-text">
                   A digital store where users can discover, deploy, and 
                   manage a wide range of third-party software solutions 
@@ -525,7 +2196,7 @@
       <a id="blog"></a>
       <div class="container">
         <header class="blog-header lh-1 py-3">
-          <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="row flex-nowrap justify-content-between align-items-center bg-light">
             <div class="col-4 pt-1">          
             </div>
             <div class="col-4 text-center">
@@ -542,20 +2213,20 @@
         <hr/>
     
         <!-- blog nav -->        
-        <div class="nav-scroller py-1 mb-2">
+        <div class="nav-scroller py-1 mb-2 bg-light">
           <nav class="nav d-flex justify-content-between">
-            <a class="p-2 link-secondary" href="#latestBlog">Latest</a>
-            <a class="p-2 link-secondary" href="#gamingBlog">Gaming</a>
-            <a class="p-2 link-secondary" href="#developmentBlog">Development</a>
-            <a class="p-2 link-secondary" href="#trainingBlog">Training</a>
-            <a class="p-2 link-secondary" href="#aiBlog">AI / ML</a>
-            <a class="p-2 link-secondary" href="#realityBlog">Reality</a>
+            <a class="p-2 link-secondary" href="#latestBlog">LATEST</a>
+            <a class="p-2 link-secondary" href="#gamingBlog">GAMING</a>
+            <a class="p-2 link-secondary" href="#developmentBlog">DEVELOPMENT</a>
+            <a class="p-2 link-secondary" href="#trainingBlog">TRAINING</a>
+            <a class="p-2 link-secondary" href="#aiBlog">AI / ML/ DEVOPS</a>
+            <a class="p-2 link-secondary" href="#realityBlog">REALITY</a>
           </nav>
         </div>
         <!-- ./ blog nav -->
       </div>
 
-      <a id="april2025"></a>
+      <a id="may2025"></a>
       
       <!-- blog headline -->
       <div class="p-4 p-md-5 mb-4 rounded text-bg-dark sassy">
@@ -574,9 +2245,9 @@
  
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="bg-light bg-gradient row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-primary">Gaming</strong>
+              <strong class="d-inline-block mb-2 text-primary">GAMING</strong>
               <h3 class="mb-0">New Releases</h3>
               <div class="mb-1 text-muted">4/2025</div>
               <p class="card-text mb-auto">
@@ -590,10 +2261,11 @@
             </div>
           </div>
         </div>
+
         <div class="col-md-6">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="bg-light bg-gradient row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
             <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block mb-2 text-success">Development</strong>
+              <strong class="d-inline-block mb-2 text-success">DEVELOPMENT</strong>
               <h3 class="mb-0">Game Server</h3>
               <div class="mb-1 text-muted">4/2025</div>
               <p class="mb-auto">
@@ -1223,16 +2895,19 @@ errors = client.insert_rows_json(table_id, rows_to_insert)
         </div>  
           
         <!-- Sidebar -->
-        <div class="col-md-4">
+        <div class="col-md-4 bg-light">
           <div class="position-sticky" style="top: 2rem;">    
             <div class="p-4"><h1>BLOG</h1> 
               <hr/>
               <h4 class="fst-italic">Archives</h4>
               <ol class="list-unstyled mb-0">
-                <li><i class="fa-solid fa-calendar-days"></i> 
-                    <a href="#april2025">
-                      <strong>April 2025</strong></a></li>                                
-                  <hr/>                
+                <li><i class="fa-solid fa-calendar-days fa-2x"></i> 
+                    <a href="#may2025"><strong>MAY 2025</strong></a></li>                                
+                <hr/>                
+                
+                <small>
+                <li> - <i class="fa-solid fa-calendar"></i> 
+                    <a href="/blog">April 2025</a></li>                
                 <li> - <i class="fa-solid fa-calendar"></i> 
                     <a href="/blog">March 2025</a></li>                
                 <li> - <i class="fa-solid fa-calendar"></i> 
@@ -1253,8 +2928,7 @@ errors = client.insert_rows_json(table_id, rows_to_insert)
                        July 2024</li>
                 <li> - <i class="fa-solid fa-calendar"></i> 
                        June 2024</li>
-                <li> - <i class="fa-solid fa-calendar"></i> 
-                       May 2024</li>
+                </small>  
               </ol>
             </div>
     
@@ -1338,161 +3012,163 @@ errors = client.insert_rows_json(table_id, rows_to_insert)
     <hr/>
 
     <!-- Contact -->
-    <div class="col-lg-11 mx-auto p-4 py-md-5"> 
-      <a id="contact"></a>
-      <hr/>
-        <h1>Let's Connect <i class="fa-solid fa-user-plus"></i></h1>
-        <p class="fs-5 col-md-8">
-          Have a question or need feedback? I am easy to find. <br/>
-          Have questions, opportunities, need support, or just say hello!            
-        </p>
-    
-        <div class="mb-5">     
-          <a href="https://www.Trello.com/" target="_blank">
-            <i class="fa-brands fa-trello"></i>
-            on Trello</a>
- 
-          <a href="https://www.slack.com" target="_blank">
-            <i class="fa-brands fa-slack"></i>
-            on Slack</a>
-
-          <a href="https://www.jira.com" target="_blank">
-            <i class="fa-brands fa-jira"></i>
-            on Jira</a>
-            
-          <hr/>
-          <p class="d-flex align-items-start mb-1">
-            <i class="fa-brands fa-yahoo"></i>
-              <a href="mailto:keeyanajones@yahoo.com" 
-                 target="_blank">keeyanajones@yahoo.com</a> <hr/>
-            <i class="fa-brands fa-google"></i>
-              <a href="mailto:keeyanajones@gmail.com" 
-                 target="_blank">keeyanajones@gmail.com</a>
-                 
+    <section class="container">
+      <div class="col-lg-12 mx-auto p-4 py-md-5"> 
+        <a id="contact"></a>
+        <hr/>
+          <h1>Let's Connect <i class="fa-solid fa-user-plus"></i></h1>
+          <p class="fs-5 col-md-10">
+            Have a question or need feedback? I am easy to find. <br/>
+            Have questions, opportunities, need support, or just say hello!            
           </p>
-          <hr/> 
-        </div>
+      
+          <div class="mb-5">     
+            <a href="https://www.Trello.com/" target="_blank">
+              <i class="fa-brands fa-trello"></i>
+              on Trello</a>
+  
+            <a href="https://www.slack.com" target="_blank">
+              <i class="fa-brands fa-slack"></i>
+              on Slack</a>
 
-        <div class="row g-5">
-          <div class="col-md-6">
-            <h2>Contact Information</h2>
-            <p>Reach out to me on one of these platforms.</p>
-            
-            <ul class="icon-list ps-0">
-              <li class="d-flex align-items-start mb-1">
-                <i class="fa-brands fa-linkedin"></i> 
-                <a href="https://www.linkedin.com/in/keeyana-jones-5a275514" 
-                   target="_blank">@KeeyanaJones</a></li>
-
-              <li class="d-flex align-items-start mb-1">
-                <i class="fa-brands fa-youtube"></i> 
-                <a href="https://www.youtube.com/channel/UC18-Qy1FulT6NCI88mqyRfQ" 
-                   target="_blank">@KeeyanaJones</a></li>
-
-              <li class="d-flex align-items-start mb-1">
-                <i class="fa-brands fa-discord"></i> 
-                <a href="https://discord.gg/NbRTUyF3tP" 
-                   target="_blank">@Agent_Kee#3648</a></li>
-
-              <li class="d-flex align-items-start mb-1">
-                <i class="fa-brands fa-tiktok"></i>
-                <a href="https://www.tiktok.com/@keeyanajones" 
-                   target="_blank">@keeyanajones</a></li>
-
-              <li class="d-flex align-items-start mb-1">
-                <i class="fa-brands fa-instagram"></i>
-                <a href="https://instagram.com/keeyanajones" 
-                   target="_blank">@keeyanajones</a></li>
-            
-              <li class="d-flex align-items-start mb-1">
-                <i class="fa-brands fa-twitter"></i>
-                <a href="https://twitter.com/keeyanajones" 
-                   target="_blank">@keeyanajones</a></li>  
-
-              <li class="d-flex align-items-start mb-1">
-                <i class="fa-brands fa-facebook"></i>
-                <a href="https://facebook.com/keeyana.jones" 
-                   target="_blank">@keeyanajones</a> </li>
-            </ul>
+            <a href="https://www.jira.com" target="_blank">
+              <i class="fa-brands fa-jira"></i>
+              on Jira</a>
+              
+            <hr/>
+            <p class="d-flex align-items-start mb-1">
+              <i class="fa-brands fa-yahoo"></i>
+                <a href="mailto:keeyanajones@yahoo.com" 
+                  target="_blank">keeyanajones@yahoo.com</a> <hr/>
+              <i class="fa-brands fa-google"></i>
+                <a href="mailto:keeyanajones@gmail.com" 
+                  target="_blank">keeyanajones@gmail.com</a>
+                  
+            </p>
+            <hr/> 
           </div>
-    
-          <div class="col-md-6">
-            <h2>Payment Methods</h2>
-            <p>Fiverr and Freelancer have several payment methods available, 
-              dependent on the device used, country of 
-              residence, and regulatory permissions. To see which are 
-              applicable, see the list or click on the links below.</p>
-    
-              <button type="button" class="btn btn-sm btn-primary position-relative">
-                Credit/Debit Card
-                <span class="position-absolute top-0 start-100 translate-middle 
-                      p-2 bg-success border border-light rounded-circle">
-                  <span class="visually-hidden">Yes alerts</span>
-                </span>
-              </button>
 
-              <button type="button" class="btn btn-sm btn-primary position-relative">
-                PayPal
-                <span class="position-absolute top-0 start-100 translate-middle 
-                             p-2 bg-success border border-light rounded-circle">
-                  <span class="visually-hidden">Yes alerts</span>
-                </span>
-              </button>
+          <div class="row g-5">
+            <div class="col-md-6">
+              <h2>Contact Information</h2>
+              <p>Reach out to me on one of these platforms.</p>
+              
+              <ul class="icon-list ps-0">
+                <li class="d-flex align-items-start mb-1">
+                  <i class="fa-brands fa-linkedin"></i> 
+                  <a href="https://www.linkedin.com/in/keeyana-jones-5a275514" 
+                    target="_blank">@KeeyanaJones</a></li>
 
-              <button type="button" class="btn btn-sm btn-primary position-relative">
-                Apple Pay
-                <span class="position-absolute top-0 start-100 translate-middle 
-                             p-2 bg-success border border-light rounded-circle">
-                  <span class="visually-hidden">Yes alerts</span>
-                </span>
-              </button>
+                <li class="d-flex align-items-start mb-1">
+                  <i class="fa-brands fa-youtube"></i> 
+                  <a href="https://www.youtube.com/channel/UC18-Qy1FulT6NCI88mqyRfQ" 
+                    target="_blank">@KeeyanaJones</a></li>
 
-              <button type="button" class="btn btn-sm btn-primary position-relative">
-                Google Pay
-                <span class="position-absolute top-0 start-100 translate-middle 
-                             p-2 bg-success border border-light rounded-circle">
-                  <span class="visually-hidden">Yes alerts</span>
-                </span>
-              </button>
+                <li class="d-flex align-items-start mb-1">
+                  <i class="fa-brands fa-discord"></i> 
+                  <a href="https://discord.gg/NbRTUyF3tP" 
+                    target="_blank">@Agent_Kee#3648</a></li>
 
-              <button type="button" class="btn btn-sm btn-primary position-relative">
-                Wire Transfer
-                <span class="position-absolute top-0 start-100 translate-middle 
-                             p-2 bg-warning border border-light rounded-circle">
-                  <span class="visually-hidden">Yes alerts</span>
-                </span>
-              </button>
+                <li class="d-flex align-items-start mb-1">
+                  <i class="fa-brands fa-tiktok"></i>
+                  <a href="https://www.tiktok.com/@keeyanajones" 
+                    target="_blank">@keeyanajones</a></li>
 
-              <button type="button" class="btn btn-sm btn-primary position-relative">
-                Cash App  
-                <span class="position-absolute top-0 start-100 translate-middle 
-                             p-2 bg-success border border-light rounded-circle">
-                  <span class="visually-hidden">Yes alerts</span>
-                </span>
-              </button>
+                <li class="d-flex align-items-start mb-1">
+                  <i class="fa-brands fa-instagram"></i>
+                  <a href="https://instagram.com/keeyanajones" 
+                    target="_blank">@keeyanajones</a></li>
+              
+                <li class="d-flex align-items-start mb-1">
+                  <i class="fa-brands fa-twitter"></i>
+                  <a href="https://twitter.com/keeyanajones" 
+                    target="_blank">@keeyanajones</a></li>  
 
-            <p class="text-danger">
-              <i class="fa-solid fa-triangle-exclamation"></i> 
-              <sub><strong>NOTE:</strong> 
-              I currently do not accept crypto as a payment method.</sub></p>
+                <li class="d-flex align-items-start mb-1">
+                  <i class="fa-brands fa-facebook"></i>
+                  <a href="https://facebook.com/keeyana.jones" 
+                    target="_blank">@keeyanajones</a> </li>
+              </ul>
+            </div>
+      
+            <div class="col-md-6">
+              <h2>Payment Methods</h2>
+              <p>Fiverr and Freelancer have several payment methods available, 
+                dependent on the device used, country of 
+                residence, and regulatory permissions. To see which are 
+                applicable, see the list or click on the links below.</p>
+      
+                <button type="button" class="btn btn-sm btn-primary position-relative">
+                  Credit/Debit Card
+                  <span class="position-absolute top-0 start-100 translate-middle 
+                        p-2 bg-success border border-light rounded-circle">
+                    <span class="visually-hidden">Yes alerts</span>
+                  </span>
+                </button>
 
-            <ul class="icon-list ps-0">
-              <li class="d-flex align-items-start mb-1">    
-                <a href="https://paypal.me/keeyanajones?country.x=US&locale.x=en_US"
-                   target="_blank">
-                   <i class="fa-brands fa-paypal"></i> Paypal.me</a></li>        
-              <li class="d-flex align-items-start mb-1">
-                <a href="https://www.freelancer.com/feesandcharges" 
-                   target="_blank">
-                      Freelancer Fees and Charges</a></li>
-              <li class="d-flex align-items-start mb-1">
-                <a href="https://www.fiverr.com/support/articles/360050216753-Payment-methods?segment=seller" 
-                   target="_blank">
-                    Fiverr Payment Methods</a></li>
-            </ul>
+                <button type="button" class="btn btn-sm btn-primary position-relative">
+                  PayPal
+                  <span class="position-absolute top-0 start-100 translate-middle 
+                              p-2 bg-success border border-light rounded-circle">
+                    <span class="visually-hidden">Yes alerts</span>
+                  </span>
+                </button>
+
+                <button type="button" class="btn btn-sm btn-primary position-relative">
+                  Apple Pay
+                  <span class="position-absolute top-0 start-100 translate-middle 
+                              p-2 bg-success border border-light rounded-circle">
+                    <span class="visually-hidden">Yes alerts</span>
+                  </span>
+                </button>
+
+                <button type="button" class="btn btn-sm btn-primary position-relative">
+                  Google Pay
+                  <span class="position-absolute top-0 start-100 translate-middle 
+                              p-2 bg-success border border-light rounded-circle">
+                    <span class="visually-hidden">Yes alerts</span>
+                  </span>
+                </button>
+
+                <button type="button" class="btn btn-sm btn-primary position-relative">
+                  Wire Transfer
+                  <span class="position-absolute top-0 start-100 translate-middle 
+                              p-2 bg-warning border border-light rounded-circle">
+                    <span class="visually-hidden">Yes alerts</span>
+                  </span>
+                </button>
+
+                <button type="button" class="btn btn-sm btn-primary position-relative">
+                  Cash App  
+                  <span class="position-absolute top-0 start-100 translate-middle 
+                              p-2 bg-success border border-light rounded-circle">
+                    <span class="visually-hidden">Yes alerts</span>
+                  </span>
+                </button>
+
+              <p class="text-danger">
+                <i class="fa-solid fa-triangle-exclamation"></i> 
+                <sub><strong>NOTE:</strong> 
+                I currently do not accept crypto as a payment method.</sub></p>
+
+              <ul class="icon-list ps-0">
+                <li class="d-flex align-items-start mb-1">    
+                  <a href="https://paypal.me/keeyanajones?country.x=US&locale.x=en_US"
+                    target="_blank">
+                    <i class="fa-brands fa-paypal"></i> Paypal.me</a></li>        
+                <li class="d-flex align-items-start mb-1">
+                  <a href="https://www.freelancer.com/feesandcharges" 
+                    target="_blank">
+                        Freelancer Fees and Charges</a></li>
+                <li class="d-flex align-items-start mb-1">
+                  <a href="https://www.fiverr.com/support/articles/360050216753-Payment-methods?segment=seller" 
+                    target="_blank">
+                      Fiverr Payment Methods</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-    </div>    
+      </div>  
+    </section>  
     <!-- .contact -->
 
     <!-- footer  -->
@@ -1500,8 +3176,8 @@ errors = client.insert_rows_json(table_id, rows_to_insert)
         Created with Bootstrap &middot; &copy; 2025
       </footer>
     <!-- .footer -->
-
     <script src="assets\js\bootstrap.bundle.min.js"></script>
+    <script src="assets\js\popover.js"></script>
     <script src="assets\js\bootstrap.min.js"></script>    
     <script src="assets\js\fontawesome.js"></script>
   </body>
