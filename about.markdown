@@ -27,8 +27,8 @@ For the last 6 years, I've pivoted my 30 year foundation into the AI space, movi
 - Brand Sentinel Document Engine: Advanced NLP for brand consistency and document integrity
 - DetroitOmnifield AI: Hyper local AI integration for the Detroit tech ecosystem.
 - ValueVision AI: Computer vision and data analysis for value stream mapping
-- Idiosyncratic Mimicry (Gemini/GCP): An experimental deep dive into persona driven AI using Googles Gemini Flash Models  
-- The Launch Pad Foundry
+- Idiosyncratic Mimicry (Gemini): An experimental deep dive into persona driven AI using Google's Gemini Flash Models  
+- [The Launchpad Foundry](https://thelaunchpadfoundry.com)
 - Motor City Mesh
   
 
