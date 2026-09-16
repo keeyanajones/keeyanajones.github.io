@@ -104,7 +104,29 @@
                   <label for="email"><strong>Email Address </strong>
                     <sup class="text-danger"><strong>*</strong></sup></label>
                   <input type="email" class="form-control" name="email" id="email" 
-                        placeholder="name@example.com" required>            
+                        placeholder="name@example.com" required> 
+                  <label for="type"><strong>Type of Inquiry:</strong>
+                    <sup class="text-danger"><strong>*</strong></sup></label>
+                  <input type="email" class="form-control" name="email" id="email" 
+                        placeholder="name@example.com" required> 
+
+                  <select name="type" id="type" class="form-control">
+                    <option> --- TYPE of INQUIRY --- </option>
+                    <option value="direct_w2">Direct W-2 Position</option>
+                    <option value="direct_b2b">Direct B2B Consulting</option>
+                    <option value="product_support">Product Support</option>
+                  </select>
+                  
+                  <label for="company_name"><strong>Company / Organization Name: [Required]</strong>
+                    <sup class="text-danger"><strong>*</strong></sup></label>
+                  <input type="text" class="form-control" name="company_name" id="company_name" 
+                        placeholder="Company XYZ" required> 
+
+
+                  <label for="direct_manager"><strong>Direct Internal Recruiter / Hiring Manager:</strong>
+                    <sup class="text-danger"><strong>*</strong></sup></label>
+                  <input type="radio" class="form-control" name="direct_manager" id="direct_manager" value="Yes"> 
+                  <input type="radio" class="form-control" name="direct_manager" id="direct_manager" value="No">                 
                         <br/>        
                 </div>
                 <button class="w-100 btn btn-md btn-secondary" type="submit">                 
@@ -2948,7 +2970,13 @@
           <p class="fs-5 col-md-10">
             Have a question or need feedback? Have questions, opportunities, need support, or just say hello!            
             Available for targeted remote architectural consulting, fractional CTO
-            engagements, and senior cloud-native engineering sprints.
+            engagements, and senior cloud-native engineering sprints. 
+            
+            <sub><strong>Notice to Recruiters: </strong>
+              I only engage in direct W-2 employment opportunities with internal corporate talent acquisition 
+              teams, or direct B2B consulting engagements via The Launchpad Foundry. Unsolicited third-party 
+              agency or C2C recruitment solicitations will not receive a response.</sub><br/>
+            
             <a href="https://thelaunchpadfoundry.com" target="_blank">
               Visit The Launchpad Foundry
             </a>
