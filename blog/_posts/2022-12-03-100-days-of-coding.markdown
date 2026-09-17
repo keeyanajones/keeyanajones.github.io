@@ -32,9 +32,9 @@ I am using the following plugins and tools to create the MERN Stack apps:
 - ReactJS
 - Visual Studio Code
 
-The MERN Stack Apps being built will estimate, manage, implement, administer, deploy, and monitor with via AWS. In addition, freelance development, agents, bots, features, solutions, mods, extensions, plugins, themes, expansions, and other related server content is also being explored.
+The MERN Stack Apps being built will estimate, manage, implement, administer, deploy, and monitor via AWS. In addition, freelance development, agents, bots, features, solutions, mods, extensions, plugins, themes, expansions, and other related server content is also being explored.
 
-Finally, I plan to post update on my progress regularly here and be more consistent highlighting the essential topics and tasks related to my development. But, if I have skipped anything feel free to check out my github Repo's or send me a message.
+Finally, I plan to post updates on my progress regularly here and be more consistent highlighting the essential topics and tasks related to my development. But, if I have skipped anything feel free to check out my github Repo's or send me a message.
 
 
 Check out the [Mongodb Developer Github](https://github.com/mongodb-developer/mern-stack-example) for more info on how to get the most out of a Mern Stack. 

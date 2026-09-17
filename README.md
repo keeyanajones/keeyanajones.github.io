@@ -1,58 +1,32 @@
-# **Keeyana Jones** 
----
+# Keeyana Jones - Blog & Portfolio
 
-## **keeyanajones.github.io**
+This repository contains the source code for my personal blog, built with Jekyll. It tracks my journey from full-stack development to specializing in Spatial Intelligence, AI, and Autonomous DevOps.
 
----
-The [keeyanajones.github.io]("https://keeyanajones.github.io/") repository serves as a comprehensive portfolio resource for my latest works specifically designed for capturing what I am building, deploying, and managing on Internet or with Google Cloud's Vertex AI.
+## 🚀 Core Focus Areas
 
-The goal is to provide a structured approach to publicly building, deploying, and maintaining high-quality, scalable, and reliable solutions using the power of Gemini, Vertex AI, and more.
+- **Spatial Intelligence & XR:** Exploring Android XR, Samsung Galaxy XR, and Snapdragon-powered immersive experiences.
+- **Generative AI & Agents:** Working with Gemini 3, Vertex AI Agent Builder, and Model Context Protocol (MCP).
+- **Autonomous DevOps:** Building self-healing pipelines using GKE, Cloud Run, and AIOps.
+- **Side Hustle Mastery:** Documenting the transition from developer to tech-entrepreneur.
 
----
-### 🚀 The Launchpad Foundry: Current Services
+## 🛠 Tech Stack
 
-Your foundry is currently focused on Industrial AI solutions for the physical economy, with a preview phase running through December 31, 2026.  
+- **Frontend:** React, Jekyll (Liquid)
+- **Backend:** Node.js, Express, MongoDB (MERN)
+- **Cloud:** Google Cloud Platform (Vertex AI, Cloud Run, GKE), AWS
+- **Languages:** JavaScript, Python, Go
 
-  - Grounded Knowledge Workflow SOPs: Designing RAG-based architectures using Spanner Graph to ensure non-hallucinatory responses.  
+## 📖 Notable Series
 
-  - Vibe Checker: Technical auditing of AI outputs for brand consistency and "human-centric" logic.  
+- **100 Days of Coding:** A journey through the MERN stack and skill acquisition in late 2022/early 2023.
+- **Side Hustle Mastery:** Researching and implementing profitable passive income streams.
+- **The 2026 Shift:** A look at the future of spatial computing and agentic energy.
 
-  - Staff Augmentation: Integrating specialized GCP-native architects or agentic "staffing agents" into existing sprint cycles.  
+## 📫 Connect with Me
 
-  - Technical Training: Hands-on workshops covering Vertex AI, Agent Builder, and cinematically-driven asset creation with Veo.  
-
-### 🛠️ Active GCP Portfolio & Experiments
-
-You’ve been bridging legacy infrastructure with autonomous agentic workflows across several domains:
-
-#### Industrial & Environmental
-
-   - Agentic Maintenance Digital Twin (AMDT): Real-time synchronization of physical machinery with virtual models via Pub/Sub and Vertex AI to forecast the remaining useful life of assets.  
-
-   - Lake Erie AI Sentinel: A predictive MLOps experiment using Smoothed Particle Hydrodynamics (SPH) to forecast toxic algal blooms.  
-
-   - VisionValue: An industrial visual inspection pipeline for real-time assembly validation and assembly defect detection.  
-
-#### Civic & Logistics
-
-  - DetroitOmniField: A RegTech framework designed to automate the monitoring of Detroit-specific compliance mandates and executive orders.  
-
-  -  Motor City Mesh: A supply chain integration layer that links legacy Transportation Management Systems (TMS) with AI-driven fleet routing.  
-
-  - 48-Hour Crisis Navigator: An agentic orchestration engine designed to automate Social Determinants of Health (SDoH) casework and resource mapping.  
-
-#### Data Infrastructure & Federation
-
-  - Cross-Cloud Lakehouse Federation: Structuring BigQuery Iceberg federated catalogs to safely query remote Iceberg REST Catalogs (Databricks Unity Catalog and AWS Glue) across multi-cloud environments.
-
-#### Gaming & Media
-
-  - Project Ronnie (Aether Economy): An autonomous economy experiment in Minecraft using Agones on GKE to power NPC trading systems.  
-
-  - TaggedStream: Real-time video enrichment that uses AI agents to convert live feeds into searchable metadata layers.
+- **GitHub:** [@keeyanajones](https://github.com/keeyanajones)
+- **LinkedIn:** [Insert Link Here]
+- **Twitter/X:** [Insert Handle Here]
 
 ---
-### 📈 Foundations & Technical Evolution
-
-- **MERN Full-Stack Roots:** Built a strong baseline in modular systems using MongoDB, Express.js, React, Node.js, and AWS architecture during my foundational "100 Days of Coding" track.
-- **AI & Spatial Computing Pivot:** Successfully pivoted from legacy full-stack applications into high-performance cloud data architectures, Vertex AI agents, and immersive/extended realities.
+*“As a man thinketh, so is his room mapped.”*
