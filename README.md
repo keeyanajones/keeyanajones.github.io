@@ -9,6 +9,13 @@ This repository contains the source code for my personal blog, built with Jekyll
 - **Autonomous DevOps:** Building self-healing pipelines using GKE, Cloud Run, and AIOps.
 - **Side Hustle Mastery:** Documenting the transition from developer to tech-entrepreneur.
 
+## 📁 Project Structure
+
+*   `blog/_posts/`: Contains all technical and personal blog entries.
+*   `_layouts/`: Jekyll templates for posts and pages.
+*   `assets/`: Images, CSS, and other static files.
+*   `README.md`: Repository overview and focus areas.
+
 ## 🛠 Tech Stack
 
 - **Frontend:** React, Jekyll (Liquid)
@@ -26,7 +33,9 @@ This repository contains the source code for my personal blog, built with Jekyll
 
 - **GitHub:** [@keeyanajones](https://github.com/keeyanajones)
 - **LinkedIn:** [Insert Link Here]
-- **Twitter/X:** [Insert Handle Here]
+- **Twitch.tv:** [Insert Handle Here]
+- **Youtube.** [Insert Handle Here]
+- **Discord:** [Insert Handle Here]
 
 ---
 *“As a man thinketh, so is his room mapped.”*
