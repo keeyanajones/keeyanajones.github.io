@@ -127,4 +127,14 @@
     height: 32rem;
 }
 
-    
+
+.modal-body .table  td {
+    font-size: small;
+}
+
+.modal-body .form-control {
+    width: 50pt;
+    display: inline-block;
+}
+
+
