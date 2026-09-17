@@ -41,8 +41,18 @@ You’ve been bridging legacy infrastructure with autonomous agentic workflows a
 
   - 48-Hour Crisis Navigator: An agentic orchestration engine designed to automate Social Determinants of Health (SDoH) casework and resource mapping.  
 
+#### Data Infrastructure & Federation
+
+  - Cross-Cloud Lakehouse Federation: Structuring BigQuery Iceberg federated catalogs to safely query remote Iceberg REST Catalogs (Databricks Unity Catalog and AWS Glue) across multi-cloud environments.
+
 #### Gaming & Media
 
   - Project Ronnie (Aether Economy): An autonomous economy experiment in Minecraft using Agones on GKE to power NPC trading systems.  
 
   - TaggedStream: Real-time video enrichment that uses AI agents to convert live feeds into searchable metadata layers.
+
+---
+### 📈 Foundations & Technical Evolution
+
+- **MERN Full-Stack Roots:** Built a strong baseline in modular systems using MongoDB, Express.js, React, Node.js, and AWS architecture during my foundational "100 Days of Coding" track.
+- **AI & Spatial Computing Pivot:** Successfully pivoted from legacy full-stack applications into high-performance cloud data architectures, Vertex AI agents, and immersive/extended realities.
