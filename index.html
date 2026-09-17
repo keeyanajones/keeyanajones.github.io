@@ -183,58 +183,11 @@
       <div class="row">         
         <h1 class="pb-2 fw-bold border-bottom text-bg-dark">
           The Launchpad Foundry        
-          <a class="btn btn-sm btn-outline-light" 
-           data-bs-toggle="modal" data-bs-target="#launchpad">
-          <i class="fa-solid fa-clipboard fa-2x"></i> </a>
 
           <a class="btn btn-sm btn-outline-light" target="_blank"
            href="https://thelaunchpadfoundry.com">
           <i class="fa-solid fa-external-link fa-2x"></i> </a>
         </h1>
-
-        <div class="modal fade modal-lg" id="launchpad" tabindex="-1" 
-             aria-labelledby="launchpadLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header bg-light">
-                <h5 class="model-title" id="launchpadLabel">
-                  <strong>The Launch Pad Foundry</strong></h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-              </div>
-              <div class="modal-body">                          
-                <h6><strong>The Detroit Builds</strong></h6>
-                <p>Industrial AI Solutions for Detroit. From Data ingestion to Predictive Modeling. Book your Preview Slot (May 1st - December 31st 2026)</p>
-                <p>We like positive energy, organic, honest flaws of the human experience; and build AI that works for workers, factories, logistics, and mortgages—real businesses in the physical economy.</p>
-
-                <ul>
-                  <li>The Website ( ): Captures user intent or data, pushes a work order into a pub/sub topic. Serves as molding station where raw data or client requirements enter the system. Using Cloud Run, the site can trigger asynchronous jobs.</li>
-                  <li>The Orchestrator ( ): Heart of foundry, uses gcp workflows (yaml) to manually define the steps. Watches the pub/sub topic and decides which agent to wake up next. Coordinates between architect and quality Gem.</li>
-                  <li>The Gems ( ): act as your artisans. Can prime specific Gems with distinct system instructions:</li>
-                  <ul>                    
-                    <li>The Gem: to draft technical specs.</li>
-                    <li>The Gem: to audit code for deployment readiness. A human centric dashboard showing the logic steps each agent took (crucial for trust).</li>
-                    <li>The Gem: gives a prompt to transform messy ideas into structured JSON requirements.</li>
-                    <li>The Gem: a separate instance that only looks for errors or hallucinations in the output of the first gem.</li>
-                  </ul>
-                  <li>The Application ( ): the core logic, built on Vertex AI. Uses Agentic Workflows to decide when to call specific tools, query a BigQuery dataset, or generate a new model iteration. Automated testing agentic loop writes and runs unit tests for code it generates before seeing it.</li>
-                </ul> 
-
-                <hr/>  
-
-                <h6><strong>TAGs</strong></h6> 
-
-                <p><span class="badge text-bg-dark">ai</span> 
-                  <span class="badge text-bg-secondary">stats</span>
-                  <span class="badge text-bg-dark">gcp</span> 
-                  <span class="badge text-bg-dark">google cloud</span>
-                  <span class="badge text-bg-dark">adjacent</span>
-                  <span class="badge text-bg-secondary">games</span>
-                  <span class="badge text-bg-secondary">agent</span> 
-                  <span class="badge text-bg-secondary">addon</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
       
           <!-- SERVICES -->
           <div class="col-md-6 d-flex flex-column align-items-start gap-2 bg-white text-bg-light">  
@@ -276,7 +229,7 @@
 
             <ul class="list-unstyled">        
                      
-              <li><a class="btn btn-dark fw-bold"
+              <li><a class="btn btn-outline-dark fw-bold"
                     data-bs-toggle="modal" data-bs-target="#technicalConsultation"> 
                 🫗 Technical Consultation</a>                                       
                 <div class="modal fade modal-lg" id="technicalConsultation" tabindex="-1" 
@@ -331,7 +284,7 @@
                 </div>                      
               </li>
 
-              <li><a class="btn btn-dark fw-bold"
+              <li><a class="btn btn-outline-dark fw-bold"
                     data-bs-toggle="modal" data-bs-target="#technicalSprint"> 
                 🏃 Technical Sprint</a>                                       
                 <div class="modal fade modal-lg" id="technicalSprint" tabindex="-1" 
@@ -377,7 +330,7 @@
                 </div>                      
               </li>
 
-              <li><a class="btn btn-dark fw-bold"
+              <li><a class="btn btn-outline-dark fw-bold"
                     data-bs-toggle="modal" data-bs-target="#systemReview"> 
                 🫠 System Review</a>                                       
                 <div class="modal fade modal-lg" id="systemReview" tabindex="-1" 
@@ -427,7 +380,7 @@
                 </div>                      
               </li>
 
-              <li><a class="btn btn-dark fw-bold"
+              <li><a class="btn btn-outline-dark fw-bold"
                     data-bs-toggle="modal" data-bs-target="#enterpriseRoadmap"> 
                 🔥 Enterprise Roadmap</a>                                       
                 <div class="modal fade modal-lg" id="enterpriseRoadmap" tabindex="-1" 
