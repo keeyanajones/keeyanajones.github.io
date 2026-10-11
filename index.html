@@ -597,7 +597,7 @@
                             
                           <hr/>
 
-                          <p><strong>>WHAT'S INCLUDED (Configuration Files & Runbooks):</strong></p>
+                          <p><strong>WHAT'S INCLUDED (Configuration Files & Runbooks):</strong></p>
 
                           <ul>                          
                             <li>GitHub Actions Workflows: Pre-written .github/workflows YAML files optimized for continuous integration and automated deployments.</li>
@@ -606,6 +606,8 @@
                             <li>GCP Deployment Targets: Out-of-the-box deployment configurations targeting Google Cloud Run (for containerized agentic APIs) and Vertex AI.</li>
                             <li>Pipeline Runbook: Clear documentation on setting up GitHub repository secrets, configuring workload identity federation with Google Cloud, and triggering automated builds.</li>
                           </ul>
+                          
+                          <hr/>
 
                           <p><strong>WHY USE THIS BLUEPRINT?</strong></p>
                           <p>Manual deployments are a liability when working with complex systems and large 
@@ -618,7 +620,7 @@
                             <li>A GitHub repository to host your application code.</li>
                             <li>A Google Cloud Platform (GCP) project (pairs seamlessly with the Landing Zone blueprint).</li>
                             <li>Basic familiarity with Docker and version control.</li>
-                            <li><a href="https://ko-fi.com/s/4bb7e39bc3" target="_blank">
+                            <li><a href="https://ko-fi.com/s/e36b026c30" target="_blank">
                               Buy Now On Ko-fi</a></li></br>
 
                             <p>Delivery: A direct download link to the repository archive (.zip) is provided immediately upon purchase.</p>
@@ -638,216 +640,178 @@
                 </li>                       
 
                 <li><a class="btn btn-sm btn-dark"
-                      data-bs-toggle="modal" data-bs-target="#healthcareInitiative">
-                      <i class="fa-solid fa-clipboard"></i>Data Serialization Ingestion
+                      data-bs-toggle="modal" data-bs-target="#serializationIngestion">
+                      📥 Serialization & Ingestion Toolkit
                     </a>
-                    <div class="modal fade modal-lg" id="healthcareInitiative" tabindex="-1" 
-                        aria-labelledby="healthcareInitiativeLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header bg-light">
-                            <h5 class="model-title" id="healthcareInitiativeLabel">
-                              <strong>The Community Care Nexus (Healthcare SDoH Initiative)</strong></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                          </div>
-                          <div class="modal-body">                          
-                            <p><strong>Overview</strong></p>
-                            <p>A centralized coordination hub designed to address Social Determinants of Health (SDoH)
-                              by connecting healthcare providers with community resource networks. This initiative focuses 
-                              on the whole person care model, using AI to identify non clinical barriers to health such as 
-                              housing instability or food insecurity and automating the referral process to local Detroit 
-                              service providers.
-                            </p>
+                  <div class="modal fade modal-lg" id="serializationIngestion" tabindex="-1" 
+                      aria-labelledby="serializationIngestionLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header bg-light">
+                          <h5 class="model-title" id="serializationIngestionLabel">
+                            <strong>📥 Serialization & Ingestion Toolkit</strong></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">                          
+                          <p><strong>Overview</strong></p>
+                          <p>Enterprise-grade scripts for schema validation, high-throughput serialization, and idempotent data ingestion.</p>
+                          <p>Data pipelines fail when they encounter "unexpected" data. Whether you are dealing with inconsistent JSON payloads from external APIs or high-frequency event streams, this toolkit provides the validation layer needed to ensure only clean, schema-compliant data ever reaches your database.</p>
+                          <p>Built on Trench Logic principles, these utilities focus on idempotency (safely retrying without duplicates) and strict schema enforcement, ensuring your downstream systems remain stable under heavy, messy, real-world data loads.</p>
 
-                            <hr/>
+                          <hr/>
 
-                            <p><strong>Services Offered</strong></p>
+                          <p><strong>WHAT'S INCLUDED (Hardened Utilities):</strong></p>
 
-                            <ul>
-                              <li><strong>Predictive Risk Stratification:</strong> Utilizing Vertex AI to identify high risk 
-                                patient populations based on socio economic data points.</li>
-                              <li><strong>Automated Referral Pathways:</strong> Intelligent matching of patient needs to 
-                                verified community resources and non profits.</li>  
-                              <li><strong>Closed Loop Tracking:</strong> Secure monitoring of referral outcomes to ensure 
-                                patients successfully receive the support they were bridged to.  
-                            </ul>
+                          <ul>
+                            <li><strong>Serialization Utilities:</strong> Optimized Python and Go scripts for high-speed Pydantic/Protobuf serialization, minimizing CPU overhead during ingestion.</li>
+                            <li><strong>Validation Engine:</strong> Pre-configured schema validators that reject "dirty" data before it ever hits your database (preventing database constraint violations).</li>
+                            <li><strong>Dead Letter Queue (DLQ) Logic:</strong> Standardized scripts to catch and isolate failed ingestion records for manual inspection without crashing the pipeline.</li>
+                            <li><strong>Idempotent Ingestion Patterns:</strong> SQL and Python patterns to ensure that your database state remains consistent even if a pipeline job restarts mid-process.</li>
+                            <li><strong>Performance Benchmarks:</strong> Scripts to measure serialization latency so you can tune your pipeline for sub-millisecond throughput.</li>
+                          </ul>
 
-                            <hr/>  
+                          <hr/>  
 
-                            <p><strong>Pricing</strong></p>
+                          <p><strong>WHY USE THIS BLUEPRINT?</strong></p>
+                          <p>Most data pipelines fail because they assume incoming data is "perfect." This toolkit forces your pipeline to treat every incoming packet as a potential threat. By automating the validation process, you reduce your on-call fatigue, prevent database corruption, and ensure your analytics remain accurate.</p>
 
-                            <ul>
-                              <li><strong>Health System Integration:</strong> Annual enterprise license based on patient population
-                                size.</li>
-                              <li><strong>Grant Funded Pilot:</strong> Specialized pricing for non profit community health 
-                                organizations and local government initiatives.</li>  
-                            </ul>
+                          <p><strong>PREREQUISTES:</strong></p>
+                          <ul>
+                            <li>An existing ingestion target (PostgreSQL, Cloud Spanner, Pub/Sub, etc.).</li>
+                            <li>Basic experience with Python or the target language of your pipeline.</li>
+                            <li><a href="https://ko-fi.com/s/50f777eadd" target="_blank">
+                              Buy Now On Ko-fi</a></li></br>
+                          </ul>
 
-                            <p><strong>Deliverables</strong></p>
+                          <hr/>
 
-                            <ul>
-                              <li><strong>Nexus Dashboard:</strong> A HIPAA compliant portal for caseworkers and clinicians to manage 
-                                social interventions.</li>
-                              <li><strong>Community Impact Report:</strong> Automated data visualization showing regional health 
-                                improvements and resource utilization.</li>
-                              <li><strong>Interoperability Layer:</strong> FHIR complient for seamless integration with major 
-                                Electronic Health Record (EHR) systems.</li>
-                            </ul>
-
-                            <hr/>
-
-                            <p><strong>TAGs</strong></p> 
-                            <p><span class="badge text-bg-dark">HealthcareIT</span> 
-                              <span class="badge text-bg-secondary">SDoH</span>
-                              <span class="badge text-bg-dark">VertexAI</span> 
-                              <span class="badge text-bg-dark">FHIR</span>
-                              <span class="badge text-bg-dark">DetroitHealth</span></p>
-                          </div>
+                          <p><strong>TAGs</strong></p> 
+                          <p><span class="badge text-bg-dark">serialization</span> 
+                            <span class="badge text-bg-secondary">ingestion</span>
+                            <span class="badge text-bg-dark">VertexAI</span> 
+                            <span class="badge text-bg-dark">data</span>
+                            <span class="badge text-bg-dark">validation</span></p>
                         </div>
                       </div>
-                    </div>                       
+                    </div>
+                  </div>                       
                 </li>                       
-                <li><a class="btn btn-sm btn-dark"
-                      data-bs-toggle="modal" data-bs-target="#healthcareInitiative">
-                      <i class="fa-solid fa-clipboard"></i>Webhook Receivers
-                    </a>
-                    <div class="modal fade modal-lg" id="healthcareInitiative" tabindex="-1" 
-                        aria-labelledby="healthcareInitiativeLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header bg-light">
-                            <h5 class="model-title" id="healthcareInitiativeLabel">
-                              <strong>The Community Care Nexus (Healthcare SDoH Initiative)</strong></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                          </div>
-                          <div class="modal-body">                          
-                            <p><strong>Overview</strong></p>
-                            <p>A centralized coordination hub designed to address Social Determinants of Health (SDoH)
-                              by connecting healthcare providers with community resource networks. This initiative focuses 
-                              on the whole person care model, using AI to identify non clinical barriers to health such as 
-                              housing instability or food insecurity and automating the referral process to local Detroit 
-                              service providers.
-                            </p>
 
-                            <hr/>
+                <li><a class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#webhookReceivers">
+                    🌐 Webhook Receiver Boilerplates</a>
+                  <div class="modal fade modal-lg" id="webhookReceivers" tabindex="-1" 
+                      aria-labelledby="webhookReceiversLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header bg-light">
+                          <h5 class="model-title" id="webhookReceiversLabel">
+                            <strong>🌐 Webhook Receiver Boilerplates</strong></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">                          
+                        <p><strong>Overview</strong></p>
+                        <p>Event-driven, hardened server architecture for secure signature verification, idempotent processing, and high-volume queuing.</p>
+                        <p>Webhooks are an asynchronous nightmare if handled incorrectly. Network retries lead to duplicate deliveries, and a failure to respond in time results in lost events. This boilerplate provides a production-tested gateway that decouples receipt from processing, ensuring that every event is verified, captured, and safely queued for downstream execution.</p>
+                        <p>Built on Trench Logic principles, this receiver is designed to make your integration "boring"—because it handles the retries, signature validation, and deduplication automatically, so your core services don't have to.</p>
 
-                            <p><strong>Services Offered</strong></p>
+                        <hr/>
 
-                            <ul>
-                              <li><strong>Predictive Risk Stratification:</strong> Utilizing Vertex AI to identify high risk 
-                                patient populations based on socio economic data points.</li>
-                              <li><strong>Automated Referral Pathways:</strong> Intelligent matching of patient needs to 
-                                verified community resources and non profits.</li>  
-                              <li><strong>Closed Loop Tracking:</strong> Secure monitoring of referral outcomes to ensure 
-                                patients successfully receive the support they were bridged to.  
-                            </ul>
+                        <p><strong>WHAT'S INCLUDED:</strong></p>
 
-                            <hr/>  
+                        <ul>
+                          <li><strong>Signature Verification Middleware:</strong> Pre-written security handlers for HMAC/SHA256 signature verification. (Hardens your endpoint against spoofing/replay attacks).</li>
+                          <li><strong>Idempotency Engine:</strong> Database-level deduplication patterns using event-unique IDs to ensure that "at-least-once" delivery never results in "double-processing."</li>
+                          <li><strong>Fast-Ack Infrastructure:</strong> Logic to validate, verify, and persist events to a queue in under 10ms, returning a 202 Accepted to prevent provider timeouts.</li>
+                          <li><strong>Poison Pill & DLQ Logic:</strong> Automatic isolation of malformed payloads or failing tasks into a Dead Letter Queue (DLQ) for manual forensic inspection.</li>
+                          <li><strong>Observability Hooks:</strong> Pre-configured logging for latency, signature failure rates, and ingestion throughput.</li>
+                        </ul>
 
-                            <p><strong>Pricing</strong></p>
+                        <hr/>  
 
-                            <ul>
-                              <li><strong>Health System Integration:</strong> Annual enterprise license based on patient population
-                                size.</li>
-                              <li><strong>Grant Funded Pilot:</strong> Specialized pricing for non profit community health 
-                                organizations and local government initiatives.</li>  
-                            </ul>
+                        <p><strong>WHY USE THIS BLUEPRINT?</strong></p>
+                        <p>Custom-rolling a webhook receiver is where most teams inject their first critical bugs. This boilerplate provides a standard "Ingress Gateway" pattern that protects your application from the chaotic nature of third-party delivery services.</p>
 
-                            <p><strong>Deliverables</strong></p>
+                        <p><strong>PREREQUISTES:</strong></p>
+                        <ul>
+                          <li>An existing event queue (Google Pub/Sub, RabbitMQ, or Redis).</li>
+                          <li>A target environment (Cloud Run or GKE recommended).</li>
+                          <li>A basic understanding of HMAC/Secret management.</li>
+                          <li><a href="https://ko-fi.com/s/2fbd65854d" target="_blank">
+                            Buy Now On Ko-fi</a></li></br>
+                        </ul>
 
-                            <ul>
-                              <li><strong>Nexus Dashboard:</strong> A HIPAA compliant portal for caseworkers and clinicians to manage 
-                                social interventions.</li>
-                              <li><strong>Community Impact Report:</strong> Automated data visualization showing regional health 
-                                improvements and resource utilization.</li>
-                              <li><strong>Interoperability Layer:</strong> FHIR complient for seamless integration with major 
-                                Electronic Health Record (EHR) systems.</li>
-                            </ul>
+                        <hr/>
 
-                            <hr/>
-
-                            <p><strong>TAGs</strong></p> 
-                            <p><span class="badge text-bg-dark">HealthcareIT</span> 
-                              <span class="badge text-bg-secondary">SDoH</span>
-                              <span class="badge text-bg-dark">VertexAI</span> 
-                              <span class="badge text-bg-dark">FHIR</span>
-                              <span class="badge text-bg-dark">DetroitHealth</span></p>
-                          </div>
+                        <p><strong>TAGs</strong></p> 
+                        <p><span class="badge text-bg-dark">webhook</span> 
+                          <span class="badge text-bg-secondary">receiver</span>
+                          <span class="badge text-bg-dark">VertexAI</span> 
+                          <span class="badge text-bg-dark">cloudrun</span>
+                          <span class="badge text-bg-dark">gke</span></p>
                         </div>
                       </div>
-                    </div>                       
+                    </div>
+                  </div>                       
                 </li>                       
  
-                <li><a class="btn btn-sm btn-dark"
-                      data-bs-toggle="modal" data-bs-target="#healthcareInitiative">
-                      <i class="fa-solid fa-clipboard"></i>Gemini API/CLI Wrapper
+                <li><a class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#geminiWrapper">
+                  ✦ Gemini API/CLI Wrapper
                     </a>
-                    <div class="modal fade modal-lg" id="healthcareInitiative" tabindex="-1" 
-                        aria-labelledby="healthcareInitiativeLabel" aria-hidden="true">
+                    <div class="modal fade modal-lg" id="geminiWrapper" tabindex="-1" 
+                        aria-labelledby="geminiWrapperLabel" aria-hidden="true">
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header bg-light">
-                            <h5 class="model-title" id="healthcareInitiativeLabel">
-                              <strong>The Community Care Nexus (Healthcare SDoH Initiative)</strong></h5>
+                            <h5 class="model-title" id="geminiWrapperLabel">
+                              <strong>✦ Gemini API/CLI Wrapper</strong></h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                           </div>
                           <div class="modal-body">                          
                             <p><strong>Overview</strong></p>
-                            <p>A centralized coordination hub designed to address Social Determinants of Health (SDoH)
-                              by connecting healthcare providers with community resource networks. This initiative focuses 
-                              on the whole person care model, using AI to identify non clinical barriers to health such as 
-                              housing instability or food insecurity and automating the referral process to local Detroit 
-                              service providers.
-                            </p>
+                            <p>Production-grade CLI utilities for robust AI interaction, token-efficient logging, and automated error recovery.</p>
+                            <p>Stop treating the Gemini API like a simple CURL command. For enterprise-grade systems, you need a wrapper that treats every request as a mission-critical operation. This toolkit provides high-performance CLI utilities and Python wrappers configured for observability, strict token management, and fault-tolerant communication.</p>
+                            <p>Built for the Launchpad Foundry standard, these wrappers ensure that your agentic workflows remain cost-effective and reliable, even when your system is operating at scale.</p>
 
                             <hr/>
 
-                            <p><strong>Services Offered</strong></p>
+                            <p><strong>WHAT'S INCLUDED:</strong></p>
 
                             <ul>
-                              <li><strong>Predictive Risk Stratification:</strong> Utilizing Vertex AI to identify high risk 
-                                patient populations based on socio economic data points.</li>
-                              <li><strong>Automated Referral Pathways:</strong> Intelligent matching of patient needs to 
-                                verified community resources and non profits.</li>  
-                              <li><strong>Closed Loop Tracking:</strong> Secure monitoring of referral outcomes to ensure 
-                                patients successfully receive the support they were bridged to.  
+                              <li><strong>Token Optimization Wrapper:</strong> Middleware that automatically truncates or batches prompts based on real-time token count, preventing budget spikes.</li>
+                              <li><strong>Structured Logging Engine:</strong> Wrappers that export request latency, input/output token usage, and API errors to your preferred logging service (Cloud Logging/BigQuery).</li>
+                              <li><strong>Robust Error Handling:</strong> Built-in exponential backoff and automatic retry logic for rate limits (429) and server-side errors (5xx).</li>
+                              <li><strong>System-Level CLI Utilities:</strong> Command-line tools to trigger batch jobs, audit your model's history, or perform "health checks" on your API connectivity.</li>
+                              <li><strong>Streaming & Async Support:</strong> Optimized handlers for non-blocking asynchronous calls, essential for building fast, agentic agent APIs.</li>
                             </ul>
 
                             <hr/>  
 
-                            <p><strong>Pricing</strong></p>
+                            <p><strong>WHY USE THIS BLUEPRINT?</strong></p>
+                            <p>Raw API calls are not "production-ready." This toolkit provides the missing architectural layers—the Circuit Breakers, the Loggers, and the Token Managers—that keep your AI system predictable and within budget.</p>
+
+                            <p><strong>PREREQUISITES:</strong></p>
 
                             <ul>
-                              <li><strong>Health System Integration:</strong> Annual enterprise license based on patient population
-                                size.</li>
-                              <li><strong>Grant Funded Pilot:</strong> Specialized pricing for non profit community health 
-                                organizations and local government initiatives.</li>  
-                            </ul>
-
-                            <p><strong>Deliverables</strong></p>
-
-                            <ul>
-                              <li><strong>Nexus Dashboard:</strong> A HIPAA compliant portal for caseworkers and clinicians to manage 
-                                social interventions.</li>
-                              <li><strong>Community Impact Report:</strong> Automated data visualization showing regional health 
-                                improvements and resource utilization.</li>
-                              <li><strong>Interoperability Layer:</strong> FHIR complient for seamless integration with major 
-                                Electronic Health Record (EHR) systems.</li>
+                              <li>A Google Cloud project with Vertex AI / Gemini API access enabled.</li>
+                              <li>Basic proficiency in Python.</li>  
+                              <li><a href="https://ko-fi.com/s/ec3b03a9bf" target="_blank">
+                            Buy Now On Ko-fi</a></li></br>
                             </ul>
 
                             <hr/>
 
                             <p><strong>TAGs</strong></p> 
-                            <p><span class="badge text-bg-dark">HealthcareIT</span> 
-                              <span class="badge text-bg-secondary">SDoH</span>
+                            <p><span class="badge text-bg-dark">Gemini</span> 
+                              <span class="badge text-bg-secondary">cli</span>
                               <span class="badge text-bg-dark">VertexAI</span> 
-                              <span class="badge text-bg-dark">FHIR</span>
-                              <span class="badge text-bg-dark">DetroitHealth</span></p>
+                              <span class="badge text-bg-dark">api</span>
+                              <span class="badge text-bg-dark">enterprise</span></p>
                           </div>
                         </div>
                       </div>
                     </div>                       
                 </li>                       
+
                 <li><a class="btn btn-sm btn-dark"
                       data-bs-toggle="modal" data-bs-target="#healthcareInitiative">
                       <i class="fa-solid fa-clipboard"></i>Agentic System Evaluation
