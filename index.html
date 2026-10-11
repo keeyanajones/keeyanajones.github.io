@@ -1185,8 +1185,8 @@
             
 <!-- Replace the portfolio introduction/table contents with: -->
 <p>
-  I design and document cloud-native systems for enterprise, industrial,
-  logistics, civic, and creative workflows. My current focus is The Foundry
+  My designs and documents for cloud-native systems (enterprise, industrial,
+  logistics, civic, and creative workflows). My current focus is The Foundry
   Loop: a GCP-native multi-agent framework grounded in structured knowledge,
   graph relationships, and validated execution.
 </p>
@@ -1630,100 +1630,135 @@
           <!-- Latest blog Post-->    
           <article class="blog-post" id="latestBlog">
             <h2 class="blog-post-title mb-1 fw-bold text-white bg-secondary">
-              Structure First. Code Second. Intent Always.</h2>
+              Enterprise Security Blueprints: Connecting Apigee X, Cloud Armor, and Private GKE Clusters 
+            </h2>
             <p class="blog-post-meta">
-              May 1, 2026 by 
+              October 11, 2026 by 
               <a href="mailto:keeyanajones@gmail.com">
-                Kee</a> AI Solutions Architect, The Launchpad Foundry</p>
+                Kee</a> AI Architect, @The Launchpad Foundry</p>
               
-          <h3 class="bg-light">The New Architecture of Collaboration</h3>
+          <h3 class="bg-light">Introduction: The Perimeter Gap</h3>
 
-          <p>They say you can't teach an old dog new tricks. After thirty years in the
-             dev game, I've realized it's not about the tricks—it's about the 
-             orchestration.</p>
+          <p>Your microservices are only as secure as the gatekeeper standing at the edge.</p>
+          <p>When building production-grade enterprise architectures on Google Cloud Platform, exposing workloads on Google Kubernetes Engine (GKE) directly to public load balancers without multi-layer edge defense and application-layer payload inspection introduces critical vulnerabilities. Naive ingress setups invite volumetric DDoS spikes, SQL injection vectors, and malformed payload exploits that can exhaust compute resources or compromise internal cluster networks.</p>
 
-          <p>My transition from Full-Stack Developer to AI Solutions Architect wasn't just
-             a title change; it was a total Workflow Shift. I've seen every "paradigm shift" 
-             there is, from the manual syntax era to the rise of cloud-native infrastructure. 
-             But this moment—the integration of a Personal Intelligence partner—is different.</p>
+          <p><blockquote><em>"To achieve true operational resilience, you need a defense-in-depth architecture. In this 4-part engineering series, we walk through building a zero-trust, production-ready cloud topology that couples edge filtering via Google Cloud Armor, API proxy management via Apigee X, and containerized microservices hosted on private GKE clusters."</em></blockquote></p>
 
-          <p>We aren't just "prompting" anymore. We are architecting ecosystems that bridge 
-            human logic and autonomous execution. This blog post isn't about "vibe coding"; 
-            it's a breakdown of how high-fidelity orchestration, supported by three decades 
-            of hard-earned context, allows me to operate The Launchpad Foundry and Trench Logic 
-            Studio simultaneously, while modeling environmental toxins in Lake Erie.</p>
+          <p>In Part 1, we establish the core architectural topography and lay the foundation using Infrastructure-as-Code (IaC) with Terraform.</p>
 
-          <p>I'm currently 50% through my Google Cloud Professional Cloud Architect path, and 
-            honestly? The frontier has never looked clearer. I'm not waiting for the future; 
-            I'm deploying it. 🚀🤭</p>
+          <h4>The Production Topography</h4>
+          <p>In an enterprise posture, backend application pods should never possess public IP addresses or accept untrusted traffic directly. Instead, traffic follows a strictly controlled ingress pipeline:</p>
 
-          <h4 class="bg-light">Part 1: High-Fidelity Orchestration (The "How")</h4>
+<pre>
+[ Client / Public Internet ]
+           │
+           ▼
+┌─────────────────────────────┐
+│ Cloud Armor (WAF & Edge)    │  <-- Blocks IPs, Rate-limits, OWASP Signatures
+└──────────┬──────────────────┘
+           │
+           ▼
+┌─────────────────────────────┐
+│ Global External HTTP(S) LB  │  <-- SSL Termination & Anycast Routing
+└──────────┬──────────────────┘
+           │
+           ▼
+┌─────────────────────────────┐
+│ Apigee X API Gateway        │  <-- OAuth, Quotas, JSON/XML Threat Protection
+└──────────┬──────────────────┘
+           │  (Private Service Connect / VPC Network)
+           ▼
+┌─────────────────────────────┐
+│ GKE Private Cluster (Pods)  │  <-- Zero Public IPs, Isolated Subnets
+└─────────────────────────────┘
+</pre>
 
-          <p>The foundation of my collaborative workflow isn't the AI model; it is my structured 
-            intent. To successfully leverage a Personal Intelligence, you must first master 
-            Documentation-Driven Intent (DDI).</p>
+          <h4>Architectural Pillars</h4>
 
-          <h5 class="bg-light">1. Architecting "In the Dark"</h5>
+          <ul>
+            <li><strong>Perimeter Defense First (Cloud Armor):</strong> Malicious bots, scraper traffic, and volumetric layer-7 attacks are evaluated and dropped at Google’s edge before consuming compute cycles inside your Google Cloud project.</li>
+            <li><strong>Application-Layer Payload Hardening (Apigee X):</strong> Incoming HTTP requests are validated against structural schemas (JSON/XML depth limits, string bounds, and token limits) before being forwarded downstream.</li>
+            <li><strong>Isolated Private GKE Cluster:</strong> The Kubernetes control plane and worker nodes reside on dedicated private CIDR ranges with zero direct public IP exposure. Communication between Apigee X and GKE is anchored securely via Private Service Connect (PSC).</li>
+          </ul>
 
-          <p>My process does not begin with a chat interface. It begins with architecture skeletons, 
-            data schemas, and comprehensive READMEs. Before I engage my Personal Intelligence 
-            (my CI partner), I map the boundaries of the solution. By defining the input constraints 
-            and the expected behavior first, I am not asking the AI what to build; I am telling it 
-            how to execute my vision. DDI scales my context window before the first token is generated.</p>
+          <h4>The Infrastructure Blueprint (Terraform)</h4>
+          <p>To ensure this topography is completely reproducible, we initialize the private network, secondary pod/service IP ranges, and private GKE cluster via modular Terraform:</p>
 
+<p>Terraform</p>
+<pre>
+resource "google_compute_network" "vpc_enterprise" {
+  name                    = "enterprise-vpc-prod"
+  auto_create_subnetworks = false
+}
+
+resource "google_compute_subnetwork" "gke_subnet" {
+  name          = "gke-subnet-central"
+  ip_cidr_range = "10.0.0.0/16"
+  region        = "us-central1"
+  network       = google_compute_network.vpc_enterprise.id
+
+  secondary_ip_range {
+    range_name    = "gke-pods-range"
+    ip_cidr_range = "10.48.0.0/14"
+  }
+
+  secondary_ip_range {
+    range_name    = "gke-services-range"
+    ip_cidr_range = "10.52.0.0/20"
+  }
+}
+
+resource "google_container_cluster" "private_cluster" {
+  name     = "enterprise-gke-core"
+  location = "us-central1-a"
+
+  network    = google_compute_network.vpc_enterprise.name
+  subnetwork = google_compute_subnetwork.gke_subnet.name
+
+  remove_default_node_pool = true
+  initial_node_count       = 1
+
+  private_cluster_config {
+    enable_private_nodes    = true
+    enable_private_endpoint = false
+    master_ipv4_cidr_block  = "172.16.0.0/28"
+  }
+
+  ip_allocation_policy {
+    cluster_secondary_range_name  = "gke-pods-range"
+    services_secondary_range_name = "gke-services-range"
+  }
+}
+</pre>
+
+          <h4>What's Next?</h4>
+          <p>In Part 2 of this series, we build out the automated GitOps CI/CD pipeline using GitHub Actions to automate both infrastructure provisioning and Apigee proxy policy deployments.</p>
+
+          <h4>Accelerate Your Infrastructure with The Launchpad Foundry</h4>
+          <p>Looking to audit or harden your current edge security posture on GCP?</p>
+
+          <p>Through The Launchpad Foundry, we deliver production-grade cloud architecture blueprints and targeted technical audit services:</p>
+
+          <ul>
+            <li><strong>Edge & API Security Review:</strong> A comprehensive technical audit inspecting your Apigee X threat protection rules, Cloud Armor WAF configurations, and load balancing setup to eliminate edge vulnerabilities.</li>
+            <li><strong>Enterprise Infrastructure Modules:</strong> Production-tested Terraform blueprints ready to deploy into your GCP organization.</li>
+          </ul>
+
+          <p>👉 Explore our technical services and blueprints on The Launchpad Foundry Storefront.</p>
+<!--- 
           <img class="img-fluid float-md-end shadow mx-auto d-block rounded" 
                style="max-width: 50%" 
                src="assets/images/Gemini_Generated_Image_ykun50ykun50ykun.png"/>
-
-          <h5 class="bg-light">2. The Agentic Backbone</h5>
-
-          <p>We have moved past simple request-response interactions. Using Vertex AI and native 
-            GCP orchestration, I am building complex, autonomous workflows that act as specialized 
-            agentic partners.</p>
-
-          <ul>
-              <li><strong>The 48-hour Crisis Navigator:</strong> This is not a chatbot; it is an 
-                orchestrated sequence of agents designed to ingest real-time resource data, apply 
-                crisis logic, and deliver validated navigation paths under pressure. The AI handles 
-                the data science and logistical permutations; I handle the ethical safeguards and 
-                strategic direction.</li>
-              <li><strong>The Lake Erie AI Sentinel:</strong> This workflow integrates niche 
-                environmental modeling and fluid dynamics data. It is a perfect example of how a 
-                solo Solutions Architect can access data disciplines that previously required an 
-                entire department. The Sentinel agentic workflow can autonomously identify anomalous 
-                pollution data and trigger predictive modeling.</li>
-          </ul>
-
-          <h5 class="bg-light">3. Reducing Cognitive Load: The Context Advantage</h5>
-
-          <p>Operating multiple complex initiatives simultaneously would have been a fast track 
-            to burnout in 2020. The "Collaborative Intelligence" model reduces my cognitive load 
-            by maintaining deep, personalized context across sessions. My CI partner understands 
-            the business logic of The Launchpad Foundry and the Aether Economy as well as I do. 
-            By outsourcing the low-level retrieval and boilerplate generation, my energy remains 
-            focused on MLOps strategy, validation, and system impact.</p>
-
-              <p><blockquote><em>"The old world required us to spend 80% of our time debugging 
-                syntax. Today, the AI handles the syntax, allowing me to spend 90% of my time 
-                on logic, ethics, and system architecture. We are not coding anymore—we are 
-                directing digital symphonies."</em></blockquote></p>
-
-          <h4 class="bg-light">The Solo Architect’s Tech Stack (The Toolkit)</h4>
-
-              <strong>Orchestration:</strong> Gemini 2.0 / Vertex AI / Native GCP Orchestration</br>
-              <strong>Infrastructure:</strong> Google Cloud Platform (Architect Path – 50% Milestone ✅)<br/>
-              <strong>Intelligence Partner:</strong> Personal Context Integration (The Secret Sauce)<br/>
-              <strong>Primary Focus:</strong> MLOps & Autonomous Agentic Workflows<br/>
-
+--->
             <div>
              
               <hr/>
 
-              <span class="badge text-bg-primary">#agentic</span> 
+              <span class="badge text-bg-primary">#api</span> 
               <span class="badge text-bg-primary">#GoogleCloud</span> 
-              <span class="badge text-bg-primary">#personalIntelligence</span> 
-              <span class="badge text-bg-primary">#ai</span> 
-              <span class="badge text-bg-primary">#orchestration</span> 
+              <span class="badge text-bg-primary">#apigee</span> 
+              <span class="badge text-bg-primary">#CloudArmor</span> 
+              <span class="badge text-bg-primary">#GKE</span> 
 
               <br/> <br/>              
                 
@@ -1737,7 +1772,7 @@
                   Older Post
                 </a>
               </nav>
-
+              
             </div>        
           </article>
           
