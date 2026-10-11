@@ -191,7 +191,7 @@
         </h1>
       
           <!-- SERVICES -->
-          <div class="col-md-6 d-flex flex-column align-items-start gap-2 bg-white text-bg-light">  
+          <div class="col-md-6 d-flex flex-column align-items-start gap-2 bg-white text-bg-light shadow">  
             <br/><br/>
 
             <h2><strong><i class="fa-solid fa-handshake"></i> 
@@ -443,7 +443,7 @@
             <small>
               <ul class="list-unstyled">
 
-                <li><a class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#landingZone">
+                <li><a class="btn btn-sm btn-dark shadow" data-bs-toggle="modal" data-bs-target="#landingZone">
                       🛬 Landing Zone
                     </a>
                   <div class="modal fade modal-lg" id="landingZone" tabindex="-1" 
@@ -506,7 +506,7 @@
                   </div>                       
                 </li>
 
-                <li><a class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#databaseSchemas">
+                <li><a class="btn btn-sm btn-dark shadow" data-bs-toggle="modal" data-bs-target="#databaseSchemas">
                       🛢 Database Schema Templates
                     </a>
                   <div class="modal fade modal-lg" id="databaseSchemas" tabindex="-1" 
@@ -578,7 +578,7 @@
                     </div>
                   </div>                       
                 </li>
-                <li><a class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#mlopsPipeline">
+                <li><a class="btn btn-sm btn-dark shadow" data-bs-toggle="modal" data-bs-target="#mlopsPipeline">
                     🔧 MLOps Pipelines
                     </a>
                   <div class="modal fade modal-lg" id="mlopsPipeline" tabindex="-1" 
@@ -639,8 +639,7 @@
                   </div>                       
                 </li>                       
 
-                <li><a class="btn btn-sm btn-dark"
-                      data-bs-toggle="modal" data-bs-target="#serializationIngestion">
+                <li><a class="btn btn-sm btn-dark shadow" data-bs-toggle="modal" data-bs-target="#serializationIngestion">
                       📥 Serialization & Ingestion Toolkit
                     </a>
                   <div class="modal fade modal-lg" id="serializationIngestion" tabindex="-1" 
@@ -697,7 +696,7 @@
                   </div>                       
                 </li>                       
 
-                <li><a class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#webhookReceivers">
+                <li><a class="btn btn-sm btn-dark shadow" data-bs-toggle="modal" data-bs-target="#webhookReceivers">
                     🌐 Webhook Receiver Boilerplates</a>
                   <div class="modal fade modal-lg" id="webhookReceivers" tabindex="-1" 
                       aria-labelledby="webhookReceiversLabel" aria-hidden="true">
@@ -754,271 +753,234 @@
                   </div>                       
                 </li>                       
  
-                <li><a class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#geminiWrapper">
+                <li><a class="btn btn-sm btn-dark shadow" data-bs-toggle="modal" data-bs-target="#geminiWrapper">
                   ✦ Gemini API/CLI Wrapper
                     </a>
-                    <div class="modal fade modal-lg" id="geminiWrapper" tabindex="-1" 
-                        aria-labelledby="geminiWrapperLabel" aria-hidden="true">
+                  <div class="modal fade modal-lg" id="geminiWrapper" tabindex="-1" 
+                      aria-labelledby="geminiWrapperLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header bg-light">
+                          <h5 class="model-title" id="geminiWrapperLabel">
+                            <strong>✦ Gemini API/CLI Wrapper</strong></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">                          
+                          <p><strong>Overview</strong></p>
+                          <p>Production-grade CLI utilities for robust AI interaction, token-efficient logging, and automated error recovery.</p>
+                          <p>Stop treating the Gemini API like a simple CURL command. For enterprise-grade systems, you need a wrapper that treats every request as a mission-critical operation. This toolkit provides high-performance CLI utilities and Python wrappers configured for observability, strict token management, and fault-tolerant communication.</p>
+                          <p>Built for the Launchpad Foundry standard, these wrappers ensure that your agentic workflows remain cost-effective and reliable, even when your system is operating at scale.</p>
+
+                          <hr/>
+
+                          <p><strong>WHAT'S INCLUDED:</strong></p>
+
+                          <ul>
+                            <li><strong>Token Optimization Wrapper:</strong> Middleware that automatically truncates or batches prompts based on real-time token count, preventing budget spikes.</li>
+                            <li><strong>Structured Logging Engine:</strong> Wrappers that export request latency, input/output token usage, and API errors to your preferred logging service (Cloud Logging/BigQuery).</li>
+                            <li><strong>Robust Error Handling:</strong> Built-in exponential backoff and automatic retry logic for rate limits (429) and server-side errors (5xx).</li>
+                            <li><strong>System-Level CLI Utilities:</strong> Command-line tools to trigger batch jobs, audit your model's history, or perform "health checks" on your API connectivity.</li>
+                            <li><strong>Streaming & Async Support:</strong> Optimized handlers for non-blocking asynchronous calls, essential for building fast, agentic agent APIs.</li>
+                          </ul>
+
+                          <hr/>  
+
+                          <p><strong>WHY USE THIS BLUEPRINT?</strong></p>
+                          <p>Raw API calls are not "production-ready." This toolkit provides the missing architectural layers—the Circuit Breakers, the Loggers, and the Token Managers—that keep your AI system predictable and within budget.</p>
+
+                          <p><strong>PREREQUISITES:</strong></p>
+
+                          <ul>
+                            <li>A Google Cloud project with Vertex AI / Gemini API access enabled.</li>
+                            <li>Basic proficiency in Python.</li>  
+                            <li><a href="https://ko-fi.com/s/ec3b03a9bf" target="_blank">
+                          Buy Now On Ko-fi</a></li></br>
+                          </ul>
+
+                          <hr/>
+
+                          <p><strong>TAGs</strong></p> 
+                          <p><span class="badge text-bg-dark">Gemini</span> 
+                            <span class="badge text-bg-secondary">cli</span>
+                            <span class="badge text-bg-dark">VertexAI</span> 
+                            <span class="badge text-bg-dark">api</span>
+                            <span class="badge text-bg-dark">enterprise</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                       
+                </li>                       
+
+                <li><a class="btn btn-sm btn-dark"
+                      data-bs-toggle="modal" data-bs-target="#evaluationToolkit">
+                      🕵🏻 Evaluation Toolkit
+                    </a>
+                  <div class="modal fade modal-lg" id="evaluationToolkit" tabindex="-1" 
+                      aria-labelledby="evaluationToolkitLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header bg-light">
+                          <h5 class="model-title" id="evaluationToolkitLabel">
+                            <strong>🕵🏻 Evaluation Toolkit</strong></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">                          
+                          <p><strong>Overview</strong></p>
+                          <p>Measure, Validate, and Harden your AI Agents against Latency, Hallucinations, and Tool-Calling Failure.</p>
+                          <p>Stop guessing if your AI agents are "good enough" for production. In multi-agent systems, non-deterministic outputs can lead to massive liability. This toolkit provides a concrete, industrial-grade evaluation framework designed to quantify your agent's performance across your entire workflow.</p>
+                          <p>Built on Trench Logic, this kit removes the subjectivity from AI development, providing you with a rigorous testing matrix to ensure your agents behave predictably under real-world pressure.</p>
+
+                          <hr/>
+
+                          <p><strong>WHAT'S INCLUDED (Testing Matrices & Scripts):</strong></p>
+
+                          <ul>
+                            <li><strong>Grading Rubrics:</strong> Pre-built evaluation schemas for measuring hallucination rates, contextual adherence, and reasoning accuracy.</li>
+                            <li><strong>Latency Benchmarking:</strong> Automated scripts to measure end-to-end response times and individual agent node performance.</li>
+                            <li><strong>Tool-Calling Reliability Matrix:</strong> Stress-test scripts designed to ensure your agents execute function calls (APIs/Databases) with 100% syntactical and logical accuracy.</li>
+                            <li><strong>Assertion Scripts:</strong> Ready-to-run Python/Node.js scripts to automate "pass/fail" testing for your agent workflows.</li>
+                            <li><strong>Multi-Agent Workflow Coverage:</strong> Specific testing strategies for complex chains where Output A feeds Input B, ensuring systemic stability.</li>
+                          </ul>
+
+                          <hr/>  
+
+                          <p><strong>WHY USE THIS BLUEPRINT?</strong></p>
+                          <p>Most AI developers test by "eyeballing" the chat output. That is not a strategy—it is a risk. This framework enforces test-driven development for agents, allowing you to identify performance bottlenecks and hallucination patterns before your users do. It bridges the gap between a "cool demo" and a "reliable enterprise asset."</p>
+
+                          <p><strong>PREREQUISITES:</strong></p>
+                          
+                          <ul>
+                            <li>An existing agentic workflow (LangChain, AutoGen, or custom implementation).</li>
+                            <li>Basic proficiency in Python or the scripting language of your agent.</li>
+                            <li><a href="https://ko-fi.com/s/ab56c5c90e" target="_blank">
+                                Buy Now On Ko-fi</a></li></br>
+                          </ul>
+
+                          <hr/>
+
+                          <p><strong>TAGs</strong></p> 
+                          <p><span class="badge text-bg-dark">evaluation</span> 
+                            <span class="badge text-bg-secondary">agentic</span>
+                            <span class="badge text-bg-dark">VertexAI</span> 
+                            <span class="badge text-bg-dark">toolkit</span>
+                            <span class="badge text-bg-dark">audit</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                       
+                </li>                       
+                
+                <li><a class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#productionIncident">
+                      ⚠️ Production Incident Runbooks
+                    </a>
+                  <div class="modal fade modal-lg" id="productionIncident" tabindex="-1" 
+                      aria-labelledby="productionIncidentLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header bg-light">
+                          <h5 class="model-title" id="productionIncidentLabel">
+                            <strong>⚠️ Production Incident Runbooks</strong></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">                          
+                          <p><strong>Overview</strong></p>
+                          <p>Pre-validated triage checklists and response workflows for LLM pipelines, API rate-limiting, and data drift.
+                          <p>When a production system fails, your engineers should not be "thinking"—they should be executing. These runbooks are structured, triage-focused checklists designed to help your team isolate failures in complex AI architectures, stop the bleeding, and restore service with absolute consistency.
+                          <p>Built for the Launchpad Foundry standard, these runbooks treat incident response as an engineering process: data-driven, repeatable, and low-latency.
+
+                          <hr/>
+
+                          <p><strong>WHAT'S INCLUDED:</strong></p>
+
+                          <ul>
+                            <li><strong>The Triage Framework:</strong> Step-by-step decision trees for rapid categorization (Is this a model hallucination? An API rate-limit? Or a data pipeline upstream failure?).</li>
+                            <li><strong>LLM Pipeline Runbook:</strong> Specific steps to isolate prompt/output quality issues, identify token usage anomalies, and perform "fallback-to-stable-version" maneuvers.</li>
+                            <li><strong>Infrastructure/API Runbook:</strong> Checklists for troubleshooting 429 rate limits, circuit-breaker activation, and latency spikes in Google Cloud Run/Vertex AI.</li>
+                            <li><strong>Data Drift Response:</strong> Procedures for comparing current production data against training-set baselines and triggering automated re-training or data-cleaning tasks.</li>
+                            <li><strong>Escalation Matrix:</strong> Clear guidance on who to notify, when to escalate to high-tier support, and how to communicate status to stakeholders.</li>
+                          </ul>
+
+                          <hr/>  
+
+                          <p><strong>WHY USE THIS BLUEPRINT?</strong></p>
+                          <p>Incidents are expensive, but unstructured incident responses are catastrophic. These runbooks eliminate the "panic factor." By following these pre-defined steps, your team stays calm, avoids "cowboy debugging," and ensures that every action taken is logged, reversible, and effective.</p>
+
+                          <p><strong>PREREQUISITES:</strong></p>
+
+                          <ul>
+                            <li>An existing incident management process (or willingness to implement one).</li>
+                            <li>Access to monitoring/observability tools (e.g., Cloud Logging, LangSmith, OpenObserve).</li>
+                            <li><a href="https://ko-fi.com/s/e3564ea511" target="_blank">
+                                Buy Now On Ko-fi</a></li></br>
+                          </ul>
+
+                          <hr/>
+
+                          <p><strong>TAGs</strong></p> 
+                          <p><span class="badge text-bg-dark">production</span> 
+                            <span class="badge text-bg-secondary">incident</span>
+                            <span class="badge text-bg-dark">VertexAI</span> 
+                            <span class="badge text-bg-dark">runbooks</span>
+                            <span class="badge text-bg-dark">framework</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                       
+                </li>                       
+                
+                <li><a class="btn btn-sm btn-dark"
+                      data-bs-toggle="modal" data-bs-target="#costOptimization">
+                      💰 Cost Optimization Playbooks
+                    </a>
+                    <div class="modal fade modal-lg" id="costOptimization" tabindex="-1" 
+                        aria-labelledby="costOptimizationLabel" aria-hidden="true">
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header bg-light">
-                            <h5 class="model-title" id="geminiWrapperLabel">
-                              <strong>✦ Gemini API/CLI Wrapper</strong></h5>
+                            <h5 class="model-title" id="costOptimizationLabel">
+                              <strong>💰 Cost Optimization Playbooks</strong></h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                           </div>
                           <div class="modal-body">                          
                             <p><strong>Overview</strong></p>
-                            <p>Production-grade CLI utilities for robust AI interaction, token-efficient logging, and automated error recovery.</p>
-                            <p>Stop treating the Gemini API like a simple CURL command. For enterprise-grade systems, you need a wrapper that treats every request as a mission-critical operation. This toolkit provides high-performance CLI utilities and Python wrappers configured for observability, strict token management, and fault-tolerant communication.</p>
-                            <p>Built for the Launchpad Foundry standard, these wrappers ensure that your agentic workflows remain cost-effective and reliable, even when your system is operating at scale.</p>
+                            <p>Actionable strategies to profile query patterns, automate scaling-to-zero, and implement aggressive caching for enterprise GCP environments.</p>
+                            <p>Cloud bills are not a "fixed cost"—they are a reflection of your architectural efficiency. Inefficient queries, unoptimized cache hits, and "always-on" compute environments are the primary drivers of runaway cloud spend. This playbook provides the engineering-led, Trench Logic strategies to bring those costs back under control.</p>
+                            <p>This is not a list of "cloud tips." It is an architectural remediation guide that shows you how to profile your system, identify the "bleeding" components, and reconfigure them for maximum cost-efficiency.</p>
 
                             <hr/>
 
-                            <p><strong>WHAT'S INCLUDED:</strong></p>
+                            <p><strong>WHAT'S INCLUDED (Optimization Guides):</strong></p>
 
                             <ul>
-                              <li><strong>Token Optimization Wrapper:</strong> Middleware that automatically truncates or batches prompts based on real-time token count, preventing budget spikes.</li>
-                              <li><strong>Structured Logging Engine:</strong> Wrappers that export request latency, input/output token usage, and API errors to your preferred logging service (Cloud Logging/BigQuery).</li>
-                              <li><strong>Robust Error Handling:</strong> Built-in exponential backoff and automatic retry logic for rate limits (429) and server-side errors (5xx).</li>
-                              <li><strong>System-Level CLI Utilities:</strong> Command-line tools to trigger batch jobs, audit your model's history, or perform "health checks" on your API connectivity.</li>
-                              <li><strong>Streaming & Async Support:</strong> Optimized handlers for non-blocking asynchronous calls, essential for building fast, agentic agent APIs.</li>
+                              <li><strong>Query Profiling & Analysis:</strong> How to use EXPLAIN ANALYZE and GCP Cloud Trace to find expensive multi-join bottlenecks that are ballooning your database costs.</li>
+                              <li><strong>Aggressive Caching Strategies:</strong> Implementation blueprints for Redis/Memorystore, focusing on TTL (Time-to-Live) tuning and cache-invalidation logic to reduce DB hits by up to 80%.</li>
+                              <li><strong>Scale-to-Zero Architecture:</strong> Specific guides on configuring Google Cloud Run, Eventarc, and Cloud Functions to ensure your compute costs drop to $0.00 during inactivity.</li>
+                              <li><strong>Budget Guardrails & Alerts:</strong> DDL/Terraform snippets to set up proactive spend monitoring that triggers auto-shutdowns before a bill reaches a "runaway" state.</li>
+                              <li><strong>The "Cost Attribution" Framework:</strong> How to use labels and tags effectively so you know exactly which agent, user, or service is responsible for every cent spent.</li>
                             </ul>
 
                             <hr/>  
 
                             <p><strong>WHY USE THIS BLUEPRINT?</strong></p>
-                            <p>Raw API calls are not "production-ready." This toolkit provides the missing architectural layers—the Circuit Breakers, the Loggers, and the Token Managers—that keep your AI system predictable and within budget.</p>
+                            <p>Every dollar saved on your cloud bill is a dollar you can reinvest into your product. These playbooks stop the "silent leak" of cloud spend. By implementing these strategies, you shift your architecture from "convenience-driven" to "efficiency-driven."</p>
 
                             <p><strong>PREREQUISITES:</strong></p>
 
                             <ul>
-                              <li>A Google Cloud project with Vertex AI / Gemini API access enabled.</li>
-                              <li>Basic proficiency in Python.</li>  
-                              <li><a href="https://ko-fi.com/s/ec3b03a9bf" target="_blank">
-                            Buy Now On Ko-fi</a></li></br>
+                              <li>An active Google Cloud Platform (GCP) project.
+                              <li>Basic familiarity with GCP console or CLI.
+                              <li><a href="https://ko-fi.com/s/e3b9772438" target="_blank">
+                                  Buy Now On Ko-fi</a></li></br>
                             </ul>
 
                             <hr/>
 
                             <p><strong>TAGs</strong></p> 
-                            <p><span class="badge text-bg-dark">Gemini</span> 
-                              <span class="badge text-bg-secondary">cli</span>
+                            <p><span class="badge text-bg-dark">cost</span> 
+                              <span class="badge text-bg-secondary">optimization</span>
                               <span class="badge text-bg-dark">VertexAI</span> 
-                              <span class="badge text-bg-dark">api</span>
-                              <span class="badge text-bg-dark">enterprise</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>                       
-                </li>                       
-
-                <li><a class="btn btn-sm btn-dark"
-                      data-bs-toggle="modal" data-bs-target="#healthcareInitiative">
-                      <i class="fa-solid fa-clipboard"></i>Agentic Evaluation
-                    </a>
-                    <div class="modal fade modal-lg" id="healthcareInitiative" tabindex="-1" 
-                        aria-labelledby="healthcareInitiativeLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header bg-light">
-                            <h5 class="model-title" id="healthcareInitiativeLabel">
-                              <strong>The Community Care Nexus (Healthcare SDoH Initiative)</strong></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                          </div>
-                          <div class="modal-body">                          
-                            <p><strong>Overview</strong></p>
-                            <p>A centralized coordination hub designed to address Social Determinants of Health (SDoH)
-                              by connecting healthcare providers with community resource networks. This initiative focuses 
-                              on the whole person care model, using AI to identify non clinical barriers to health such as 
-                              housing instability or food insecurity and automating the referral process to local Detroit 
-                              service providers.
-                            </p>
-
-                            <hr/>
-
-                            <p><strong>Services Offered</strong></p>
-
-                            <ul>
-                              <li><strong>Predictive Risk Stratification:</strong> Utilizing Vertex AI to identify high risk 
-                                patient populations based on socio economic data points.</li>
-                              <li><strong>Automated Referral Pathways:</strong> Intelligent matching of patient needs to 
-                                verified community resources and non profits.</li>  
-                              <li><strong>Closed Loop Tracking:</strong> Secure monitoring of referral outcomes to ensure 
-                                patients successfully receive the support they were bridged to.  
-                            </ul>
-
-                            <hr/>  
-
-                            <p><strong>Pricing</strong></p>
-
-                            <ul>
-                              <li><strong>Health System Integration:</strong> Annual enterprise license based on patient population
-                                size.</li>
-                              <li><strong>Grant Funded Pilot:</strong> Specialized pricing for non profit community health 
-                                organizations and local government initiatives.</li>  
-                            </ul>
-
-                            <p><strong>Deliverables</strong></p>
-
-                            <ul>
-                              <li><strong>Nexus Dashboard:</strong> A HIPAA compliant portal for caseworkers and clinicians to manage 
-                                social interventions.</li>
-                              <li><strong>Community Impact Report:</strong> Automated data visualization showing regional health 
-                                improvements and resource utilization.</li>
-                              <li><strong>Interoperability Layer:</strong> FHIR complient for seamless integration with major 
-                                Electronic Health Record (EHR) systems.</li>
-                            </ul>
-
-                            <hr/>
-
-                            <p><strong>TAGs</strong></p> 
-                            <p><span class="badge text-bg-dark">HealthcareIT</span> 
-                              <span class="badge text-bg-secondary">SDoH</span>
-                              <span class="badge text-bg-dark">VertexAI</span> 
-                              <span class="badge text-bg-dark">FHIR</span>
-                              <span class="badge text-bg-dark">DetroitHealth</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>                       
-                </li>                       
-                
-                <li><a class="btn btn-sm btn-dark"
-                      data-bs-toggle="modal" data-bs-target="#healthcareInitiative">
-                      <i class="fa-solid fa-clipboard"></i>Production Incident Runbooks
-                    </a>
-                    <div class="modal fade modal-lg" id="healthcareInitiative" tabindex="-1" 
-                        aria-labelledby="healthcareInitiativeLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header bg-light">
-                            <h5 class="model-title" id="healthcareInitiativeLabel">
-                              <strong>The Community Care Nexus (Healthcare SDoH Initiative)</strong></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                          </div>
-                          <div class="modal-body">                          
-                            <p><strong>Overview</strong></p>
-                            <p>A centralized coordination hub designed to address Social Determinants of Health (SDoH)
-                              by connecting healthcare providers with community resource networks. This initiative focuses 
-                              on the whole person care model, using AI to identify non clinical barriers to health such as 
-                              housing instability or food insecurity and automating the referral process to local Detroit 
-                              service providers.
-                            </p>
-
-                            <hr/>
-
-                            <p><strong>Services Offered</strong></p>
-
-                            <ul>
-                              <li><strong>Predictive Risk Stratification:</strong> Utilizing Vertex AI to identify high risk 
-                                patient populations based on socio economic data points.</li>
-                              <li><strong>Automated Referral Pathways:</strong> Intelligent matching of patient needs to 
-                                verified community resources and non profits.</li>  
-                              <li><strong>Closed Loop Tracking:</strong> Secure monitoring of referral outcomes to ensure 
-                                patients successfully receive the support they were bridged to.  
-                            </ul>
-
-                            <hr/>  
-
-                            <p><strong>Pricing</strong></p>
-
-                            <ul>
-                              <li><strong>Health System Integration:</strong> Annual enterprise license based on patient population
-                                size.</li>
-                              <li><strong>Grant Funded Pilot:</strong> Specialized pricing for non profit community health 
-                                organizations and local government initiatives.</li>  
-                            </ul>
-
-                            <p><strong>Deliverables</strong></p>
-
-                            <ul>
-                              <li><strong>Nexus Dashboard:</strong> A HIPAA compliant portal for caseworkers and clinicians to manage 
-                                social interventions.</li>
-                              <li><strong>Community Impact Report:</strong> Automated data visualization showing regional health 
-                                improvements and resource utilization.</li>
-                              <li><strong>Interoperability Layer:</strong> FHIR complient for seamless integration with major 
-                                Electronic Health Record (EHR) systems.</li>
-                            </ul>
-
-                            <hr/>
-
-                            <p><strong>TAGs</strong></p> 
-                            <p><span class="badge text-bg-dark">HealthcareIT</span> 
-                              <span class="badge text-bg-secondary">SDoH</span>
-                              <span class="badge text-bg-dark">VertexAI</span> 
-                              <span class="badge text-bg-dark">FHIR</span>
-                              <span class="badge text-bg-dark">DetroitHealth</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>                       
-                </li>                       
-                
-                <li><a class="btn btn-sm btn-dark"
-                      data-bs-toggle="modal" data-bs-target="#healthcareInitiative">
-                      <i class="fa-solid fa-clipboard"></i>Cost Optimaization
-                    </a>
-                    <div class="modal fade modal-lg" id="healthcareInitiative" tabindex="-1" 
-                        aria-labelledby="healthcareInitiativeLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header bg-light">
-                            <h5 class="model-title" id="healthcareInitiativeLabel">
-                              <strong>The Community Care Nexus (Healthcare SDoH Initiative)</strong></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                          </div>
-                          <div class="modal-body">                          
-                            <p><strong>Overview</strong></p>
-                            <p>A centralized coordination hub designed to address Social Determinants of Health (SDoH)
-                              by connecting healthcare providers with community resource networks. This initiative focuses 
-                              on the whole person care model, using AI to identify non clinical barriers to health such as 
-                              housing instability or food insecurity and automating the referral process to local Detroit 
-                              service providers.
-                            </p>
-
-                            <hr/>
-
-                            <p><strong>Services Offered</strong></p>
-
-                            <ul>
-                              <li><strong>Predictive Risk Stratification:</strong> Utilizing Vertex AI to identify high risk 
-                                patient populations based on socio economic data points.</li>
-                              <li><strong>Automated Referral Pathways:</strong> Intelligent matching of patient needs to 
-                                verified community resources and non profits.</li>  
-                              <li><strong>Closed Loop Tracking:</strong> Secure monitoring of referral outcomes to ensure 
-                                patients successfully receive the support they were bridged to.  
-                            </ul>
-
-                            <hr/>  
-
-                            <p><strong>Pricing</strong></p>
-
-                            <ul>
-                              <li><strong>Health System Integration:</strong> Annual enterprise license based on patient population
-                                size.</li>
-                              <li><strong>Grant Funded Pilot:</strong> Specialized pricing for non profit community health 
-                                organizations and local government initiatives.</li>  
-                            </ul>
-
-                            <p><strong>Deliverables</strong></p>
-
-                            <ul>
-                              <li><strong>Nexus Dashboard:</strong> A HIPAA compliant portal for caseworkers and clinicians to manage 
-                                social interventions.</li>
-                              <li><strong>Community Impact Report:</strong> Automated data visualization showing regional health 
-                                improvements and resource utilization.</li>
-                              <li><strong>Interoperability Layer:</strong> FHIR complient for seamless integration with major 
-                                Electronic Health Record (EHR) systems.</li>
-                            </ul>
-
-                            <hr/>
-
-                            <p><strong>TAGs</strong></p> 
-                            <p><span class="badge text-bg-dark">HealthcareIT</span> 
-                              <span class="badge text-bg-secondary">SDoH</span>
-                              <span class="badge text-bg-dark">VertexAI</span> 
-                              <span class="badge text-bg-dark">FHIR</span>
-                              <span class="badge text-bg-dark">DetroitHealth</span></p>
+                              <span class="badge text-bg-dark">framework</span>
+                              <span class="badge text-bg-dark">alerts</span></p>
                           </div>
                         </div>
                       </div>
