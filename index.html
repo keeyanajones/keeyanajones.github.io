@@ -1649,7 +1649,7 @@
           <h4>The Production Topography</h4>
           <p>In an enterprise posture, backend application pods should never possess public IP addresses or accept untrusted traffic directly. Instead, traffic follows a strictly controlled ingress pipeline:</p>
 
-<pre>
+<pre class="bg-light shadow">
 [ Client / Public Internet ]
            │
            ▼
@@ -1685,7 +1685,7 @@
           <p>To ensure this topography is completely reproducible, we initialize the private network, secondary pod/service IP ranges, and private GKE cluster via modular Terraform:</p>
 
 <p>Terraform</p>
-<pre>
+<pre class="bg-light shadow">
 resource "google_compute_network" "vpc_enterprise" {
   name                    = "enterprise-vpc-prod"
   auto_create_subnetworks = false
@@ -1772,7 +1772,7 @@ resource "google_container_cluster" "private_cluster" {
                   Older Post
                 </a>
               </nav>
-              
+
             </div>        
           </article>
           
