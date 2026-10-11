@@ -987,220 +987,185 @@
                     </div>                       
                 </li>                       
                 
-                <li><a class="btn btn-sm btn-dark"
-                      data-bs-toggle="modal" data-bs-target="#healthcareInitiative">
-                      <i class="fa-solid fa-clipboard"></i>API Specification Audit
+                <li><a class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#apiSpecAudit">
+                    🫠 API Specification Audit
+                  </a>
+                  <div class="modal fade modal-lg" id="apiSpecAudit" tabindex="-1" 
+                      aria-labelledby="apiSpecAuditLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header bg-light">
+                          <h5 class="model-title" id="apiSpecAuditLabel">
+                            <strong>🫠 API Specification Audit</strong></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">                          
+                          <p><strong>Overview</strong></p>
+                          <p>An API is the front door to your digital infrastructure. If that door is poorly designed, insecure, or inefficient, your entire system suffers. Don't push to production until you've had a systems architect verify your API contract.
+                          <p>This is a fixed-scope audit where I personally review your API specification to ensure it follows industry-standard best practices, is optimized for low-latency, and is shielded by airtight security mechanisms.
+
+                          <hr/>
+
+                          <p><strong>WHAT'S INCLUDED IN THE AUDIT:</strong></p>
+
+                          <ul>  
+                            <li><strong>RESTful Standards Check:</strong> Review of your endpoints, method usage (GET/POST/PUT/DELETE), and status code implementation.</li>
+                            <li><strong>Payload Efficiency Review:</strong> Analysis of your JSON/gRPC structures to minimize data bloat and reduce bandwidth costs.</li>
+                            <li><strong>Security & Authentication Audit:</strong> Evaluation of your authorization flows (OAuth2/OIDC), header security, and protection against common API vulnerabilities (BOLA/BFLA).</li>
+                            <li><strong>Versioning & Evolution Strategy:</strong> Advice on how to version your API so you can iterate without breaking your clients.</li>
+                            <li><strong>Architectural Feedback Report:</strong> A concise, actionable document detailing exactly what to fix to bring your API to enterprise standards.</li>
+                          </ul>
+
+                          <hr/>  
+
+                          <p><strong>WHY USE THIS SERVICE?</strong></p>
+
+                          <p>Bad API design is "technical debt" that you pay for every single day. A single security oversight or an inefficient payload design can cost you thousands in cloud egress fees and developer hours spent on refactoring later. Leverage my 30 years of architectural experience to "bulletproof" your API contract before you write a single line of production code.</p>
+                          <p>See Technical API & Architecture Deep Dive Hardening Sprint (Heat Treating) in Services Section</p>
+
+                          <p><strong>HOW IT WORKS:</strong></p>
+
+                          <ul>
+                            <li><strong>Submit Your Spec:</strong> Once purchased, you’ll submit your API documentation (OpenAPI/Swagger file, Postman collection, or code snippets).</li>
+                            <li><strong>Architectural Review:</strong> I perform a deep-dive analysis of your schema, auth flow, and data modeling.</li>
+                            <li><strong>Actionable Report:</strong> You receive a Launchpad Foundry Audit Report within 3-5 business days with clear, "fix-it" instructions.</li>
+                          </ul>
+
+                          <p><strong>PREREQUISITES:</strong></p>
+                          <p>An existing API definition or documentation (OpenAPI 3.0, Swagger, or API design docs).</p>
+
+                          <p><strong>Tiered Pricing:</strong></p>
+                          <ul>
+                            <li><strong>Standard Audit (Up to 10 endpoints):</strong> $199</li>
+                            <li>A fixed-fee $5,000 - $7,500 package. You spend 3 to 5 days tearing down their current cloud setup, analyzing data pipeline bottlenecks, identifying LLM cost leaks, and delivering a clean, hardened architectural blueprint.</li>
+
+                            <li><strong>Enterprise Audit (Up to 30 endpoints + Auth Flow Review):</strong> $399</li>
+                            <li>The Enterprise Hardening Sprint (Heat Treating): A fixed-fee $10,000 - $12,500 package. A flat two-week engagement focused strictly on optimization—reducing Vertex AI latency, hardening API security, and refactoring their full-stack logic for scale.</li>
+
+                            <li><a href="https://ko-fi.com/s/d7a96bad54" target="_blank">
+                                Buy Now On Ko-fi</a></li></br>
+                          </ul>
+
+                          <hr/>
+
+                          <p><strong>TAGs</strong></p> 
+                          <p><span class="badge text-bg-dark">api</span> 
+                            <span class="badge text-bg-secondary">RESTful</span>
+                            <span class="badge text-bg-dark">VertexAI</span> 
+                            <span class="badge text-bg-dark">review</span>
+                            <span class="badge text-bg-dark">audit</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                       
+                </li>                       
+
+                <li><a class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#singleArchTeardown">
+                  🔨 Single Architecture Teardown
                     </a>
-                    <div class="modal fade modal-lg" id="healthcareInitiative" tabindex="-1" 
-                        aria-labelledby="healthcareInitiativeLabel" aria-hidden="true">
+                    <div class="modal fade modal-lg" id="singleArchTeardown" tabindex="-1" 
+                        aria-labelledby="singleArchTeardownLabel" aria-hidden="true">
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header bg-light">
-                            <h5 class="model-title" id="healthcareInitiativeLabel">
-                              <strong>The Community Care Nexus (Healthcare SDoH Initiative)</strong></h5>
+                            <h5 class="model-title" id="singleArchTeardownLabel">
+                              <strong>🔨 Single Architecture Teardown</strong></h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                           </div>
                           <div class="modal-body">                          
                             <p><strong>Overview</strong></p>
-                            <p>A centralized coordination hub designed to address Social Determinants of Health (SDoH)
-                              by connecting healthcare providers with community resource networks. This initiative focuses 
-                              on the whole person care model, using AI to identify non clinical barriers to health such as 
-                              housing instability or food insecurity and automating the referral process to local Detroit 
-                              service providers.
-                            </p>
+                            <p>Don't wait for a production incident to discover a single point of failure. This teardown is a deep-dive, asynchronous forensic analysis of your system architecture. I personally review your submitted system diagram to map your traffic flow, identify structural bottlenecks, and pinpoint vulnerabilities that could compromise your availability, scalability, or security.</p>
 
                             <hr/>
 
-                            <p><strong>Services Offered</strong></p>
+                            <p><strong>WHAT'S INCLUDED IN THE TEARDOWN REPORT:</strong></p>
 
                             <ul>
-                              <li><strong>Predictive Risk Stratification:</strong> Utilizing Vertex AI to identify high risk 
-                                patient populations based on socio economic data points.</li>
-                              <li><strong>Automated Referral Pathways:</strong> Intelligent matching of patient needs to 
-                                verified community resources and non profits.</li>  
-                              <li><strong>Closed Loop Tracking:</strong> Secure monitoring of referral outcomes to ensure 
-                                patients successfully receive the support they were bridged to.  
+                              <li><strong>SPOF (Single Point of Failure) Analysis:</strong> A rigorous identification of critical nodes that, if they fail, bring your entire business flow to a halt.</li>
+                              <li><strong>Scalability Bottleneck Audit:</strong> Identifying "hot spots" in your architecture that will break as you hit 10x or 100x user growth.</li>
+                              <li><strong>Security & Data Flow Review:</strong> Analysis of your trust boundaries, encryption-in-transit/at-rest patterns, and potential exposure of sensitive data.</li>
+                              <li><strong>Resiliency Roadmap:</strong> A prioritized list of "quick wins" and "structural fixes" to move your architecture toward N+1 redundancy.</li>
+                              <li><strong>Actionable Findings Report:</strong> A custom, structured report delivered via private repository, tailored to your specific tech stack.</li>
                             </ul>
 
                             <hr/>  
 
-                            <p><strong>Pricing</strong></p>
+                            <p><strong>WHY USE THIS BLUEPRINT?</strong></p>
+                            <p>Most teams "eyeball" their architecture, assuming that because it works in development, it’s ready for the world. In reality, most systems have "silent" risks—misconfigured load balancers, single-region dependencies, or unindexed database queries—that are ticking time bombs. This teardown gives you the objective, expert perspective of a veteran architect to bulletproof your system foundation.</p>
+
+                            <p><strong>HOW IT WORKS:</strong></p>
 
                             <ul>
-                              <li><strong>Health System Integration:</strong> Annual enterprise license based on patient population
-                                size.</li>
-                              <li><strong>Grant Funded Pilot:</strong> Specialized pricing for non profit community health 
-                                organizations and local government initiatives.</li>  
+                              <li><strong>Submit Your Diagram:</strong> Upon purchase, you submit your current architecture diagram (Lucidchart, Draw.io, or a high-quality whiteboard photo).</li>
+                              <li><strong>Structural Forensic Review:</strong> I perform a deep-dive analysis of your components, data paths, and external dependencies.</li>
+                              <li><strong>Teardown Report:</strong> You receive your Launchpad Foundry Teardown Report within the agreed upon timeframe containing specific, technical recommendations to harden your infrastructure.</li>
+                              <li><a href="https://ko-fi.com/s/d5250b8389" target="_blank">
+                                Buy Now On Ko-fi</a></li></br>
                             </ul>
 
-                            <p><strong>Deliverables</strong></p>
-
-                            <ul>
-                              <li><strong>Nexus Dashboard:</strong> A HIPAA compliant portal for caseworkers and clinicians to manage 
-                                social interventions.</li>
-                              <li><strong>Community Impact Report:</strong> Automated data visualization showing regional health 
-                                improvements and resource utilization.</li>
-                              <li><strong>Interoperability Layer:</strong> FHIR complient for seamless integration with major 
-                                Electronic Health Record (EHR) systems.</li>
-                            </ul>
+                            <p><strong>PREREQUISITES:</strong></p>
+                            <p>An existing architecture diagram or a clear list of system components/dependencies.</p>
 
                             <hr/>
 
                             <p><strong>TAGs</strong></p> 
-                            <p><span class="badge text-bg-dark">HealthcareIT</span> 
-                              <span class="badge text-bg-secondary">SDoH</span>
+                            <p><span class="badge text-bg-dark">teardown</span> 
+                              <span class="badge text-bg-secondary">spof</span>
                               <span class="badge text-bg-dark">VertexAI</span> 
-                              <span class="badge text-bg-dark">FHIR</span>
-                              <span class="badge text-bg-dark">DetroitHealth</span></p>
+                              <span class="badge text-bg-dark">audit</span>
+                              <span class="badge text-bg-dark">roadmap</span></p>
                           </div>
                         </div>
                       </div>
                     </div>                       
-                </li>                       
-                <li><a class="btn btn-sm btn-dark"
-                      data-bs-toggle="modal" data-bs-target="#healthcareInitiative">
-                      <i class="fa-solid fa-clipboard"></i>Single Architecture Teardown
+                </li>                    
+
+                <li><a class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#ultimateBundle">
+                      🛠️ The Ultimate Bundle
                     </a>
-                    <div class="modal fade modal-lg" id="healthcareInitiative" tabindex="-1" 
-                        aria-labelledby="healthcareInitiativeLabel" aria-hidden="true">
+                    <div class="modal fade modal-lg" id="ultimateBundle" tabindex="-1" 
+                        aria-labelledby="ultimateBundleLabel" aria-hidden="true">
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header bg-light">
-                            <h5 class="model-title" id="healthcareInitiativeLabel">
-                              <strong>The Community Care Nexus (Healthcare SDoH Initiative)</strong></h5>
+                            <h5 class="model-title" id="ultimateBundleLabel">
+                              <strong>🛠️ The Ultimate Bundle</strong></h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
                           </div>
                           <div class="modal-body">                          
                             <p><strong>Overview</strong></p>
-                            <p>A centralized coordination hub designed to address Social Determinants of Health (SDoH)
-                              by connecting healthcare providers with community resource networks. This initiative focuses 
-                              on the whole person care model, using AI to identify non clinical barriers to health such as 
-                              housing instability or food insecurity and automating the referral process to local Detroit 
-                              service providers.
-                            </p>
-
-                            <hr/>
-
-                            <p><strong>Services Offered</strong></p>
+    
+                            <p>🛠️ The Launchpad Foundry Ultimate Bundle:<p>
 
                             <ul>
-                              <li><strong>Predictive Risk Stratification:</strong> Utilizing Vertex AI to identify high risk 
-                                patient populations based on socio economic data points.</li>
-                              <li><strong>Automated Referral Pathways:</strong> Intelligent matching of patient needs to 
-                                verified community resources and non profits.</li>  
-                              <li><strong>Closed Loop Tracking:</strong> Secure monitoring of referral outcomes to ensure 
-                                patients successfully receive the support they were bridged to.  
-                            </ul>
-
-                            <hr/>  
-
-                            <p><strong>Pricing</strong></p>
-
-                            <ul>
-                              <li><strong>Health System Integration:</strong> Annual enterprise license based on patient population
-                                size.</li>
-                              <li><strong>Grant Funded Pilot:</strong> Specialized pricing for non profit community health 
-                                organizations and local government initiatives.</li>  
-                            </ul>
-
-                            <p><strong>Deliverables</strong></p>
-
-                            <ul>
-                              <li><strong>Nexus Dashboard:</strong> A HIPAA compliant portal for caseworkers and clinicians to manage 
-                                social interventions.</li>
-                              <li><strong>Community Impact Report:</strong> Automated data visualization showing regional health 
-                                improvements and resource utilization.</li>
-                              <li><strong>Interoperability Layer:</strong> FHIR complient for seamless integration with major 
-                                Electronic Health Record (EHR) systems.</li>
+                              <li>Database Schema Templates $49.99</li>
+                              <li>Terraform Landing Zone $79.99</li>
+                              <li>MLOps Pipeline Boilerplate $129.99</li>
+                              <li>Data Serialization and Ingestion $69.99</li>
+                              <li>Gemini API/CLI Wrappers $59.99</li>
+                              <li>API Webhook Receivers $79.99</li>
+                              <li>Production Incident Runbooks $89.99</li>
+                              <li>Cost Optimization Playbooks $89.99</li>
+                              <li>Agentic System Evaluation $129.99</li>
+                            <li><a href="https://ko-fi.com/s/1961f017d4" target="_blank">
+                                Buy Now On Ko-fi</a></li></br>
                             </ul>
 
                             <hr/>
 
                             <p><strong>TAGs</strong></p> 
-                            <p><span class="badge text-bg-dark">HealthcareIT</span> 
-                              <span class="badge text-bg-secondary">SDoH</span>
+                            <p><span class="badge text-bg-dark">bundle</span> 
+                              <span class="badge text-bg-secondary">ultimate</span>
                               <span class="badge text-bg-dark">VertexAI</span> 
-                              <span class="badge text-bg-dark">FHIR</span>
-                              <span class="badge text-bg-dark">DetroitHealth</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>                       
-                </li>                       
-                <li><a class="btn btn-sm btn-dark"
-                      data-bs-toggle="modal" data-bs-target="#healthcareInitiative">
-                      <i class="fa-solid fa-clipboard"></i>Master Bundle
-                    </a>
-                    <div class="modal fade modal-lg" id="healthcareInitiative" tabindex="-1" 
-                        aria-labelledby="healthcareInitiativeLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header bg-light">
-                            <h5 class="model-title" id="healthcareInitiativeLabel">
-                              <strong>The Community Care Nexus (Healthcare SDoH Initiative)</strong></h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
-                          </div>
-                          <div class="modal-body">                          
-                            <p><strong>Overview</strong></p>
-                            <p>A centralized coordination hub designed to address Social Determinants of Health (SDoH)
-                              by connecting healthcare providers with community resource networks. This initiative focuses 
-                              on the whole person care model, using AI to identify non clinical barriers to health such as 
-                              housing instability or food insecurity and automating the referral process to local Detroit 
-                              service providers.
-                            </p>
-
-                            <hr/>
-
-                            <p><strong>Services Offered</strong></p>
-
-                            <ul>
-                              <li><strong>Predictive Risk Stratification:</strong> Utilizing Vertex AI to identify high risk 
-                                patient populations based on socio economic data points.</li>
-                              <li><strong>Automated Referral Pathways:</strong> Intelligent matching of patient needs to 
-                                verified community resources and non profits.</li>  
-                              <li><strong>Closed Loop Tracking:</strong> Secure monitoring of referral outcomes to ensure 
-                                patients successfully receive the support they were bridged to.  
-                            </ul>
-
-                            <hr/>  
-
-                            <p><strong>Pricing</strong></p>
-
-                            <ul>
-                              <li><strong>Health System Integration:</strong> Annual enterprise license based on patient population
-                                size.</li>
-                              <li><strong>Grant Funded Pilot:</strong> Specialized pricing for non profit community health 
-                                organizations and local government initiatives.</li>  
-                            </ul>
-
-                            <p><strong>Deliverables</strong></p>
-
-                            <ul>
-                              <li><strong>Nexus Dashboard:</strong> A HIPAA compliant portal for caseworkers and clinicians to manage 
-                                social interventions.</li>
-                              <li><strong>Community Impact Report:</strong> Automated data visualization showing regional health 
-                                improvements and resource utilization.</li>
-                              <li><strong>Interoperability Layer:</strong> FHIR complient for seamless integration with major 
-                                Electronic Health Record (EHR) systems.</li>
-                            </ul>
-
-                            <hr/>
-
-                            <p><strong>TAGs</strong></p> 
-                            <p><span class="badge text-bg-dark">HealthcareIT</span> 
-                              <span class="badge text-bg-secondary">SDoH</span>
-                              <span class="badge text-bg-dark">VertexAI</span> 
-                              <span class="badge text-bg-dark">FHIR</span>
-                              <span class="badge text-bg-dark">DetroitHealth</span></p>
+                              <span class="badge text-bg-dark">audit</span>
+                              <span class="badge text-bg-dark">consultation</span></p>
                           </div>
                         </div>
                       </div>
                     </div>                       
                 </li>   
-
-                </hr>
-
-              </ul>              
+              </ul>                            
+            </hr>
           </div>
       </div>
     </div>
