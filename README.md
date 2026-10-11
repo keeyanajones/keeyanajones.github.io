@@ -31,11 +31,14 @@ This repository contains the source code for my personal blog, built with Jekyll
 
 ## 📫 Connect with Me
 
-- **GitHub:** [@keeyanajones](https://github.com/keeyanajones)
-- **LinkedIn:** [Insert Link Here]
-- **Twitch.tv:** [Insert Handle Here]
-- **Youtube.** [Insert Handle Here]
-- **Discord:** [Insert Handle Here]
+- **GitHub:** [@keeyanajones's Github Profile](https://github.com/keeyanajones)
+- **Github Blog:** [Keeyana Jones's Dev Blog](https://keeyanajones.github.io)
+- **LinkedIn:** [Keeyana Jones's LinkedIn Profile](https://www.linkedin.com/in/keeyana-jones-5a275514/)
+- **Twitch.tv:** [The Launchpad Foundry Twitch](https://www.twitch.tv/thelaunchpadfoundry)
+- **Youtube.** [@TheLaunchpadFoundry YouTube](https://www.youtube.com/@thelaunchpadfoundry)
+- **Discord:** [The Launchpad Foundry Discord](https://discord.gg/y4ZDquAqJn)
+- **Website:** [The Launchpad Foundry Website](https://www.thelaunchpadfoundry.com)
+- **Ko-Fi:** [The Launchpad Foundry Ko-Fi](https://www.ko-fi.com/thelaunchpadfoundry)
 
 ---
 *“As a man thinketh, so is his room mapped.”*
